@@ -41,19 +41,19 @@ export function AppSidebar() {
           <img
             src="/logos/favicon-robusta.svg"
             alt="ROBUSTA"
-            className="hidden size-7 shrink-0 dark:invert group-data-[collapsible=icon]:block"
+            className="hidden size-8 shrink-0 dark:invert group-data-[collapsible=icon]:block"
           />
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/logos/logopreto.svg"
             alt="ROBUSTA"
-            className="h-5 w-auto dark:hidden group-data-[collapsible=icon]:hidden"
+            className="h-6 w-auto dark:hidden group-data-[collapsible=icon]:hidden"
           />
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/logos/logobranco.svg"
             alt="ROBUSTA"
-            className="hidden h-5 w-auto dark:block group-data-[collapsible=icon]:hidden"
+            className="hidden h-6 w-auto dark:block group-data-[collapsible=icon]:hidden"
           />
         </Link>
       </SidebarHeader>
