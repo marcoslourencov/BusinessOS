@@ -10,7 +10,7 @@ const meta = {
   argTypes: {
     status: {
       control: "select",
-      options: ["draft", "in-progress", "review", "done", "blocked"],
+      options: ["rascunho", "em-andamento", "validado"],
     },
     layout: {
       control: "radio",
@@ -25,9 +25,10 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     title: "Mapa do Mercado",
-    status: "in-progress",
+    status: "em-andamento",
     updatedAt: "2026-06-22",
     excerpt: "Panorama do mercado: tamanho, concorrentes e dinâmicas relevantes.",
+    tags: ["mercado", "pesquisa"],
     layout: "grid",
   },
   render: (args) => (
@@ -41,7 +42,7 @@ export const Clickable: Story = {
   args: {
     ...Default.args,
     title: "Tese de Valor",
-    status: "review",
+    status: "em-andamento",
     onClick: () => alert("Card clicado"),
   },
   render: (args) => (
@@ -59,11 +60,11 @@ export const Clickable: Story = {
   },
 };
 
-export const Done: Story = {
+export const Validado: Story = {
   args: {
     ...Default.args,
     title: "Perfil Ideal de Cliente",
-    status: "done",
+    status: "validado",
   },
   render: (args) => (
     <div className="max-w-sm">
@@ -87,7 +88,7 @@ export const ListLayout: Story = {
   args: {
     ...Default.args,
     title: "Primeiros clientes",
-    status: "blocked",
+    status: "rascunho",
     layout: "list",
   },
   render: (args) => (

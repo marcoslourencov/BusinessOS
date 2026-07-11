@@ -1,4 +1,5 @@
 import * as React from "react";
+import Link from "next/link";
 import { cn } from "@/lib/utils";
 import {
   Card,
@@ -8,20 +9,12 @@ import {
   CardFooter,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-
-export type ContentStatus =
-  | "draft"
-  | "in-progress"
-  | "review"
-  | "done"
-  | "blocked";
+import type { ContentStatus } from "@/lib/types";
 
 const statusLabels: Record<ContentStatus, string> = {
-  draft: "Rascunho",
-  "in-progress": "Em andamento",
-  review: "Em revisão",
-  done: "Concluído",
-  blocked: "Bloqueado",
+  rascunho: "Rascunho",
+  "em-andamento": "Em andamento",
+  validado: "Validado",
 };
 
 export type ContentCardProps = {
@@ -29,6 +22,9 @@ export type ContentCardProps = {
   status?: ContentStatus;
   updatedAt?: string | Date;
   excerpt?: string;
+  tags?: string[];
+  /** When provided, the whole card navigates to this route. */
+  href?: string;
   onClick?: () => void;
   className?: string;
   /** Render as a stacked list row instead of a grid card. */
@@ -50,19 +46,22 @@ export function ContentCard({
   status,
   updatedAt,
   excerpt,
+  tags,
+  href,
   onClick,
   className,
   layout = "grid",
 }: ContentCardProps) {
   const formattedDate = updatedAt ? formatUpdatedAt(updatedAt) : undefined;
+  const isInteractive = Boolean(href) || Boolean(onClick);
 
-  return (
+  const card = (
     <Card
-      role={onClick ? "button" : undefined}
-      tabIndex={onClick ? 0 : undefined}
-      onClick={onClick}
+      role={isInteractive && !href ? "button" : undefined}
+      tabIndex={isInteractive && !href ? 0 : undefined}
+      onClick={!href ? onClick : undefined}
       onKeyDown={
-        onClick
+        !href && onClick
           ? (event) => {
               if (event.key === "Enter" || event.key === " ") {
                 event.preventDefault();
@@ -72,7 +71,9 @@ export function ContentCard({
           : undefined
       }
       className={cn(
-        "group cursor-pointer gap-3 transition-all duration-150 ease-out hover:-translate-y-0.5 hover:shadow-md hover:border-foreground/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
+        isInteractive &&
+          "group cursor-pointer gap-3 transition-all duration-150 ease-out hover:-translate-y-0.5 hover:shadow-md hover:border-foreground/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
+        !isInteractive && "gap-3",
         layout === "list" && "flex-row items-center gap-4 py-4",
         className
       )}
@@ -89,6 +90,18 @@ export function ContentCard({
         {excerpt && (
           <CardDescription className="line-clamp-2">{excerpt}</CardDescription>
         )}
+        {tags && tags.length > 0 && (
+          <div className="flex flex-wrap gap-1.5 pt-1">
+            {tags.map((tag) => (
+              <span
+                key={tag}
+                className="rounded-full border border-border px-2 py-0.5 text-xs text-muted-foreground"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+        )}
       </CardHeader>
       {formattedDate && (
         <CardFooter
@@ -102,4 +115,17 @@ export function ContentCard({
       )}
     </Card>
   );
+
+  if (href) {
+    return (
+      <Link
+        href={href}
+        className="block rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+      >
+        {card}
+      </Link>
+    );
+  }
+
+  return card;
 }

@@ -7,23 +7,29 @@ const mockItems: ContentGridItem[] = [
   {
     id: "mapa-do-mercado",
     title: "Mapa do Mercado",
-    status: "done",
+    status: "validado",
     updatedAt: "2026-06-15",
     excerpt: "Panorama do mercado: tamanho, concorrentes e dinâmicas relevantes.",
+    tags: ["mercado", "pesquisa"],
+    href: "/direcao/mapa-do-mercado",
   },
   {
     id: "mapa-de-problemas",
     title: "Mapa de Problemas",
-    status: "in-progress",
+    status: "em-andamento",
     updatedAt: "2026-06-22",
     excerpt: "Os problemas reais dos clientes que valem a pena resolver.",
+    tags: ["problemas"],
+    href: "/direcao/mapa-de-problemas",
   },
   {
     id: "perfil-ideal-de-cliente",
     title: "Perfil Ideal de Cliente",
-    status: "review",
+    status: "em-andamento",
     updatedAt: "2026-06-25",
     excerpt: "Quem é o cliente ideal e o que o caracteriza.",
+    tags: ["icp"],
+    href: "/direcao/perfil-ideal-de-cliente",
   },
 ];
 
