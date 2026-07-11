@@ -1,4 +1,4 @@
-export type Section = "founder" | "direcao" | "validacao" | "caixa";
+export type Section = "founder" | "direcao" | "validacao" | "caixa" | "marca";
 
 export type ContentStatus = "rascunho" | "em-andamento" | "validado";
 
@@ -14,6 +14,8 @@ export interface ContentFrontmatter {
   validationStage?: "nao-testada" | "em-teste" | "validada" | "invalidada";
   relatedSlugs?: string[];
   period?: string;
+  /** Posição manual de exibição dentro da seção (menor = primeiro). Blocos sem este campo vão para o final, ordenados por título. */
+  order?: number;
 }
 
 export interface ContentItem {

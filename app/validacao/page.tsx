@@ -7,6 +7,7 @@ export default async function ValidacaoPage() {
 
   return (
     <SectionView
+      section="validacao"
       title="Validação"
       description="Testar a oferta no mundo real e aprender com os primeiros clientes."
       items={toContentGridItems(items, "validacao")}

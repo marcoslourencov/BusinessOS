@@ -7,6 +7,7 @@ updatedAt: "2026-07-09T13:45:00-03:00"
 tags: ["proposta-de-valor", "diferenciacao", "tese"]
 aiContext: "Ao avaliar mudanças na Oferta, verifique se elas continuam consistentes com esta tese antes de aprovar ou sugerir uma alteração de escopo."
 relatedSlugs: ["perfil-ideal-de-cliente", "oferta"]
+order: 4
 ---
 
 A tese central é: founders early-stage não precisam de mais uma ferramenta configurável, precisam de um sistema operacional de negócio pré-estruturado, que já venha com as perguntas certas (objetivo, direção, validação, caixa) prontas para responder, reduzindo o tempo entre "abrir o app" e "ter clareza do que fazer hoje".

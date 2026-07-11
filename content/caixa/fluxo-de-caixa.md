@@ -8,6 +8,7 @@ tags: ["financeiro", "caixa", "runway"]
 aiContext: "Use os números deste documento para alertar o founder se uma nova despesa recorrente comprometer o runway mínimo de 4 meses definido como limite de segurança."
 period: "2026-07"
 relatedSlugs: ["primeiros-clientes"]
+order: 1
 ---
 
 Em julho de 2026, a receita recorrente mensal (MRR) é de R$ 14.700 (3 clientes na oferta "Operações sob Demanda" a R$ 4.900 cada), contra despesas fixas de R$ 6.200/mês (ferramentas, contador e uma freelancer parcial de suporte administrativo).

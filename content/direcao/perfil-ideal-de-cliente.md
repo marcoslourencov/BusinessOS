@@ -7,6 +7,7 @@ updatedAt: "2026-07-08T10:05:00-03:00"
 tags: ["icp", "segmentacao", "cliente-ideal"]
 aiContext: "Ao avaliar um novo lead ou cliente em Primeiros Clientes, compare o perfil dele com os critérios aqui descritos antes de sugerir priorização de atendimento."
 relatedSlugs: ["mapa-do-mercado", "tese-de-valor"]
+order: 3
 ---
 
 O cliente ideal é o founder solo ou com sócio, à frente de uma agência ou consultoria de operações com faturamento entre R$ 20 mil e R$ 150 mil por mês, que já tem clientes pagantes mas ainda não tem nenhuma equipe de gestão dedicada — ou seja, ele mesmo acumula as funções de estratégia, vendas e operação.

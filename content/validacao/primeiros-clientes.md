@@ -9,6 +9,7 @@ aiContext: "Use este documento para avaliar se a evidência de tração já sust
 sharedWith: []
 validationStage: "em-teste"
 relatedSlugs: ["oferta", "perfil-ideal-de-cliente"]
+order: 6
 ---
 
 Até agora, 3 clientes fecharam a oferta "Operações sob Demanda": uma agência de marketing de performance (8 pessoas), uma consultoria contábil boutique (5 pessoas) e uma clínica odontológica com 2 unidades (12 pessoas) que se encaixou no perfil por acumular a mesma dor de coordenação apesar de não ser uma agência propriamente dita.

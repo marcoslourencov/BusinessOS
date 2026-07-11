@@ -7,6 +7,7 @@ export default async function DirecaoPage() {
 
   return (
     <SectionView
+      section="direcao"
       title="Direção"
       description="A tese estratégica: mercado, problema, cliente e oferta."
       items={toContentGridItems(items, "direcao")}

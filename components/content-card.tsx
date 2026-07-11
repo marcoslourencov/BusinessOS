@@ -1,5 +1,10 @@
+"use client";
+
 import * as React from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { useTransition } from "react";
+import { Trash2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import {
   Card,
@@ -9,12 +14,33 @@ import {
   CardFooter,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import type { ContentStatus } from "@/lib/types";
+import { Button } from "@/components/ui/button";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog";
+import { deleteBlockAction } from "@/lib/actions";
+import type { ContentStatus, Section } from "@/lib/types";
 
 const statusLabels: Record<ContentStatus, string> = {
   rascunho: "Rascunho",
   "em-andamento": "Em andamento",
   validado: "Validado",
+};
+
+const statusStyles: Record<ContentStatus, string> = {
+  rascunho: "bg-muted text-muted-foreground",
+  "em-andamento":
+    "bg-orange-100 text-orange-800 dark:bg-orange-500/15 dark:text-orange-300",
+  validado:
+    "bg-emerald-100 text-emerald-800 dark:bg-emerald-500/15 dark:text-emerald-300",
 };
 
 export type ContentCardProps = {
@@ -29,6 +55,9 @@ export type ContentCardProps = {
   className?: string;
   /** Render as a stacked list row instead of a grid card. */
   layout?: "grid" | "list";
+  /** When provided together with `slug`, renders a delete affordance on the card. */
+  section?: Section;
+  slug?: string;
 };
 
 function formatUpdatedAt(value: string | Date): string {
@@ -51,9 +80,22 @@ export function ContentCard({
   onClick,
   className,
   layout = "grid",
+  section,
+  slug,
 }: ContentCardProps) {
+  const router = useRouter();
+  const [isDeleting, startDeleteTransition] = useTransition();
   const formattedDate = updatedAt ? formatUpdatedAt(updatedAt) : undefined;
   const isInteractive = Boolean(href) || Boolean(onClick);
+  const canDelete = Boolean(section) && Boolean(slug);
+
+  function handleDelete() {
+    if (!section || !slug) return;
+    startDeleteTransition(async () => {
+      await deleteBlockAction(section, slug);
+      router.refresh();
+    });
+  }
 
   const card = (
     <Card
@@ -82,7 +124,10 @@ export function ContentCard({
         <div className="flex items-start justify-between gap-2">
           <CardTitle className="text-base font-semibold">{title}</CardTitle>
           {status && (
-            <Badge variant="secondary" className="shrink-0 font-normal">
+            <Badge
+              variant="outline"
+              className={cn("shrink-0 border-transparent font-normal", statusStyles[status])}
+            >
               {statusLabels[status]}
             </Badge>
           )}
@@ -116,16 +161,50 @@ export function ContentCard({
     </Card>
   );
 
-  if (href) {
-    return (
-      <Link
-        href={href}
-        className="block rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-      >
-        {card}
-      </Link>
-    );
-  }
-
-  return card;
+  return (
+    <div className="group/card relative">
+      {href ? (
+        <Link
+          href={href}
+          className="block rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+        >
+          {card}
+        </Link>
+      ) : (
+        card
+      )}
+      {canDelete && (
+        <AlertDialog>
+          <AlertDialogTrigger
+            render={
+              <Button
+                variant="outline"
+                size="icon"
+                aria-label={`Excluir ${title}`}
+                className="absolute -top-2 -right-2 size-7 rounded-full border-border bg-background text-muted-foreground opacity-0 shadow-sm transition-opacity duration-150 group-hover/card:opacity-100 hover:bg-destructive/10 hover:text-destructive focus-visible:opacity-100"
+                onClick={(event: React.MouseEvent) => event.stopPropagation()}
+              />
+            }
+          >
+            <Trash2 className="size-3.5" />
+          </AlertDialogTrigger>
+          <AlertDialogContent onClick={(event) => event.stopPropagation()}>
+            <AlertDialogHeader>
+              <AlertDialogTitle>Excluir &ldquo;{title}&rdquo;?</AlertDialogTitle>
+              <AlertDialogDescription>
+                Essa ação remove o arquivo de conteúdo permanentemente e não pode ser
+                desfeita.
+              </AlertDialogDescription>
+            </AlertDialogHeader>
+            <AlertDialogFooter>
+              <AlertDialogCancel>Cancelar</AlertDialogCancel>
+              <AlertDialogAction disabled={isDeleting} onClick={handleDelete}>
+                {isDeleting ? "Excluindo..." : "Excluir"}
+              </AlertDialogAction>
+            </AlertDialogFooter>
+          </AlertDialogContent>
+        </AlertDialog>
+      )}
+    </div>
+  );
 }

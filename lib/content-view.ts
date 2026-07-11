@@ -30,6 +30,8 @@ export function toContentGridItem(
     excerpt: truncate(item.body),
     tags: item.frontmatter.tags,
     href: `/${routeSection}/${item.frontmatter.slug}`,
+    section: routeSection,
+    slug: item.frontmatter.slug,
   };
 }
 

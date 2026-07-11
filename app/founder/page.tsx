@@ -7,6 +7,7 @@ export default async function FounderPage() {
 
   return (
     <SectionView
+      section="founder"
       title="Founder"
       description="O ponto de partida: quem você é e para onde quer ir."
       items={toContentGridItems(items, "founder")}

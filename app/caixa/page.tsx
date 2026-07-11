@@ -7,6 +7,7 @@ export default async function CaixaPage() {
 
   return (
     <SectionView
+      section="caixa"
       title="Caixa"
       description="A operação financeira: fluxo de caixa e gestão do negócio."
       items={toContentGridItems(items, "caixa")}

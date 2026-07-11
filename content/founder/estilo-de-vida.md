@@ -7,6 +7,7 @@ updatedAt: "2026-06-28T18:40:00-03:00"
 tags: ["rotina", "limites", "bem-estar"]
 aiContext: "Ao sugerir prazos ou cargas de trabalho em outras seções, respeite os limites descritos aqui — não recomende rotinas que exijam mais do que 4 dias úteis de trabalho profundo por semana."
 relatedSlugs: ["objetivo"]
+order: 2
 ---
 
 Quero manter uma rotina de 4 dias de trabalho profundo por semana, com sextas-feiras reservadas para revisão de métricas, planejamento e assuntos administrativos do negócio — não para atendimento a cliente.

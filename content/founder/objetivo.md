@@ -7,6 +7,7 @@ updatedAt: "2026-07-02T09:15:00-03:00"
 tags: ["norte", "metas", "visao-pessoal"]
 aiContext: "Use este documento para entender a motivação de fundo do founder antes de sugerir prioridades em outras seções — decisões de produto e de caixa devem ser avaliadas à luz desta meta pessoal."
 relatedSlugs: ["estilo-de-vida"]
+order: 1
 ---
 
 Meu objetivo com o BusinessOS é sair do trabalho por hora como consultor de operações e construir um produto que gere receita recorrente, chegando a R$ 30 mil de MRR até o final de 2027 sem depender de mim para cada entrega.

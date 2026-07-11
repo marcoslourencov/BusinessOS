@@ -7,6 +7,7 @@ updatedAt: "2026-07-05T11:00:00-03:00"
 tags: ["mercado", "concorrencia", "posicionamento"]
 aiContext: "Use este documento como referência de tamanho e concorrência de mercado antes de validar hipóteses na Tese de Valor ou avaliar uma nova oferta."
 relatedSlugs: ["tese-de-valor", "perfil-ideal-de-cliente"]
+order: 1
 ---
 
 O mercado-alvo é o de pequenas agências e consultorias de operações (10 a 50 funcionários) no Brasil que já usam alguma combinação de planilhas e ferramentas soltas para gerir clientes, sem um sistema único de gestão. Estimo esse universo em cerca de 40 mil empresas, das quais uma fração relevante já sente dor de coordenação entre times.

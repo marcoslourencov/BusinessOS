@@ -7,6 +7,7 @@ updatedAt: "2026-06-30T15:00:00-03:00"
 tags: ["ferramentas", "processos", "financeiro"]
 aiContext: "Use este documento para entender quais ferramentas já existem antes de sugerir a adoção de uma nova ferramenta financeira ou operacional — priorize integrar o que já existe em vez de sugerir substituição."
 relatedSlugs: ["fluxo-de-caixa"]
+order: 2
 ---
 
 Hoje o controle financeiro roda em uma combinação de Google Sheets (fluxo de caixa manual, atualizado semanalmente às sextas) e o app do banco para emissão de boletos e conciliação. Não há nenhum ERP formal implantado ainda.

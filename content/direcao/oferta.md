@@ -9,6 +9,7 @@ aiContext: "Ao editar este documento, garanta que a proposta de valor permaneça
 sharedWith: ["validacao"]
 validationStage: "em-teste"
 relatedSlugs: ["tese-de-valor", "perfil-ideal-de-cliente", "primeiros-clientes"]
+order: 5
 ---
 
 A oferta atual é um pacote mensal de "Operações sob Demanda": por uma mensalidade fixa de R$ 4.900, assumo a coordenação de operações do cliente (processos, ferramentas, acompanhamento de time) até 20 horas por semana, com reunião semanal de alinhamento e um board de status atualizado em tempo real.

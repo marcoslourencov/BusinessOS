@@ -3,6 +3,8 @@
 import * as React from "react";
 import { useState, useTransition } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { Trash2 } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
@@ -14,8 +16,20 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog";
 import type { ContentItem, ContentStatus, Section } from "@/lib/types";
 import { saveItemAction } from "@/app/[section]/[slug]/actions";
+import { deleteBlockAction } from "@/lib/actions";
 
 const STATUS_OPTIONS: { value: ContentStatus; label: string }[] = [
   { value: "rascunho", label: "Rascunho" },
@@ -29,13 +43,22 @@ export type ContentEditFormProps = {
 };
 
 export function ContentEditForm({ section, item }: ContentEditFormProps) {
+  const router = useRouter();
   const [title, setTitle] = useState(item.frontmatter.title);
   const [status, setStatus] = useState<ContentStatus>(item.frontmatter.status);
   const [tagsInput, setTagsInput] = useState(item.frontmatter.tags.join(", "));
   const [aiContext, setAiContext] = useState(item.frontmatter.aiContext ?? "");
   const [body, setBody] = useState(item.body);
   const [isPending, startTransition] = useTransition();
+  const [isDeleting, startDeleteTransition] = useTransition();
   const [lastSavedAt, setLastSavedAt] = useState<string | null>(null);
+
+  function handleDelete() {
+    startDeleteTransition(async () => {
+      await deleteBlockAction(section, item.frontmatter.slug);
+      router.push(`/${section}`);
+    });
+  }
 
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -151,6 +174,35 @@ export function ContentEditForm({ section, item }: ContentEditFormProps) {
             }).format(new Date(lastSavedAt))}
           </span>
         )}
+        <AlertDialog>
+          <AlertDialogTrigger
+            render={
+              <Button
+                type="button"
+                variant="ghost"
+                className="ml-auto text-muted-foreground hover:bg-destructive/10 hover:text-destructive"
+              />
+            }
+          >
+            <Trash2 className="size-4" />
+            Excluir bloco
+          </AlertDialogTrigger>
+          <AlertDialogContent>
+            <AlertDialogHeader>
+              <AlertDialogTitle>Excluir &ldquo;{title}&rdquo;?</AlertDialogTitle>
+              <AlertDialogDescription>
+                Essa ação remove o arquivo de conteúdo permanentemente e não pode ser
+                desfeita.
+              </AlertDialogDescription>
+            </AlertDialogHeader>
+            <AlertDialogFooter>
+              <AlertDialogCancel>Cancelar</AlertDialogCancel>
+              <AlertDialogAction disabled={isDeleting} onClick={handleDelete}>
+                {isDeleting ? "Excluindo..." : "Excluir"}
+              </AlertDialogAction>
+            </AlertDialogFooter>
+          </AlertDialogContent>
+        </AlertDialog>
       </div>
     </form>
   );
