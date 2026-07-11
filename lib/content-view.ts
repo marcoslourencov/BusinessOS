@@ -32,6 +32,7 @@ export function toContentGridItem(
     href: `/${routeSection}/${item.frontmatter.slug}`,
     section: routeSection,
     slug: item.frontmatter.slug,
+    group: item.frontmatter.group,
   };
 }
 

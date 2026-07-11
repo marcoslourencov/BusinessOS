@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Building2, Compass, ClipboardCheck, Wallet, Sparkles } from "lucide-react";
+import { Building2, Compass, ClipboardCheck, Wallet, Sparkles, Megaphone } from "lucide-react";
 
 import {
   Sidebar,
@@ -29,6 +29,7 @@ export const navItems: NavItem[] = [
   { title: "Validação", href: "/validacao", icon: ClipboardCheck },
   { title: "Caixa", href: "/caixa", icon: Wallet },
   { title: "Marca", href: "/marca", icon: Sparkles },
+  { title: "Autoridade", href: "/autoridade", icon: Megaphone },
 ];
 
 export function AppSidebar() {

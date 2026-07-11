@@ -1,4 +1,10 @@
-export type Section = "founder" | "direcao" | "validacao" | "caixa" | "marca";
+export type Section =
+  | "founder"
+  | "direcao"
+  | "validacao"
+  | "caixa"
+  | "marca"
+  | "autoridade";
 
 export type ContentStatus = "rascunho" | "em-andamento" | "validado";
 
@@ -16,6 +22,8 @@ export interface ContentFrontmatter {
   period?: string;
   /** Posição manual de exibição dentro da seção (menor = primeiro). Blocos sem este campo vão para o final, ordenados por título. */
   order?: number;
+  /** Rótulo opcional de agrupamento visual dentro da seção (ex.: "Editorias"). Itens sem este campo aparecem soltos, sem cabeçalho de grupo. */
+  group?: string;
 }
 
 export interface ContentItem {

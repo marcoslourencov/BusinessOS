@@ -9,6 +9,7 @@ const VALID_SECTIONS: readonly Section[] = [
   "validacao",
   "caixa",
   "marca",
+  "autoridade",
 ];
 
 function isSection(value: string): value is Section {
