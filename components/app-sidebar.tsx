@@ -36,13 +36,25 @@ export function AppSidebar() {
   return (
     <Sidebar collapsible="icon">
       <SidebarHeader className="px-3 py-4">
-        <Link href="/" className="flex items-center gap-2 px-1">
-          <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-foreground text-sm font-semibold text-background">
-            B
-          </span>
-          <span className="text-base font-semibold tracking-tight group-data-[collapsible=icon]:hidden">
-            BusinessOS
-          </span>
+        <Link href="/" className="flex items-center px-1">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/logos/favicon-robusta.svg"
+            alt="ROBUSTA"
+            className="hidden size-7 shrink-0 dark:invert group-data-[collapsible=icon]:block"
+          />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/logos/logopreto.svg"
+            alt="ROBUSTA"
+            className="h-5 w-auto dark:hidden group-data-[collapsible=icon]:hidden"
+          />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/logos/logobranco.svg"
+            alt="ROBUSTA"
+            className="hidden h-5 w-auto dark:block group-data-[collapsible=icon]:hidden"
+          />
         </Link>
       </SidebarHeader>
       <SidebarContent>
