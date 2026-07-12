@@ -1,0 +1,214 @@
+{
+  "stages": [
+    {
+      "id": "a-iniciar",
+      "label": "A iniciar",
+      "description": "Sem conteúdo ainda.",
+      "kind": "a-iniciar"
+    },
+    {
+      "id": "em-progresso",
+      "label": "Em progresso",
+      "description": "Rascunho em construção.",
+      "kind": "em-progresso"
+    },
+    {
+      "id": "aguardando",
+      "label": "Aguardando você",
+      "description": "Proposta da IA para aprovar.",
+      "kind": "aguardando"
+    },
+    {
+      "id": "validado",
+      "label": "Validado",
+      "description": "Aprovado pelo founder.",
+      "kind": "validado"
+    }
+  ],
+  "cards": [
+    {
+      "id": "block:validacao/primeiros-clientes",
+      "type": "block",
+      "section": "validacao",
+      "slug": "primeiros-clientes",
+      "stageId": "aguardando",
+      "order": 0
+    },
+    {
+      "id": "block:marca/big-idea",
+      "type": "block",
+      "section": "marca",
+      "slug": "big-idea",
+      "stageId": "validado",
+      "order": 0
+    },
+    {
+      "id": "block:marca/codigos",
+      "type": "block",
+      "section": "marca",
+      "slug": "codigos",
+      "stageId": "em-progresso",
+      "order": 0
+    },
+    {
+      "id": "block:marca/icp",
+      "type": "block",
+      "section": "marca",
+      "slug": "icp",
+      "stageId": "validado",
+      "order": 1
+    },
+    {
+      "id": "block:marca/posicionamento-x-y",
+      "type": "block",
+      "section": "marca",
+      "slug": "posicionamento-x-y",
+      "stageId": "validado",
+      "order": 2
+    },
+    {
+      "id": "block:marca/tom-de-voz",
+      "type": "block",
+      "section": "marca",
+      "slug": "tom-de-voz",
+      "stageId": "validado",
+      "order": 3
+    },
+    {
+      "id": "block:founder/estilo-de-vida",
+      "type": "block",
+      "section": "founder",
+      "slug": "estilo-de-vida",
+      "stageId": "aguardando",
+      "order": 1
+    },
+    {
+      "id": "block:founder/objetivo",
+      "type": "block",
+      "section": "founder",
+      "slug": "objetivo",
+      "stageId": "aguardando",
+      "order": 2
+    },
+    {
+      "id": "block:direcao/mapa-de-problemas",
+      "type": "block",
+      "section": "direcao",
+      "slug": "mapa-de-problemas",
+      "stageId": "em-progresso",
+      "order": 1
+    },
+    {
+      "id": "block:direcao/mapa-do-mercado",
+      "type": "block",
+      "section": "direcao",
+      "slug": "mapa-do-mercado",
+      "stageId": "em-progresso",
+      "order": 2
+    },
+    {
+      "id": "block:direcao/oferta",
+      "type": "block",
+      "section": "direcao",
+      "slug": "oferta",
+      "stageId": "em-progresso",
+      "order": 3
+    },
+    {
+      "id": "block:direcao/perfil-ideal-de-cliente",
+      "type": "block",
+      "section": "direcao",
+      "slug": "perfil-ideal-de-cliente",
+      "stageId": "validado",
+      "order": 4
+    },
+    {
+      "id": "block:direcao/tese-de-valor",
+      "type": "block",
+      "section": "direcao",
+      "slug": "tese-de-valor",
+      "stageId": "em-progresso",
+      "order": 4
+    },
+    {
+      "id": "block:caixa/erp",
+      "type": "block",
+      "section": "caixa",
+      "slug": "erp",
+      "stageId": "aguardando",
+      "order": 3
+    },
+    {
+      "id": "block:caixa/fluxo-de-caixa",
+      "type": "block",
+      "section": "caixa",
+      "slug": "fluxo-de-caixa",
+      "stageId": "aguardando",
+      "order": 4
+    },
+    {
+      "id": "block:autoridade/biblioteca-de-scripts",
+      "type": "block",
+      "section": "autoridade",
+      "slug": "biblioteca-de-scripts",
+      "stageId": "em-progresso",
+      "order": 5
+    },
+    {
+      "id": "block:autoridade/calendario-de-publicacao",
+      "type": "block",
+      "section": "autoridade",
+      "slug": "calendario-de-publicacao",
+      "stageId": "em-progresso",
+      "order": 6
+    },
+    {
+      "id": "block:autoridade/cases",
+      "type": "block",
+      "section": "autoridade",
+      "slug": "cases",
+      "stageId": "em-progresso",
+      "order": 7
+    },
+    {
+      "id": "block:autoridade/cultura",
+      "type": "block",
+      "section": "autoridade",
+      "slug": "cultura",
+      "stageId": "em-progresso",
+      "order": 8
+    },
+    {
+      "id": "block:autoridade/mercado",
+      "type": "block",
+      "section": "autoridade",
+      "slug": "mercado",
+      "stageId": "em-progresso",
+      "order": 9
+    },
+    {
+      "id": "block:autoridade/metodo",
+      "type": "block",
+      "section": "autoridade",
+      "slug": "metodo",
+      "stageId": "em-progresso",
+      "order": 10
+    },
+    {
+      "id": "block:autoridade/metricas-de-alcance-e-conversao",
+      "type": "block",
+      "section": "autoridade",
+      "slug": "metricas-de-alcance-e-conversao",
+      "stageId": "em-progresso",
+      "order": 11
+    },
+    {
+      "id": "block:autoridade/noticias",
+      "type": "block",
+      "section": "autoridade",
+      "slug": "noticias",
+      "stageId": "em-progresso",
+      "order": 12
+    }
+  ]
+}

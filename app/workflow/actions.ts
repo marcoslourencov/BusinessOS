@@ -1,42 +1,57 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
-import { getContentBySlug, saveContent } from "@/lib/content";
-import type { Section } from "@/lib/types";
+import {
+  moveCard,
+  createCard,
+  deleteCard,
+  addStage,
+  renameStage,
+  deleteStage,
+  readBoardStages,
+  type CreateCardInput,
+} from "@/lib/workflow";
 
-export type ApproveResult = { status: "approved" } | { status: "not-found" };
+function revalidateAll() {
+  revalidatePath("/workflow");
+}
 
-/**
- * Aprova a proposta de um bloco: marca como `validado` e remove o estado
- * `review: "pendente"`, movendo o card de "Aguardando você" para "Validado".
- * Preserva todo o resto do frontmatter (answers, briefing, report, etc.).
- */
-export async function approveBlockAction(
-  section: Section,
-  slug: string
-): Promise<ApproveResult> {
-  const item = await getContentBySlug(section, slug);
-  if (!item) return { status: "not-found" };
+export async function moveCardAction(cardId: string, toStageId: string, toIndex: number) {
+  await moveCard(cardId, toStageId, toIndex);
+  revalidateAll();
+}
 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars -- excluído do restante preservado
-  const { updatedAt, ...rest } = item.frontmatter;
-  const saved = await saveContent(section, slug, {
-    frontmatter: { ...rest, status: "validado", review: undefined },
-    body: item.body,
-  });
+export async function createCardAction(input: CreateCardInput) {
+  await createCard(input);
+  if (input.type === "block") revalidatePath(`/${input.section}`);
+  revalidateAll();
+}
 
-  const paths = new Set<string>([
-    "/workflow",
-    `/${section}`,
-    `/${section}/${slug}`,
-    `/${saved.frontmatter.section}`,
-    `/${saved.frontmatter.section}/${slug}`,
-  ]);
-  for (const shared of saved.frontmatter.sharedWith ?? []) {
-    paths.add(`/${shared}`);
-    paths.add(`/${shared}/${slug}`);
-  }
-  for (const p of paths) revalidatePath(p);
+export async function deleteCardAction(cardId: string) {
+  await deleteCard(cardId);
+  revalidateAll();
+}
 
-  return { status: "approved" };
+export async function addStageAction(label: string) {
+  await addStage(label);
+  revalidateAll();
+}
+
+export async function renameStageAction(stageId: string, label: string) {
+  await renameStage(stageId, label);
+  revalidateAll();
+}
+
+export async function deleteStageAction(stageId: string) {
+  await deleteStage(stageId);
+  revalidateAll();
+}
+
+/** Aprovar = mover o card para a etapa de kind "validado". */
+export async function approveCardAction(cardId: string) {
+  const stages = await readBoardStages();
+  const validado = stages.find((s) => s.kind === "validado");
+  if (!validado) return;
+  await moveCard(cardId, validado.id, 0);
+  revalidateAll();
 }
