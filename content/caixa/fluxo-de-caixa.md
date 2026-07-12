@@ -67,6 +67,7 @@ report:
         https://www.forbes.com/councils/forbesagencycouncil/2025/07/14/the-high-cost-of-putting-creativity-on-the-clock/
       publisher: Forbes
       publishedAt: '2025'
+review: pendente
 ---
 ## Em uma frase, como o dinheiro entra e sai deste bloco?
 

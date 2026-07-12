@@ -70,6 +70,12 @@ export interface ContentFrontmatter {
   briefingGeneratedAt?: string;
   /** Relatório de dados reais com fontes. Ver Report e lib/report.ts. */
   report?: Report;
+  /**
+   * Estado de revisão da proposta gerada por IA. `"pendente"` coloca o bloco
+   * na coluna "Aguardando você" do Workflow até o founder aprovar. Ver
+   * lib/workflow.ts.
+   */
+  review?: "pendente";
 }
 
 export interface ContentItem {

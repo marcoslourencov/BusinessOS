@@ -3,7 +3,6 @@ title: Primeiros Clientes
 section: validacao
 slug: primeiros-clientes
 status: rascunho
-updatedAt: '2026-07-12T18:55:49.043Z'
 tags:
   - clientes
   - validacao
@@ -74,6 +73,8 @@ report:
         https://www.forbes.com/councils/forbesagencycouncil/2025/07/14/the-high-cost-of-putting-creativity-on-the-clock/
       publisher: Forbes
       publishedAt: '2025'
+review: pendente
+updatedAt: '2026-07-12T22:39:28.271Z'
 ---
 ## Qual é a hipótese que você quer testar?
 

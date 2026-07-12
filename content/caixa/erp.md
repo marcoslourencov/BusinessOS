@@ -67,6 +67,7 @@ report:
       url: 'https://agiled.app/statistics/agency-pricing-statistics'
       publisher: Agiled
       publishedAt: '2026'
+review: pendente
 ---
 ## Em uma frase, como o dinheiro entra e sai deste bloco?
 

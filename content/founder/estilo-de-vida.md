@@ -62,6 +62,7 @@ report:
       url: 'https://buffer.com/resources/how-often-to-post-on-linkedin/'
       publisher: Buffer
       publishedAt: '2026'
+review: pendente
 ---
 ## Em uma frase, do que se trata este bloco?
 
