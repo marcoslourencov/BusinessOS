@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Building2, Compass, ClipboardCheck, Wallet, Sparkles, Megaphone, UserRound, ChevronsUpDown } from "lucide-react";
+import { Building2, Compass, ClipboardCheck, Wallet, Sparkles, Megaphone, UserRound, ChevronsUpDown, Bot } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import type { Section } from "@/lib/types";
@@ -95,6 +95,30 @@ export function AppSidebar({ counts }: { counts?: Partial<Record<Section, number
                   </SidebarMenuItem>
                 );
               })}
+            </SidebarMenu>
+          </SidebarGroupContent>
+        </SidebarGroup>
+
+        <SidebarGroup>
+          <SidebarGroupLabel>Ferramentas</SidebarGroupLabel>
+          <SidebarGroupContent>
+            <SidebarMenu className="gap-1">
+              <SidebarMenuItem>
+                <SidebarMenuButton
+                  render={<Link href="/agentes" />}
+                  isActive={pathname?.startsWith("/agentes") ?? false}
+                  tooltip="Agentes"
+                  className={cn(
+                    "h-10 rounded-lg px-3 transition-colors duration-150 ease-out group-data-[collapsible=icon]:justify-center",
+                    (pathname?.startsWith("/agentes") ?? false)
+                      ? "bg-sidebar-foreground font-medium text-sidebar hover:bg-sidebar-foreground hover:text-sidebar data-active:bg-sidebar-foreground data-active:text-sidebar"
+                      : "text-sidebar-foreground/80 hover:bg-sidebar-accent hover:text-sidebar-foreground"
+                  )}
+                >
+                  <Bot className="size-4" />
+                  <span className="group-data-[collapsible=icon]:hidden">Agentes</span>
+                </SidebarMenuButton>
+              </SidebarMenuItem>
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>
