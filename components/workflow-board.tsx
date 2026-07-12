@@ -7,14 +7,21 @@ import {
   DndContext,
   DragOverlay,
   PointerSensor,
-  useDraggable,
   useDroppable,
   useSensor,
   useSensors,
-  pointerWithin,
+  closestCorners,
   type DragEndEvent,
+  type DragOverEvent,
   type DragStartEvent,
 } from "@dnd-kit/core";
+import {
+  SortableContext,
+  arrayMove,
+  useSortable,
+  verticalListSortingStrategy,
+} from "@dnd-kit/sortable";
+import { CSS } from "@dnd-kit/utilities";
 import {
   BellDot,
   Bot,
@@ -204,7 +211,7 @@ function CardBody({
   );
 }
 
-function DraggableCard({
+function SortableCard({
   card,
   stageKind,
   onApprove,
@@ -215,10 +222,17 @@ function DraggableCard({
   onApprove?: () => void;
   onDelete?: () => void;
 }) {
-  const { attributes, listeners, setNodeRef, isDragging } = useDraggable({ id: card.id });
+  const { attributes, listeners, setNodeRef, transform, transition, isDragging } =
+    useSortable({ id: card.id });
+  const style: React.CSSProperties = {
+    transform: CSS.Translate.toString(transform),
+    transition,
+  };
   return (
     <div
       ref={setNodeRef}
+      style={style}
+      data-card-id={card.id}
       {...listeners}
       {...attributes}
       className={cn(
@@ -247,7 +261,7 @@ function Column({
   onDeleteStage: (stageId: string) => void;
 }) {
   const { stage } = column;
-  const { setNodeRef, isOver } = useDroppable({ id: `col:${stage.id}` });
+  const { setNodeRef, isOver } = useDroppable({ id: stage.id });
   const [renaming, setRenaming] = React.useState(false);
   const [renameValue, setRenameValue] = React.useState(stage.label);
   const [adding, setAdding] = React.useState(false);
@@ -305,20 +319,26 @@ function Column({
 
       <div
         ref={setNodeRef}
+        data-stage-id={stage.id}
         className={cn(
           "flex min-h-24 flex-col gap-2.5 rounded-2xl p-1.5 transition-colors",
           isOver ? "bg-accent-orange/10 ring-2 ring-accent-orange/40" : "bg-muted/30"
         )}
       >
-        {column.cards.map((card) => (
-          <DraggableCard
-            key={card.id}
-            card={card}
-            stageKind={stage.kind}
-            onApprove={() => onApprove(card.id)}
-            onDelete={() => onDelete(card)}
-          />
-        ))}
+        <SortableContext
+          items={column.cards.map((c) => c.id)}
+          strategy={verticalListSortingStrategy}
+        >
+          {column.cards.map((card) => (
+            <SortableCard
+              key={card.id}
+              card={card}
+              stageKind={stage.kind}
+              onApprove={() => onApprove(card.id)}
+              onDelete={() => onDelete(card)}
+            />
+          ))}
+        </SortableContext>
 
         {adding ? (
           <AddCardForm
@@ -437,8 +457,65 @@ export function WorkflowBoard({
     [columns, activeId]
   );
 
+  const stageIds = React.useMemo(
+    () => new Set(columns.map((c) => c.stage.id)),
+    [columns]
+  );
+
+  /** Dado um id de card ou de etapa, retorna o id da etapa (coluna) dele. */
+  function findContainer(id: string): string | undefined {
+    if (stageIds.has(id)) return id;
+    return columns.find((c) => c.cards.some((x) => x.id === id))?.stage.id;
+  }
+
   function handleDragStart(e: DragStartEvent) {
     setActiveId(String(e.active.id));
+  }
+
+  /** Move o card entre colunas ao vivo (preview) enquanto arrasta. */
+  function handleDragOver(e: DragOverEvent) {
+    const { active, over } = e;
+    if (!over) return;
+    const activeIdStr = String(active.id);
+    const overId = String(over.id);
+    const fromStage = findContainer(activeIdStr);
+    const toStage = findContainer(overId);
+    if (!fromStage || !toStage || fromStage === toStage) return;
+
+    setColumns((prev) => {
+      const from = prev.find((c) => c.stage.id === fromStage);
+      const to = prev.find((c) => c.stage.id === toStage);
+      if (!from || !to) return prev;
+      const activeIndex = from.cards.findIndex((c) => c.id === activeIdStr);
+      if (activeIndex === -1) return prev;
+      const moved = from.cards[activeIndex];
+
+      const overIsColumn = prev.some((c) => c.stage.id === overId);
+      let newIndex: number;
+      if (overIsColumn) {
+        newIndex = to.cards.length;
+      } else {
+        const overIndex = to.cards.findIndex((c) => c.id === overId);
+        const translated = active.rect.current.translated;
+        const isBelow =
+          translated && over.rect
+            ? translated.top > over.rect.top + over.rect.height / 2
+            : false;
+        newIndex = overIndex >= 0 ? overIndex + (isBelow ? 1 : 0) : to.cards.length;
+      }
+
+      return prev.map((c) => {
+        if (c.stage.id === fromStage) {
+          return { ...c, cards: c.cards.filter((x) => x.id !== activeIdStr) };
+        }
+        if (c.stage.id === toStage) {
+          const next = [...c.cards];
+          next.splice(newIndex, 0, { ...moved, stageId: toStage });
+          return { ...c, cards: next };
+        }
+        return c;
+      });
+    });
   }
 
   function handleDragEnd(e: DragEndEvent) {
@@ -447,29 +524,47 @@ export function WorkflowBoard({
     if (!over) return;
     const cardId = String(active.id);
     const overId = String(over.id);
-    const toStageId = overId.startsWith("col:") ? overId.slice(4) : null;
-    if (!toStageId) return;
+    const fromStage = findContainer(cardId);
+    const toStage = findContainer(overId);
+    if (!fromStage || !toStage) return;
 
-    let moved: ResolvedCard | undefined;
-    const without = columns.map((col) => {
-      const idx = col.cards.findIndex((c) => c.id === cardId);
-      if (idx === -1) return col;
-      moved = col.cards[idx];
-      return { ...col, cards: col.cards.filter((c) => c.id !== cardId) };
-    });
-    if (!moved) return;
-    const fromStageId = moved.stageId;
-    const toIndex = without.find((c) => c.stage.id === toStageId)?.cards.length ?? 0;
-    if (fromStageId === toStageId && toIndex === columns.find((c) => c.stage.id === toStageId)?.cards.length) {
-      // solto na mesma coluna, no fim — nada muda
+    const from = columns.find((c) => c.stage.id === fromStage);
+    const to = columns.find((c) => c.stage.id === toStage);
+    if (!from || !to) return;
+    const activeIndex = from.cards.findIndex((c) => c.id === cardId);
+    if (activeIndex === -1) return;
+    const overIsColumn = stageIds.has(overId);
+    let overIndex = overIsColumn ? to.cards.length : to.cards.findIndex((c) => c.id === overId);
+    if (overIndex < 0) overIndex = to.cards.length;
+
+    let toIndex: number;
+    if (fromStage === toStage) {
+      // Reordenar dentro da mesma coluna (índice exato do drop).
+      const target = Math.min(overIndex, from.cards.length - 1);
+      const newCards = arrayMove(from.cards, activeIndex, target);
+      toIndex = newCards.findIndex((c) => c.id === cardId);
+      setColumns((prev) =>
+        prev.map((c) => (c.stage.id === fromStage ? { ...c, cards: newCards } : c))
+      );
+    } else {
+      // Entre colunas (fallback caso onDragOver não tenha rodado).
+      const moved = from.cards[activeIndex];
+      toIndex = overIndex;
+      setColumns((prev) =>
+        prev.map((c) => {
+          if (c.stage.id === fromStage) {
+            return { ...c, cards: c.cards.filter((x) => x.id !== cardId) };
+          }
+          if (c.stage.id === toStage) {
+            const next = [...c.cards];
+            next.splice(overIndex, 0, { ...moved, stageId: toStage });
+            return { ...c, cards: next };
+          }
+          return c;
+        })
+      );
     }
-    const next = without.map((col) =>
-      col.stage.id === toStageId
-        ? { ...col, cards: [...col.cards, { ...moved!, stageId: toStageId, order: toIndex }] }
-        : col
-    );
-    setColumns(next);
-    moveCardAction(cardId, toStageId, toIndex);
+    moveCardAction(cardId, toStage, Math.max(0, toIndex));
   }
 
   function withRefresh(fn: () => Promise<void>) {
@@ -507,8 +602,9 @@ export function WorkflowBoard({
       {/* Quadro */}
       <DndContext
         sensors={sensors}
-        collisionDetection={pointerWithin}
+        collisionDetection={closestCorners}
         onDragStart={handleDragStart}
+        onDragOver={handleDragOver}
         onDragEnd={handleDragEnd}
       >
         <div className="flex items-start gap-4 overflow-x-auto pb-4">

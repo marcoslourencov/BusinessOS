@@ -326,8 +326,9 @@ export async function moveCard(cardId: string, toStageId: string, toIndex: numbe
 
   await writeBoardFile(board);
 
-  // Sincroniza status se caiu numa etapa padrão (só para cards-bloco).
-  if (card.type === "block" && target.kind) {
+  // Sincroniza status ao MUDAR de coluna para uma etapa padrão (só cards-bloco).
+  // Reordenar dentro da mesma coluna não reescreve o bloco.
+  if (card.type === "block" && target.kind && fromStageId !== toStageId) {
     await syncBlockStatus(card.section, card.slug, target.kind);
   }
 }
