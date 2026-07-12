@@ -3,7 +3,8 @@ import { notFound } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
 import { getContentBySlug } from "@/lib/content";
 import type { Section } from "@/lib/types";
-import { ContentEditForm } from "@/components/content-edit-form";
+import { ContentReport } from "@/components/content-report";
+import { ContentOnboarding } from "@/components/content-onboarding";
 
 const VALID_SECTIONS: readonly Section[] = [
   "founder",
@@ -45,7 +46,7 @@ export default async function ContentDetailPage({
   }
 
   return (
-    <div className="mx-auto flex w-full max-w-2xl flex-col gap-6">
+    <div className="mx-auto flex w-full max-w-4xl flex-col gap-6">
       <div className="flex flex-col gap-4">
         <Link
           href={`/${section}`}
@@ -54,16 +55,19 @@ export default async function ContentDetailPage({
           <ArrowLeft className="size-4" />
           {SECTION_LABELS[section]}
         </Link>
-        <div className="flex flex-col gap-2">
-          <h1 className="font-display text-3xl font-semibold tracking-tight sm:text-4xl">
-            {item.frontmatter.title}
-          </h1>
-          <span className="inline-flex w-fit items-center rounded-full bg-muted px-3 py-1 font-mono text-xs text-muted-foreground">
-            {item.filePath}
-          </span>
+        <div className="flex flex-wrap items-start justify-between gap-4">
+          <div className="flex flex-col gap-2">
+            <h1 className="font-display text-3xl font-semibold tracking-tight sm:text-4xl">
+              {item.frontmatter.title}
+            </h1>
+            <span className="inline-flex w-fit items-center rounded-full bg-muted px-3 py-1 font-mono text-xs text-muted-foreground">
+              {item.filePath}
+            </span>
+          </div>
+          <ContentOnboarding section={section} item={item} />
         </div>
       </div>
-      <ContentEditForm section={section} item={item} />
+      <ContentReport section={section} item={item} />
     </div>
   );
 }

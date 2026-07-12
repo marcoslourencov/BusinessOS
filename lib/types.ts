@@ -24,6 +24,12 @@ export interface ContentFrontmatter {
   order?: number;
   /** Rótulo opcional de agrupamento visual dentro da seção (ex.: "Editorias"). Itens sem este campo aparecem soltos, sem cabeçalho de grupo. */
   group?: string;
+  /** Respostas estruturadas do onboarding, indexadas pelo id da pergunta (ver lib/questions). */
+  answers?: Record<string, string>;
+  /** Briefing (markdown) gerado a partir das respostas. Ver lib/briefing. */
+  briefing?: string;
+  /** Quando o briefing foi gerado pela última vez (ISO 8601). */
+  briefingGeneratedAt?: string;
 }
 
 export interface ContentItem {
