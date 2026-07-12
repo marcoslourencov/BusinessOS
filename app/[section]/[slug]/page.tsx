@@ -5,6 +5,7 @@ import { getContentBySlug } from "@/lib/content";
 import type { Section } from "@/lib/types";
 import { ContentReport } from "@/components/content-report";
 import { ContentOnboarding } from "@/components/content-onboarding";
+import { GenerateReportButton } from "@/components/generate-report-button";
 
 const VALID_SECTIONS: readonly Section[] = [
   "founder",
@@ -64,7 +65,14 @@ export default async function ContentDetailPage({
               {item.filePath}
             </span>
           </div>
-          <ContentOnboarding section={section} item={item} />
+          <div className="flex flex-wrap items-center gap-2">
+            <GenerateReportButton
+              section={section}
+              slug={item.frontmatter.slug}
+              hasReport={Boolean(item.frontmatter.report)}
+            />
+            <ContentOnboarding section={section} item={item} />
+          </div>
         </div>
       </div>
       <ContentReport section={section} item={item} />

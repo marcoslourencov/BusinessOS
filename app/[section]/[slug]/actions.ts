@@ -1,9 +1,29 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
-import { saveContent } from "@/lib/content";
+import { getContentBySlug, saveContent } from "@/lib/content";
 import { answersToBody, composeBriefing } from "@/lib/briefing";
+import { generateReport } from "@/lib/report";
 import type { ContentFrontmatter, Section } from "@/lib/types";
+
+/** Revalida a rota da seção/slug + qualquer seção em `sharedWith`. */
+function revalidateContentPaths(
+  section: Section,
+  slug: string,
+  saved: { frontmatter: ContentFrontmatter }
+) {
+  const paths = new Set<string>([
+    `/${section}`,
+    `/${section}/${slug}`,
+    `/${saved.frontmatter.section}`,
+    `/${saved.frontmatter.section}/${slug}`,
+  ]);
+  for (const shared of saved.frontmatter.sharedWith ?? []) {
+    paths.add(`/${shared}`);
+    paths.add(`/${shared}/${slug}`);
+  }
+  for (const p of paths) revalidatePath(p);
+}
 
 export type SaveItemInput = {
   section: Section;
@@ -24,21 +44,7 @@ export async function saveItemAction(input: SaveItemInput) {
 
   const saved = await saveContent(section, slug, { frontmatter, body });
 
-  const pathsToRevalidate = new Set<string>([
-    `/${section}`,
-    `/${section}/${slug}`,
-    `/${saved.frontmatter.section}`,
-    `/${saved.frontmatter.section}/${slug}`,
-  ]);
-
-  for (const shared of saved.frontmatter.sharedWith ?? []) {
-    pathsToRevalidate.add(`/${shared}`);
-    pathsToRevalidate.add(`/${shared}/${slug}`);
-  }
-
-  for (const p of pathsToRevalidate) {
-    revalidatePath(p);
-  }
+  revalidateContentPaths(section, slug, saved);
 
   return saved;
 }
@@ -79,21 +85,42 @@ export async function saveBlockContentAction(input: SaveBlockContentInput) {
     body,
   });
 
-  const pathsToRevalidate = new Set<string>([
-    `/${section}`,
-    `/${section}/${slug}`,
-    `/${saved.frontmatter.section}`,
-    `/${saved.frontmatter.section}/${slug}`,
-  ]);
-
-  for (const shared of saved.frontmatter.sharedWith ?? []) {
-    pathsToRevalidate.add(`/${shared}`);
-    pathsToRevalidate.add(`/${shared}/${slug}`);
-  }
-
-  for (const p of pathsToRevalidate) {
-    revalidatePath(p);
-  }
+  revalidateContentPaths(section, slug, saved);
 
   return saved;
+}
+
+export type GenerateReportResult =
+  | { status: "generated" }
+  | { status: "pending" }
+  | { status: "not-found" };
+
+/**
+ * (Re)gera o relatório de dados reais de um bloco. A geração é a *seam* de IA
+ * (ver lib/report.generateReport). Enquanto a IA/web search não está conectada,
+ * `generateReport` devolve `null` e esta action é um no-op — nunca sobrescreve
+ * um `report` já autorado via chat.
+ */
+export async function generateReportAction(
+  section: Section,
+  slug: string
+): Promise<GenerateReportResult> {
+  const item = await getContentBySlug(section, slug);
+  if (!item) return { status: "not-found" };
+
+  const report = await generateReport(section, item);
+  if (!report) return { status: "pending" };
+
+  // Preserva todo o frontmatter existente (answers/briefing intocados);
+  // `updatedAt` é regerado dentro de saveContent.
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars -- excluído do restante preservado
+  const { updatedAt, ...rest } = item.frontmatter;
+  const saved = await saveContent(section, slug, {
+    frontmatter: { ...rest, report },
+    body: item.body,
+  });
+
+  revalidateContentPaths(section, slug, saved);
+
+  return { status: "generated" };
 }

@@ -49,6 +49,38 @@ briefing: >-
   _Briefing gerado automaticamente a partir das suas respostas (13% preenchido).
   Uma IA (Claude) vai refinar isto em breve._
 briefingGeneratedAt: '2026-07-07T17:30:00-03:00'
+report:
+  summary: >-
+    A editoria de bastidor — mostrar a própria disciplina operacional — tem
+    lógica comercial além do 'employer branding': produzir conteúdo de
+    autoridade de forma consistente deixa **90% dos decisores mais receptivos a
+    uma abordagem de vendas**, e **73% confiam mais nesse conteúdo que em
+    material de marketing**. Puxar decisões reais do BusinessOS (com dado
+    sensível removido) evita o risco declarado de virar 'cultura de empresa'
+    genérica.
+  generatedAt: '2026-07-12T00:00:00-03:00'
+  generatedBy: claude-web-research
+  findings:
+    - label: Autoridade consistente abre porta de vendas
+      value: 90% dos decisores ficam mais receptivos a outreach
+      kind: fato
+      detail: >-
+        Mostrar a operação por dentro demonstra, na prática, a disciplina que a
+        ROBUSTA vende.
+      sourceIndexes:
+        - 0
+    - label: Confiança em conteúdo de autoridade
+      value: 73% confiam mais nisso que em material de marketing
+      kind: fato
+      detail: Bastidor operacional concreto > post motivacional de cultura.
+      sourceIndexes:
+        - 0
+  sources:
+    - title: 2024 Edelman-LinkedIn B2B Thought Leadership Impact Report
+      url: >-
+        https://www.edelman.com/expertise/Business-Marketing/2024-b2b-thought-leadership-report
+      publisher: Edelman / LinkedIn
+      publishedAt: '2024'
 ---
 
 Editoria de bastidor: como a ROBUSTA organiza a própria operação, decisões de processo, aprendizados de erro interno. Serve para demonstrar, na prática, o mesmo tipo de disciplina operacional que a agência vende para os clientes.
