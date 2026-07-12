@@ -58,6 +58,33 @@ export const Lista: Story = {
   },
 };
 
+export const Agrupado: Story = {
+  args: {
+    view: "grid",
+    items: [
+      { ...mockItems[0], group: "Direção" },
+      { ...mockItems[1], group: "Direção" },
+      {
+        id: "tese-de-valor",
+        title: "Tese de Valor",
+        status: "rascunho",
+        updatedAt: "2026-06-28",
+        excerpt: "A promessa central e por que ela importa.",
+        tags: ["valor"],
+        group: "Autoridade",
+      },
+    ],
+  },
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "Itens consecutivos com o mesmo `group` renderizam sob um cabeçalho com marcador lime.",
+      },
+    },
+  },
+};
+
 export const Vazio: Story = {
   args: {
     items: [],

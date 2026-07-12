@@ -97,3 +97,39 @@ export const ListLayout: Story = {
     </div>
   ),
 };
+
+export const AllStatuses: Story = {
+  args: {
+    ...Default.args,
+  },
+  render: (args) => (
+    <div className="grid max-w-3xl gap-4 rounded-2xl bg-background p-6 sm:grid-cols-3">
+      <ContentCard
+        {...args}
+        title="Rascunho inicial"
+        status="rascunho"
+        tags={["ideia"]}
+      />
+      <ContentCard
+        {...args}
+        title="Em construção"
+        status="em-andamento"
+        tags={["mercado"]}
+      />
+      <ContentCard
+        {...args}
+        title="Pronto e validado"
+        status="validado"
+        tags={["icp", "pesquisa"]}
+      />
+    </div>
+  ),
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "Os três status como pílulas on-brand sobre o canvas lime: rascunho (neutro), em andamento (âmbar) e validado (lime).",
+      },
+    },
+  },
+};

@@ -1,4 +1,6 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
+import { ArrowLeft } from "lucide-react";
 import { getContentBySlug } from "@/lib/content";
 import type { Section } from "@/lib/types";
 import { ContentEditForm } from "@/components/content-edit-form";
@@ -11,6 +13,15 @@ const VALID_SECTIONS: readonly Section[] = [
   "marca",
   "autoridade",
 ];
+
+const SECTION_LABELS: Record<Section, string> = {
+  founder: "Founder",
+  direcao: "Direção",
+  validacao: "Validação",
+  caixa: "Caixa",
+  marca: "Marca",
+  autoridade: "Autoridade",
+};
 
 function isSection(value: string): value is Section {
   return (VALID_SECTIONS as readonly string[]).includes(value);
@@ -35,13 +46,22 @@ export default async function ContentDetailPage({
 
   return (
     <div className="mx-auto flex w-full max-w-2xl flex-col gap-6">
-      <div>
-        <h1 className="text-2xl font-semibold tracking-tight">
-          {item.frontmatter.title}
-        </h1>
-        <p className="text-sm text-muted-foreground">
-          {item.filePath}
-        </p>
+      <div className="flex flex-col gap-4">
+        <Link
+          href={`/${section}`}
+          className="inline-flex w-fit items-center gap-1.5 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+        >
+          <ArrowLeft className="size-4" />
+          {SECTION_LABELS[section]}
+        </Link>
+        <div className="flex flex-col gap-2">
+          <h1 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
+            {item.frontmatter.title}
+          </h1>
+          <span className="inline-flex w-fit items-center rounded-full bg-muted px-3 py-1 font-mono text-xs text-muted-foreground">
+            {item.filePath}
+          </span>
+        </div>
       </div>
       <ContentEditForm section={section} item={item} />
     </div>

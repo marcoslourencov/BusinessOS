@@ -24,55 +24,64 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-/** The sidebar alone, expanded — Founder is the active route. */
+/**
+ * The sidebar alone, expanded — Founder is the active route. The `counts` prop
+ * drives the per-section "em andamento" badges in the nav. The footer shows the
+ * login/account row (replacing the former "Desbloqueie o Pro" upgrade card).
+ */
 export const Default: Story = {
   render: () => (
-    <SidebarProvider>
-      <AppSidebar />
-    </SidebarProvider>
+    <div className="min-h-svh bg-background">
+      <SidebarProvider>
+        <AppSidebar counts={{ validacao: 3, autoridade: 5 }} />
+      </SidebarProvider>
+    </div>
   ),
 };
 
 /** Sidebar collapsed to icon-only mode. */
 export const Collapsed: Story = {
   render: () => (
-    <SidebarProvider defaultOpen={false}>
-      <AppSidebar />
-    </SidebarProvider>
+    <div className="min-h-svh bg-background">
+      <SidebarProvider defaultOpen={false}>
+        <AppSidebar counts={{ validacao: 3, autoridade: 5 }} />
+      </SidebarProvider>
+    </div>
   ),
 };
 
 /**
- * Full AppShell composition: sidebar (with hover + rounded nav items) next to
- * the content area, matching the root layout used across the app.
+ * Full AppShell composition: floating near-black sidebar next to a rounded
+ * white content panel on the pale-lime canvas, matching the root layout.
  */
 export const AppShell: Story = {
   parameters: {
     nextjs: {
       appDirectory: true,
       navigation: {
-        pathname: "/direcao",
+        pathname: "/validacao",
       },
     },
   },
   render: () => (
-    <SidebarProvider>
-      <AppSidebar />
-      <SidebarInset>
-        <header className="flex h-14 shrink-0 items-center gap-2 border-b px-4">
-          <SidebarTrigger className="-ml-1 rounded-lg hover:bg-muted" />
-          <Separator orientation="vertical" className="mr-2 h-4" />
-          <span className="text-sm font-medium text-muted-foreground">
-            BusinessOS
-          </span>
-        </header>
-        <main className="flex-1 p-10">
-          <p className="text-sm text-muted-foreground">
-            Conteúdo da página (mock). Passe o mouse pelos itens do menu para
-            ver o hover com background e cantos arredondados.
-          </p>
-        </main>
-      </SidebarInset>
-    </SidebarProvider>
+    <div className="min-h-svh bg-background">
+      <SidebarProvider>
+        <AppSidebar counts={{ validacao: 3, autoridade: 5 }} />
+        <SidebarInset className="m-2 ml-0 overflow-hidden rounded-3xl border border-border/60 bg-card shadow-sm md:m-3 md:ml-0">
+          <header className="flex h-16 shrink-0 items-center gap-3 border-b border-border/60 px-4 md:px-6">
+            <SidebarTrigger className="-ml-1 rounded-full hover:bg-muted" />
+            <Separator orientation="vertical" className="mr-1 h-4" />
+            <span className="text-sm font-semibold">BusinessOS</span>
+          </header>
+          <main className="flex-1 p-10">
+            <p className="text-sm text-muted-foreground">
+              Conteúdo da página (mock). O item ativo vira uma pílula branca com
+              texto escuro e badge lime; passe o mouse pelos demais para ver o
+              hover arredondado.
+            </p>
+          </main>
+        </SidebarInset>
+      </SidebarProvider>
+    </div>
   ),
 };

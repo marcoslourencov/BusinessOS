@@ -38,9 +38,14 @@ const statusLabels: Record<ContentStatus, string> = {
 const statusStyles: Record<ContentStatus, string> = {
   rascunho: "bg-muted text-muted-foreground",
   "em-andamento":
-    "bg-orange-100 text-orange-800 dark:bg-orange-500/15 dark:text-orange-300",
-  validado:
-    "bg-emerald-100 text-emerald-800 dark:bg-emerald-500/15 dark:text-emerald-300",
+    "bg-amber-100 text-amber-900 dark:bg-amber-500/15 dark:text-amber-200",
+  validado: "bg-accent-orange text-accent-orange-foreground",
+};
+
+const statusDotStyles: Record<ContentStatus, string> = {
+  rascunho: "bg-muted-foreground/50",
+  "em-andamento": "bg-amber-500 dark:bg-amber-300",
+  validado: "bg-accent-orange-foreground/70",
 };
 
 export type ContentCardProps = {
@@ -114,7 +119,7 @@ export function ContentCard({
       }
       className={cn(
         isInteractive &&
-          "group cursor-pointer gap-3 transition-all duration-150 ease-out hover:-translate-y-0.5 hover:shadow-md hover:border-foreground/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
+          "group cursor-pointer gap-3 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:shadow-lg hover:ring-foreground/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
         !isInteractive && "gap-3",
         layout === "list" && "flex-row items-center gap-4 py-4",
         className
@@ -126,8 +131,18 @@ export function ContentCard({
           {status && (
             <Badge
               variant="outline"
-              className={cn("shrink-0 border-transparent font-normal", statusStyles[status])}
+              className={cn(
+                "shrink-0 gap-1.5 border-transparent px-2.5 font-medium",
+                statusStyles[status]
+              )}
             >
+              <span
+                className={cn(
+                  "size-1.5 rounded-full",
+                  statusDotStyles[status]
+                )}
+                aria-hidden
+              />
               {statusLabels[status]}
             </Badge>
           )}
@@ -140,7 +155,7 @@ export function ContentCard({
             {tags.map((tag) => (
               <span
                 key={tag}
-                className="rounded-full border border-border px-2 py-0.5 text-xs text-muted-foreground"
+                className="rounded-full bg-muted px-2.5 py-0.5 text-xs font-medium text-muted-foreground"
               >
                 {tag}
               </span>

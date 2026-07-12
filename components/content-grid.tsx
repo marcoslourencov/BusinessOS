@@ -32,7 +32,7 @@ export function ContentGrid({
 }: ContentGridProps) {
   if (items.length === 0) {
     return (
-      <div className="flex min-h-32 items-center justify-center rounded-xl border border-dashed text-sm text-muted-foreground">
+      <div className="flex min-h-40 items-center justify-center rounded-2xl border border-dashed border-border bg-card/50 px-6 text-center text-sm text-muted-foreground">
         {emptyMessage}
       </div>
     );
@@ -55,7 +55,11 @@ export function ContentGrid({
       {chunks.map((chunk, index) => (
         <div key={chunk.group ?? `ungrouped-${index}`} className="flex flex-col gap-3">
           {chunk.group && (
-            <h2 className="text-sm font-medium tracking-wide text-muted-foreground uppercase">
+            <h2 className="flex items-center gap-2 px-1 text-xs font-semibold tracking-wide text-muted-foreground uppercase">
+              <span
+                className="size-2 rounded-full bg-accent-orange"
+                aria-hidden
+              />
               {chunk.group}
             </h2>
           )}

@@ -1,5 +1,6 @@
 "use client";
 
+import { cn } from "@/lib/utils";
 import {
   Select,
   SelectContent,
@@ -22,7 +23,10 @@ export function ViewToggle({ value, onValueChange, className }: ViewToggleProps)
       value={value}
       onValueChange={(next) => onValueChange(next as ViewMode)}
     >
-      <SelectTrigger className={className} aria-label="Modo de visualização">
+      <SelectTrigger
+        className={cn("rounded-full px-3.5", className)}
+        aria-label="Modo de visualização"
+      >
         <SelectValue placeholder="Visualização" />
       </SelectTrigger>
       <SelectContent>
