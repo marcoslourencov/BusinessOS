@@ -2,16 +2,15 @@
 title: Primeiros Clientes
 section: validacao
 slug: primeiros-clientes
-status: em-andamento
-updatedAt: '2026-07-09T17:10:00-03:00'
+status: rascunho
+updatedAt: '2026-07-12T18:55:49.043Z'
 tags:
   - clientes
   - validacao
-  - vendas
+  - cerne
 aiContext: >-
-  Use este documento para avaliar se a evidência de tração já sustenta um
-  aumento de preço ou escopo da Oferta, ou se ainda é cedo demais para essa
-  decisão.
+  Ao avaliar um lead, cheque se o projeto permite conduzir o CERNE (diagnóstico
+  antes de forma). Bloco inferido — validar com casos reais.
 sharedWith: []
 validationStage: em-teste
 relatedSlugs:
@@ -20,99 +19,64 @@ relatedSlugs:
 order: 6
 answers:
   hipotese: >-
-    Até agora, 3 clientes fecharam a oferta "Operações sob Demanda": uma agência
-    de marketing de performance (8 pessoas), uma consultoria contábil boutique
-    (5 pessoas) e uma clínica odontológica com 2 unidades (12 pessoas) que se
-    encaixou no perfil por acumular a mesma dor de coordenação apesar de não ser
-    uma agência propriamente dita.
+    Hipótese a testar: o nicho "designers que querem sair da execução e ocupar o
+    espaço estratégico" sustenta tanto autoridade pública quanto projetos pagos
+    de alto impacto (via empreendedores). Os primeiros projetos conduzidos pelo
+    CERNE precisam provar que o cliente reconhece e paga pelo diagnóstico — não
+    pela estética.
 
 
-    O ciclo de venda médio foi de 18 dias, mais curto do que o esperado, com
-    todos os 3 fechamentos vindo de indicação direta — nenhum lead veio de
-    conteúdo ou prospecção fria ainda, o que é um sinal de alerta para
-    dependência de rede pessoal.
-
-
-    Próximo marco: fechar mais 2 clientes até o final de agosto de 2026 para ter
-    uma base de 5, tamanho mínimo que defini como suficiente para decidir se a
-    oferta está pronta para escalar ou precisa de ajuste de preço/escopo.
+    _(Rascunho inferido da identidade de marca — precisa da validação de
+    Marcos.)_
 briefing: >-
-  Até agora, 3 clientes fecharam a oferta "Operações sob Demanda": uma agência
-  de marketing de performance (8 pessoas), uma consultoria contábil boutique (5
-  pessoas) e uma clínica odontológica com 2 unidades (12 pessoas) que se
-  encaixou no perfil por acumular a mesma dor de coordenação apesar de não ser
-  uma agência propriamente dita.
+  Hipótese a testar: o nicho "designers que querem sair da execução e ocupar o
+  espaço estratégico" sustenta tanto autoridade pública quanto projetos pagos de
+  alto impacto (via empreendedores). Os primeiros projetos conduzidos pelo CERNE
+  precisam provar que o cliente reconhece e paga pelo diagnóstico — não pela
+  estética.
 
 
-  O ciclo de venda médio foi de 18 dias, mais curto do que o esperado, com todos
-  os 3 fechamentos vindo de indicação direta — nenhum lead veio de conteúdo ou
-  prospecção fria ainda, o que é um sinal de alerta para dependência de rede
-  pessoal.
-
-
-  Próximo marco: fechar mais 2 clientes até o final de agosto de 2026 para ter
-  uma base de 5, tamanho mínimo que defini como suficiente para decidir se a
-  oferta está pronta para escalar ou precisa de ajuste de preço/escopo.
+  _(Rascunho inferido da identidade de marca — precisa da validação de Marcos.)_
 
 
   _Briefing gerado automaticamente a partir das suas respostas (13% preenchido).
   Uma IA (Claude) vai refinar isto em breve._
-briefingGeneratedAt: '2026-07-09T17:10:00-03:00'
+briefingGeneratedAt: '2026-07-12T18:55:49.043Z'
 report:
   summary: >-
-    Os primeiros clientes valem muito além da receita: em B2B, **~79% dos
-    compradores dependem de prova social** e reviews são a fonte nº 1 na hora de
-    montar shortlist — ou seja, cada cliente satisfeito vira alavanca de
-    aquisição. Validar a oferta cedo também é defesa: **~40% das empresas
-    brasileiras fecham antes de 5 anos**, com gestão e falta de planejamento
-    entre as causas líderes. Fixar poucos clientes bem atendidos e
-    transformá-los em prova é o movimento certo nesta fase.
+    Bloco inferido. Os primeiros projetos importam além da receita: em decisões
+    B2B, ~79% dependem de prova social — e o modelo de preço por valor só se
+    sustenta quando há casos que provem o valor. Cada projeto CERNE bem
+    conduzido vira, ao mesmo tempo, prova e ativo de autoridade.
   generatedAt: '2026-07-12T00:00:00-03:00'
   generatedBy: claude-web-research
   findings:
-    - label: Prova social decide compras B2B
-      value: ~79% dependem dela · reviews = nº1 no shortlist
+    - label: Prova social decide
+      value: ~79% dos compradores dependem dela
       kind: expectativa
-      detail: >-
-        Compilação de dados Gartner. Primeiros clientes satisfeitos viram o
-        principal ativo de aquisição.
+      detail: Primeiros clientes satisfeitos são o principal ativo de aquisição.
       sourceIndexes:
         - 0
-    - label: Risco de não validar cedo
-      value: ~40% das empresas fecham antes de 5 anos
-      kind: fato
-      detail: >-
-        Gestão deficiente e falta de planejamento entre as causas. Validar
-        oferta com clientes reais reduz esse risco.
+    - label: Cases destravam preço por valor
+      value: premium exige prova do valor entregue
+      kind: expectativa
+      detail: Validar a oferta cedo cria a base que sustenta o preço por diagnóstico.
       sourceIndexes:
         - 1
-    - label: Realidade da fase de validação
-      value: ~30% dos micro-negócios nunca passam de US$ 1k MRR
-      kind: expectativa
-      detail: >-
-        A fase inicial serve para achar product-market fit — priorizar
-        aprendizado sobre volume.
-      sourceIndexes:
-        - 2
   sources:
     - title: Social Proof Conversion Stats (compilando Gartner)
       url: >-
         https://genesysgrowth.com/blog/social-proof-conversion-stats-for-marketing-leaders
       publisher: Genesys Growth
       publishedAt: '2026'
-    - title: Taxa de Sobrevivência das Empresas Brasileiras
+    - title: The High Cost Of Putting Creativity On The Clock
       url: >-
-        https://sebraepr.com.br/impulsiona/taxa-de-sobrevivencia-das-empresas-brasileiras/
-      publisher: Sebrae/PR
-      publishedAt: '2024'
-    - title: 'AI-Driven, Founder-Led: The 2025 State of Micro-SaaS'
-      url: 'https://freemius.com/blog/state-of-micro-saas-2025/'
-      publisher: Freemius
+        https://www.forbes.com/councils/forbesagencycouncil/2025/07/14/the-high-cost-of-putting-creativity-on-the-clock/
+      publisher: Forbes
       publishedAt: '2025'
 ---
+## Qual é a hipótese que você quer testar?
 
-Até agora, 3 clientes fecharam a oferta "Operações sob Demanda": uma agência de marketing de performance (8 pessoas), uma consultoria contábil boutique (5 pessoas) e uma clínica odontológica com 2 unidades (12 pessoas) que se encaixou no perfil por acumular a mesma dor de coordenação apesar de não ser uma agência propriamente dita.
+Hipótese a testar: o nicho "designers que querem sair da execução e ocupar o espaço estratégico" sustenta tanto autoridade pública quanto projetos pagos de alto impacto (via empreendedores). Os primeiros projetos conduzidos pelo CERNE precisam provar que o cliente reconhece e paga pelo diagnóstico — não pela estética.
 
-O ciclo de venda médio foi de 18 dias, mais curto do que o esperado, com todos os 3 fechamentos vindo de indicação direta — nenhum lead veio de conteúdo ou prospecção fria ainda, o que é um sinal de alerta para dependência de rede pessoal.
-
-Próximo marco: fechar mais 2 clientes até o final de agosto de 2026 para ter uma base de 5, tamanho mínimo que defini como suficiente para decidir se a oferta está pronta para escalar ou precisa de ajuste de preço/escopo.
+_(Rascunho inferido da identidade de marca — precisa da validação de Marcos.)_

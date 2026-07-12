@@ -2,81 +2,72 @@
 title: Códigos
 section: marca
 slug: codigos
-status: rascunho
-updatedAt: '2026-07-10T10:05:00-03:00'
+status: em-andamento
+updatedAt: '2026-07-12T18:55:49.021Z'
 tags:
   - identidade-visual
   - codigos-de-marca
-  - guidelines
+  - editorial
 aiContext: >-
-  Lista viva dos elementos visuais e verbais que tornam a marca reconhecível. Ao
-  gerar qualquer peça, checar consistência com estes códigos antes de sugerir
-  algo novo.
+  Ao aplicar identidade, mantenha P&B + off-white com um único acento musgo,
+  tipografia editorial e ausência de ornamento. A robustez vem da tipografia e
+  do espaço, não da cor.
 order: 4
 answers:
   essencia: >-
-    Paleta estritamente preto e branco, sem cor de destaque — a robustez vem da
-    tipografia e do espaço, não de cor. Fonte Inter em todos os materiais, sem
-    exceção.
+    Paleta estrita: preto (#0A0A0A), branco (#FFFFFF) e off-white (#F4EFE8), com
+    um único acento verde-musgo (#2D4A3E). A robustez vem da tipografia e do
+    espaço, não da cor. Serifa editorial (Canela ou Editorial New) para peso;
+    grotesca limpa (Inter ou Neue Haas Grotesk) para clareza. Estética
+    editorial, densa, sem ornamento sem função.
 
 
-    Logotipo ROBUSTA sempre com a área de respiro mínima preservada (não
-    comprimir o lockup). Versão preta em fundo claro, versão branca em fundo
-    escuro — nunca aplicar a versão errada por contraste.
-
-
-    Linguagem visual: bordas arredondadas, blocos de conteúdo bem definidos,
-    nada de elementos decorativos sem função. Ainda em aberto: se haverá uma
-    textura ou padrão gráfico de apoio (ex.: grid pontilhado) além do logotipo.
+    Códigos verbais recorrentes: "Marca não nasce no design, nasce no
+    diagnóstico", "Clareza é um ato de poder", "Eu não visto marcas, devolvo o
+    espelho". Handle @marcoslourencov, tagline "Estratégia de Marca". Em aberto:
+    se haverá um padrão gráfico de apoio além do logotipo.
 briefing: >-
-  Paleta estritamente preto e branco, sem cor de destaque — a robustez vem da
-  tipografia e do espaço, não de cor. Fonte Inter em todos os materiais, sem
-  exceção.
+  Paleta estrita: preto (#0A0A0A), branco (#FFFFFF) e off-white (#F4EFE8), com
+  um único acento verde-musgo (#2D4A3E). A robustez vem da tipografia e do
+  espaço, não da cor. Serifa editorial (Canela ou Editorial New) para peso;
+  grotesca limpa (Inter ou Neue Haas Grotesk) para clareza. Estética editorial,
+  densa, sem ornamento sem função.
 
 
-  Logotipo ROBUSTA sempre com a área de respiro mínima preservada (não comprimir
-  o lockup). Versão preta em fundo claro, versão branca em fundo escuro — nunca
-  aplicar a versão errada por contraste.
-
-
-  Linguagem visual: bordas arredondadas, blocos de conteúdo bem definidos, nada
-  de elementos decorativos sem função. Ainda em aberto: se haverá uma textura ou
-  padrão gráfico de apoio (ex.: grid pontilhado) além do logotipo.
+  Códigos verbais recorrentes: "Marca não nasce no design, nasce no
+  diagnóstico", "Clareza é um ato de poder", "Eu não visto marcas, devolvo o
+  espelho". Handle @marcoslourencov, tagline "Estratégia de Marca". Em aberto:
+  se haverá um padrão gráfico de apoio além do logotipo.
 
 
   _Briefing gerado automaticamente a partir das suas respostas (13% preenchido).
   Uma IA (Claude) vai refinar isto em breve._
-briefingGeneratedAt: '2026-07-10T10:05:00-03:00'
+briefingGeneratedAt: '2026-07-12T18:55:49.021Z'
 report:
   summary: >-
-    Este bloco é majoritariamente guideline interno, então há pouco 'dado de
-    mercado' a buscar — mas as escolhas centrais têm respaldo objetivo. A paleta
-    **estritamente preto e branco** entrega o **maior contraste possível
-    (21:1)**, muito acima do nível AAA de acessibilidade da WCAG (7:1) — ou
-    seja, a robustez visual e a legibilidade caminham juntas. E a **Inter** é
-    uma tipografia desenhada especificamente para interfaces e leitura em tela,
-    coerente com "a robustez vem da tipografia e do espaço, não da cor".
+    As escolhas visuais têm respaldo objetivo: a paleta P&B entrega o contraste
+    máximo (21:1), muito acima do nível AAA da WCAG (7:1), e a Inter é desenhada
+    para interface/leitura em tela — robustez pela tipografia e pelo espaço, não
+    pela cor.
   generatedAt: '2026-07-12T00:00:00-03:00'
   generatedBy: claude-web-research
   findings:
-    - label: Contraste preto/branco vs. WCAG
+    - label: Contraste P&B vs WCAG
       value: '21:1 (máximo) · mínimo AAA = 7:1'
       kind: fato
       detail: >-
-        A escolha P&B maximiza acessibilidade e legibilidade — reforço objetivo
-        do código de marca.
+        A paleta preto/branco maximiza acessibilidade e legibilidade — reforço
+        objetivo do código.
       sourceIndexes:
         - 0
     - label: Inter — feita para interface
-      value: tipografia open-source desenhada para telas/UI
+      value: tipografia desenhada para telas/UI
       kind: fato
-      detail: >-
-        Escolha coerente com legibilidade em produto; alinhada ao princípio de
-        robustez pela tipografia.
+      detail: Coerente com "a robustez vem da tipografia e do espaço".
       sourceIndexes:
         - 1
   sources:
-    - title: 'Understanding Success Criterion 1.4.6: Contrast (Enhanced)'
+    - title: 'Understanding SC 1.4.6: Contrast (Enhanced)'
       url: 'https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced.html'
       publisher: W3C — WCAG 2.1
       publishedAt: '2023'
@@ -85,9 +76,8 @@ report:
       publisher: Inter (rsms.me)
       publishedAt: '2025'
 ---
+## Em uma frase, qual é a grande ideia por trás desta marca?
 
-Paleta estritamente preto e branco, sem cor de destaque — a robustez vem da tipografia e do espaço, não de cor. Fonte Inter em todos os materiais, sem exceção.
+Paleta estrita: preto (#0A0A0A), branco (#FFFFFF) e off-white (#F4EFE8), com um único acento verde-musgo (#2D4A3E). A robustez vem da tipografia e do espaço, não da cor. Serifa editorial (Canela ou Editorial New) para peso; grotesca limpa (Inter ou Neue Haas Grotesk) para clareza. Estética editorial, densa, sem ornamento sem função.
 
-Logotipo ROBUSTA sempre com a área de respiro mínima preservada (não comprimir o lockup). Versão preta em fundo claro, versão branca em fundo escuro — nunca aplicar a versão errada por contraste.
-
-Linguagem visual: bordas arredondadas, blocos de conteúdo bem definidos, nada de elementos decorativos sem função. Ainda em aberto: se haverá uma textura ou padrão gráfico de apoio (ex.: grid pontilhado) além do logotipo.
+Códigos verbais recorrentes: "Marca não nasce no design, nasce no diagnóstico", "Clareza é um ato de poder", "Eu não visto marcas, devolvo o espelho". Handle @marcoslourencov, tagline "Estratégia de Marca". Em aberto: se haverá um padrão gráfico de apoio além do logotipo.

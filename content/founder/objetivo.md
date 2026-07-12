@@ -2,107 +2,82 @@
 title: Objetivo
 section: founder
 slug: objetivo
-status: em-andamento
-updatedAt: '2026-07-02T09:15:00-03:00'
+status: rascunho
+updatedAt: '2026-07-12T18:55:49.062Z'
 tags:
   - norte
-  - metas
-  - visao-pessoal
+  - autoridade
+  - monetizacao
 aiContext: >-
-  Use este documento para entender a motivação de fundo do founder antes de
-  sugerir prioridades em outras seções — decisões de produto e de caixa devem
-  ser avaliadas à luz desta meta pessoal.
+  Bloco inferido da identidade de marca. Objetivos pessoais/financeiros reais de
+  Marcos precisam ser validados por ele.
 relatedSlugs:
   - estilo-de-vida
 order: 1
 answers:
   essencia: >-
-    Meu objetivo com o BusinessOS é sair do trabalho por hora como consultor de
-    operações e construir um produto que gere receita recorrente, chegando a R$
-    30 mil de MRR até o final de 2027 sem depender de mim para cada entrega.
+    O objetivo da ROBUSTA é ocupar o espaço de autoridade em estratégia de marca
+    junto aos designers e converter essa autoridade em projetos de alto impacto
+    com empreendedores. No curto prazo, isso significa publicar com consistência
+    — vencendo o "perfeccionismo mascarado de profissionalismo" — e transformar
+    o método CERNE em ativo público.
 
 
-    Isso significa priorizar clientes que pagam por resultado (não por hora),
-    documentar processos que hoje só existem na minha cabeça, e aceitar crescer
-    mais devagar no curto prazo em troca de um negócio que eventualmente rode
-    com uma equipe pequena.
-
-
-    No curto prazo (próximos 2 meses), a meta é validar a oferta atual com pelo
-    menos 5 clientes pagantes e usar esse aprendizado para decidir se dobro a
-    aposta nesse nicho ou pivoto.
+    _(Rascunho inferido da identidade de marca — precisa da validação de
+    Marcos.)_
 briefing: >-
-  Meu objetivo com o BusinessOS é sair do trabalho por hora como consultor de
-  operações e construir um produto que gere receita recorrente, chegando a R$ 30
-  mil de MRR até o final de 2027 sem depender de mim para cada entrega.
+  O objetivo da ROBUSTA é ocupar o espaço de autoridade em estratégia de marca
+  junto aos designers e converter essa autoridade em projetos de alto impacto
+  com empreendedores. No curto prazo, isso significa publicar com consistência —
+  vencendo o "perfeccionismo mascarado de profissionalismo" — e transformar o
+  método CERNE em ativo público.
 
 
-  Isso significa priorizar clientes que pagam por resultado (não por hora),
-  documentar processos que hoje só existem na minha cabeça, e aceitar crescer
-  mais devagar no curto prazo em troca de um negócio que eventualmente rode com
-  uma equipe pequena.
-
-
-  No curto prazo (próximos 2 meses), a meta é validar a oferta atual com pelo
-  menos 5 clientes pagantes e usar esse aprendizado para decidir se dobro a
-  aposta nesse nicho ou pivoto.
+  _(Rascunho inferido da identidade de marca — precisa da validação de Marcos.)_
 
 
   _Briefing gerado automaticamente a partir das suas respostas (14% preenchido).
   Uma IA (Claude) vai refinar isto em breve._
-briefingGeneratedAt: '2026-07-02T09:15:00-03:00'
+briefingGeneratedAt: '2026-07-12T18:55:49.062Z'
 report:
   summary: >-
-    A meta central — **R$ 30 mil de MRR até o fim de 2027**, sem depender do
-    founder por entrega — é ambiciosa mas coerente com a realidade de negócios
-    recorrentes enxutos: a mediana de um micro-negócio de software lucrativo
-    fica em **~US$ 4,2 mil de MRR**, e chegar a US$ 10 mil leva tipicamente
-    **12–18 meses** do primeiro cliente. A transição de "por hora" para receita
-    recorrente surfa a onda do trabalho fracionado/sob demanda, hoje um mercado
-    de **~US$ 5,7 bi crescendo ~14% ao ano**.
+    Bloco inferido. A aposta em autoridade tem base de mercado: o público de
+    designers passa de 23 milhões (~90% freelancers), e converter autoridade em
+    projetos por valor é o modelo mais rentável (~18% margem vs ~13% por hora) —
+    desde que sustentado por prova pública.
   generatedAt: '2026-07-12T00:00:00-03:00'
   generatedBy: claude-web-research
   findings:
-    - label: Meta de MRR
-      value: R$ 30 mil até o fim de 2027
+    - label: Objetivo
+      value: autoridade entre designers + monetização por projetos
       kind: meta
       detail: >-
-        Objetivo definido pelo founder. Exige sair do faturamento por hora e
-        documentar processos hoje só na cabeça dele.
-    - label: Meta de curto prazo
-      value: 5 clientes pagantes em ~2 meses
-      kind: meta
-      detail: Marco para decidir entre dobrar a aposta no nicho ou pivotar.
-    - label: Benchmark de negócio recorrente enxuto
-      value: 'mediana ~US$ 4,2 mil MRR · US$ 10 mil em 12–18 meses'
+        Definido a partir da identidade de marca — precisa da validação de
+        Marcos.
+    - label: Escala do público
+      value: +23 mi de designers · ~90% freelancers
       kind: expectativa
-      detail: >-
-        Ordem de grandeza de micro-negócios de software bootstrapped —
-        referência realista para calibrar a meta.
+      detail: Base ampla para construir autoridade pública.
       sourceIndexes:
         - 0
-    - label: Onda do trabalho sob demanda
-      value: '~US$ 5,7 bi · +14% a.a. · operações ~16%'
+    - label: Modelo de monetização mais rentável
+      value: preço por valor ~18% margem vs ~13% hora
       kind: expectativa
-      detail: >-
-        Mercado fracionado/on-demand em alta valida a transição de consultor por
-        hora para produto/serviço recorrente.
+      detail: 'Converter autoridade em projetos por valor, não por hora.'
       sourceIndexes:
         - 1
   sources:
-    - title: 'AI-Driven, Founder-Led: The 2025 State of Micro-SaaS'
-      url: 'https://freemius.com/blog/state-of-micro-saas-2025/'
-      publisher: Freemius
-      publishedAt: '2025'
-    - title: Why Fractional Executives Are a Growing Business Trend
-      url: >-
-        https://www.mbopartners.com/blog/independent-workforce-trends/why-fractional-executives-are-a-growing-business-trend/
-      publisher: MBO Partners
-      publishedAt: '2025'
+    - title: Graphic Design Statistics & Trends
+      url: 'https://colorlib.com/wp/graphic-design-statistics/'
+      publisher: Colorlib
+      publishedAt: '2026'
+    - title: Agency Pricing Statistics 2026 (modelos e margens)
+      url: 'https://agiled.app/statistics/agency-pricing-statistics'
+      publisher: Agiled
+      publishedAt: '2026'
 ---
+## Em uma frase, do que se trata este bloco?
 
-Meu objetivo com o BusinessOS é sair do trabalho por hora como consultor de operações e construir um produto que gere receita recorrente, chegando a R$ 30 mil de MRR até o final de 2027 sem depender de mim para cada entrega.
+O objetivo da ROBUSTA é ocupar o espaço de autoridade em estratégia de marca junto aos designers e converter essa autoridade em projetos de alto impacto com empreendedores. No curto prazo, isso significa publicar com consistência — vencendo o "perfeccionismo mascarado de profissionalismo" — e transformar o método CERNE em ativo público.
 
-Isso significa priorizar clientes que pagam por resultado (não por hora), documentar processos que hoje só existem na minha cabeça, e aceitar crescer mais devagar no curto prazo em troca de um negócio que eventualmente rode com uma equipe pequena.
-
-No curto prazo (próximos 2 meses), a meta é validar a oferta atual com pelo menos 5 clientes pagantes e usar esse aprendizado para decidir se dobro a aposta nesse nicho ou pivoto.
+_(Rascunho inferido da identidade de marca — precisa da validação de Marcos.)_

@@ -2,104 +2,86 @@
 title: ICP
 section: marca
 slug: icp
-status: em-andamento
-updatedAt: '2026-07-08T16:20:00-03:00'
+status: validado
+updatedAt: '2026-07-12T18:55:49.023Z'
 tags:
   - icp
-  - publico
-  - tom-de-comunicacao
+  - designer
+  - territorio-de-autoridade
 aiContext: >-
-  Este ICP é a versão 'de comunicação' do perfil de cliente: como ele fala, o
-  que ele lê, o que o irrita em comunicação de agência. Para o ICP de
-  vendas/segmentação, ver o card equivalente em Direção.
+  O ICP de autoridade é o designer deslocado de papel. Toda comunicação deve
+  nomear essa dor específica — participar do projeto sem participar das decisões
+  — em vez de falar de branding genérico.
 relatedSlugs:
   - perfil-ideal-de-cliente
 order: 3
 answers:
   essencia: >-
-    Founder solo ou com um sócio, 28-42 anos, à frente de uma agência ou
-    consultoria de operações com 10 a 50 funcionários. Já tentou contratar um
-    "gerente de operações" ou terceirizar isso e não funcionou como esperava.
+    O público de autoridade da ROBUSTA é o designer com mais de 5 anos de
+    mercado que domina a técnica mas é tratado como executor — "quem faz arte",
+    fornecedor de estética. Ele aceita todo tipo de projeto para pagar as
+    contas, tem portfólio amplo e identidade fraca, escreve documentos que
+    ninguém lê e faz apresentações que ninguém escuta.
 
 
-    Consome conteúdo de LinkedIn e newsletters de negócios, tem pouca paciência
-    para jargão de marketing e desconfia de promessas de "crescimento
-    exponencial". Responde melhor a comunicação direta, com exemplos concretos e
-    números, do que a discurso inspiracional.
-
-
-    Irritação recorrente: agências que vendem "parceria estratégica" e entregam
-    só relatório. A comunicação da ROBUSTA precisa deixar claro, sempre, o que
-    muda na rotina operacional dele.
+    Dor central: ele faz parte do projeto, mas não participa das decisões. Não é
+    falta de talento — é deslocamento de papel. É essa pessoa que a ROBUSTA
+    nomeia, representa e ajuda a atravessar a ponte da execução para a
+    estratégia. Marcos já foi essa pessoa; a afinidade sustenta o nicho.
 briefing: >-
-  Founder solo ou com um sócio, 28-42 anos, à frente de uma agência ou
-  consultoria de operações com 10 a 50 funcionários. Já tentou contratar um
-  "gerente de operações" ou terceirizar isso e não funcionou como esperava.
+  O público de autoridade da ROBUSTA é o designer com mais de 5 anos de mercado
+  que domina a técnica mas é tratado como executor — "quem faz arte", fornecedor
+  de estética. Ele aceita todo tipo de projeto para pagar as contas, tem
+  portfólio amplo e identidade fraca, escreve documentos que ninguém lê e faz
+  apresentações que ninguém escuta.
 
 
-  Consome conteúdo de LinkedIn e newsletters de negócios, tem pouca paciência
-  para jargão de marketing e desconfia de promessas de "crescimento
-  exponencial". Responde melhor a comunicação direta, com exemplos concretos e
-  números, do que a discurso inspiracional.
-
-
-  Irritação recorrente: agências que vendem "parceria estratégica" e entregam só
-  relatório. A comunicação da ROBUSTA precisa deixar claro, sempre, o que muda
-  na rotina operacional dele.
+  Dor central: ele faz parte do projeto, mas não participa das decisões. Não é
+  falta de talento — é deslocamento de papel. É essa pessoa que a ROBUSTA
+  nomeia, representa e ajuda a atravessar a ponte da execução para a estratégia.
+  Marcos já foi essa pessoa; a afinidade sustenta o nicho.
 
 
   _Briefing gerado automaticamente a partir das suas respostas (13% preenchido).
   Uma IA (Claude) vai refinar isto em breve._
-briefingGeneratedAt: '2026-07-08T16:20:00-03:00'
+briefingGeneratedAt: '2026-07-12T18:55:49.023Z'
 report:
   summary: >-
-    A leitura do ICP para comunicação — decisor que desconfia de hype e responde
-    a número concreto — bate com o comportamento medido de compradores B2B.
-    **73% dos decisores** consideram conteúdo de autoridade uma base mais
-    confiável que material de marketing para avaliar um fornecedor, e **52%
-    gastam 1h+ por semana** consumindo esse tipo de conteúdo. Comunicar 'o que
-    muda na rotina operacional dele', com exemplos e dados, é exatamente o que
-    esse público recompensa.
+    O público de autoridade é enorme e pressionado: há mais de 23 milhões de
+    designers no mundo, ~90% freelancers — e a IA, que acelera a execução sem
+    garantir qualidade (58%), empurra justamente esse profissional a migrar da
+    forma para a estratégia. É a ponte que a ROBUSTA representa.
   generatedAt: '2026-07-12T00:00:00-03:00'
   generatedBy: claude-web-research
   findings:
-    - label: Confiança em autoridade > material de marketing
-      value: 73% dos decisores B2B
-      kind: fato
-      detail: >-
-        Justifica a comunicação direta, por prova e exemplo, em vez de promessa
-        genérica.
-      sourceIndexes:
-        - 0
-    - label: Consumo de conteúdo pelo decisor
-      value: 52% leem 1h+ de thought leadership por semana
-      kind: fato
-      detail: Confirma onde e quanto o ICP consome — LinkedIn/newsletters de negócio.
-      sourceIndexes:
-        - 0
-    - label: Peso da prova concreta
-      value: ~79% dos compradores B2B dependem de prova social
+    - label: Tamanho do público de autoridade
+      value: +23 mi de designers · ~90% freelancers
       kind: expectativa
       detail: >-
-        Números e casos reais > adjetivo — alinhado à baixa paciência do ICP com
-        jargão.
+        O ICP (designer deslocado de papel) é uma população vasta e
+        majoritariamente autônoma.
+      sourceIndexes:
+        - 0
+    - label: Pressão que move o ICP
+      value: 'IA: 78% aceleram · só 58% melhoram qualidade'
+      kind: expectativa
+      detail: >-
+        Execução comoditizada empurra o designer a ocupar o espaço estratégico —
+        a dor que a ROBUSTA nomeia.
       sourceIndexes:
         - 1
   sources:
-    - title: 2024 Edelman-LinkedIn B2B Thought Leadership Impact Report
-      url: >-
-        https://www.edelman.com/expertise/Business-Marketing/2024-b2b-thought-leadership-report
-      publisher: Edelman / LinkedIn
-      publishedAt: '2024'
-    - title: Social Proof Conversion Stats (compilando Gartner)
-      url: >-
-        https://genesysgrowth.com/blog/social-proof-conversion-stats-for-marketing-leaders
-      publisher: Genesys Growth
+    - title: Graphic Design Statistics & Trends
+      url: 'https://colorlib.com/wp/graphic-design-statistics/'
+      publisher: Colorlib
       publishedAt: '2026'
+    - title: Figma 2025 Design Survey & o "mar de mesmice" da IA
+      url: 'https://www.atomwriter.com/blog/ai-content-homogenization-brand-voice/'
+      publisher: Atom Writer (dados Figma 2025)
+      publishedAt: '2025'
 ---
+## Em uma frase, qual é a grande ideia por trás desta marca?
 
-Founder solo ou com um sócio, 28-42 anos, à frente de uma agência ou consultoria de operações com 10 a 50 funcionários. Já tentou contratar um "gerente de operações" ou terceirizar isso e não funcionou como esperava.
+O público de autoridade da ROBUSTA é o designer com mais de 5 anos de mercado que domina a técnica mas é tratado como executor — "quem faz arte", fornecedor de estética. Ele aceita todo tipo de projeto para pagar as contas, tem portfólio amplo e identidade fraca, escreve documentos que ninguém lê e faz apresentações que ninguém escuta.
 
-Consome conteúdo de LinkedIn e newsletters de negócios, tem pouca paciência para jargão de marketing e desconfia de promessas de "crescimento exponencial". Responde melhor a comunicação direta, com exemplos concretos e números, do que a discurso inspiracional.
-
-Irritação recorrente: agências que vendem "parceria estratégica" e entregam só relatório. A comunicação da ROBUSTA precisa deixar claro, sempre, o que muda na rotina operacional dele.
+Dor central: ele faz parte do projeto, mas não participa das decisões. Não é falta de talento — é deslocamento de papel. É essa pessoa que a ROBUSTA nomeia, representa e ajuda a atravessar a ponte da execução para a estratégia. Marcos já foi essa pessoa; a afinidade sustenta o nicho.

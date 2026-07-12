@@ -2,95 +2,81 @@
 title: Big Idea
 section: marca
 slug: big-idea
-status: em-andamento
-updatedAt: '2026-07-08T09:15:00-03:00'
+status: validado
+updatedAt: '2026-07-12T18:55:49.017Z'
 tags:
   - big-idea
   - proposito
-  - narrativa
+  - diagnostico
 aiContext: >-
-  Use este documento como a ideia-guarda-chuva da marca. Toda peça de
-  comunicação, copy de oferta ou material de vendas deve remeter, direta ou
-  indiretamente, a esta ideia central.
+  A Big Idea é o filtro de tudo. Ao avaliar qualquer peça, pergunte: isso
+  reforça "design mal traduzido para o negócio / marca nasce no diagnóstico /
+  clareza é poder", ou contradiz?
 order: 1
 answers:
   essencia: >-
-    A Big Idea da ROBUSTA é: "Operação não é o que trava o crescimento, é o que
-    impede o founder de crescer". Toda agência de marketing vende resultado; a
-    ROBUSTA vende a ausência do caos operacional que normalmente vem junto.
+    A Big Idea da ROBUSTA é: "Design não é desvalorizado. Ele só é mal traduzido
+    para o negócio." Dois corolários sustentam tudo: "Marca não nasce no design.
+    Nasce no diagnóstico." e "Clareza é um ato de poder."
 
 
-    Essa ideia nasce de um padrão observado nas entrevistas com founders
-    early-stage: o problema raramente é falta de estratégia, é falta de gente e
-    processo para executar a estratégia com consistência.
-
-
-    Em qualquer peça — site, proposta, post — a pergunta de teste é: "isso
-    reforça a ideia de que a ROBUSTA tira o founder do operacional, ou é só mais
-    uma promessa genérica de crescimento?".
+    Toda saída — conteúdo, proposta, aula, projeto — precisa ser coerente com
+    essas três frases, nunca contraditória. O que a ROBUSTA vende não é
+    estética: é clareza, eixo e autonomia. "Eu não visto marcas. Devolvo o
+    espelho."
 briefing: >-
-  A Big Idea da ROBUSTA é: "Operação não é o que trava o crescimento, é o que
-  impede o founder de crescer". Toda agência de marketing vende resultado; a
-  ROBUSTA vende a ausência do caos operacional que normalmente vem junto.
+  A Big Idea da ROBUSTA é: "Design não é desvalorizado. Ele só é mal traduzido
+  para o negócio." Dois corolários sustentam tudo: "Marca não nasce no design.
+  Nasce no diagnóstico." e "Clareza é um ato de poder."
 
 
-  Essa ideia nasce de um padrão observado nas entrevistas com founders
-  early-stage: o problema raramente é falta de estratégia, é falta de gente e
-  processo para executar a estratégia com consistência.
-
-
-  Em qualquer peça — site, proposta, post — a pergunta de teste é: "isso reforça
-  a ideia de que a ROBUSTA tira o founder do operacional, ou é só mais uma
-  promessa genérica de crescimento?".
+  Toda saída — conteúdo, proposta, aula, projeto — precisa ser coerente com
+  essas três frases, nunca contraditória. O que a ROBUSTA vende não é estética:
+  é clareza, eixo e autonomia. "Eu não visto marcas. Devolvo o espelho."
 
 
   _Briefing gerado automaticamente a partir das suas respostas (13% preenchido).
   Uma IA (Claude) vai refinar isto em breve._
-briefingGeneratedAt: '2026-07-08T09:15:00-03:00'
+briefingGeneratedAt: '2026-07-12T18:55:49.016Z'
 report:
   summary: >-
-    A Big Idea — "operação não é o que trava o crescimento, é o que impede o
-    founder de crescer" — está ancorada em dado real, não em retórica. O
-    trabalho operacional fragmentado custa **~1.200 trocas de contexto por dia e
-    ~4h por semana** só em reorientação; e o mercado responde criando uma
-    categoria inteira (trabalho sob demanda/fracionado, **~US$ 5,7 bi, +14%
-    a.a.**) para tirar exatamente essa carga das costas de quem lidera. A
-    ROBUSTA vende a ausência do caos operacional — e há números para provar que
-    esse caos existe.
+    A Big Idea tem respaldo no momento do mercado: quando a IA torna a
+    competência de execução abundante (78% dizem que ela acelera, mas só 58% que
+    melhora a qualidade), o diferencial deixa de ser a forma e passa a ser a
+    clareza — exatamente a tese "design mal traduzido / marca nasce no
+    diagnóstico".
   generatedAt: '2026-07-12T00:00:00-03:00'
   generatedBy: claude-web-research
   findings:
-    - label: O custo real do operacional
-      value: ~1.200 trocas de app/dia · ~4h/semana perdidas
-      kind: fato
-      detail: >-
-        Sustenta a tese de que a operação, não a estratégia, é o que consome o
-        founder.
-      sourceIndexes:
-        - 0
-    - label: Mercado buscando tirar a operação do founder
-      value: 'trabalho sob demanda ~US$ 5,7 bi · +14% a.a.'
+    - label: Competência de execução vira commodity
+      value: 'IA: 78% aceleram · só 58% melhoram a qualidade'
       kind: expectativa
       detail: >-
-        A existência e o crescimento da categoria validam a dor que a Big Idea
-        nomeia.
+        Quando todos produzem forma competente, sobra clareza/estratégia como
+        diferencial — o núcleo da Big Idea.
+      sourceIndexes:
+        - 0
+    - label: Confiança em autoridade > marketing
+      value: 73% dos decisores
+      kind: fato
+      detail: >-
+        Conteúdo de autoridade (diagnóstico, ponto de vista) é base mais
+        confiável que material promocional.
       sourceIndexes:
         - 1
   sources:
-    - title: How Much Time and Energy Do We Waste Toggling Between Applications?
-      url: >-
-        https://hbr.org/2022/08/how-much-time-and-energy-do-we-waste-toggling-between-applications
-      publisher: Harvard Business Review
-      publishedAt: '2022'
-    - title: Why Fractional Executives Are a Growing Business Trend
-      url: >-
-        https://www.mbopartners.com/blog/independent-workforce-trends/why-fractional-executives-are-a-growing-business-trend/
-      publisher: MBO Partners
+    - title: Figma 2025 Design Survey & o "mar de mesmice" da IA
+      url: 'https://www.atomwriter.com/blog/ai-content-homogenization-brand-voice/'
+      publisher: Atom Writer (dados Figma 2025)
       publishedAt: '2025'
+    - title: 2024 Edelman-LinkedIn B2B Thought Leadership Impact Report
+      url: >-
+        https://www.edelman.com/expertise/Business-Marketing/2024-b2b-thought-leadership-report
+      publisher: Edelman / LinkedIn
+      publishedAt: '2024'
 ---
+## Em uma frase, qual é a grande ideia por trás desta marca?
 
-A Big Idea da ROBUSTA é: "Operação não é o que trava o crescimento, é o que impede o founder de crescer". Toda agência de marketing vende resultado; a ROBUSTA vende a ausência do caos operacional que normalmente vem junto.
+A Big Idea da ROBUSTA é: "Design não é desvalorizado. Ele só é mal traduzido para o negócio." Dois corolários sustentam tudo: "Marca não nasce no design. Nasce no diagnóstico." e "Clareza é um ato de poder."
 
-Essa ideia nasce de um padrão observado nas entrevistas com founders early-stage: o problema raramente é falta de estratégia, é falta de gente e processo para executar a estratégia com consistência.
-
-Em qualquer peça — site, proposta, post — a pergunta de teste é: "isso reforça a ideia de que a ROBUSTA tira o founder do operacional, ou é só mais uma promessa genérica de crescimento?".
+Toda saída — conteúdo, proposta, aula, projeto — precisa ser coerente com essas três frases, nunca contraditória. O que a ROBUSTA vende não é estética: é clareza, eixo e autonomia. "Eu não visto marcas. Devolvo o espelho."

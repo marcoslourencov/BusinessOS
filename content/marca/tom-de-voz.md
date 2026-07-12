@@ -3,90 +3,83 @@ title: Tom de voz
 section: marca
 slug: tom-de-voz
 status: validado
-updatedAt: '2026-07-11T08:30:00-03:00'
+updatedAt: '2026-07-12T18:55:49.028Z'
 tags:
   - tom-de-voz
   - copywriting
-  - comunicacao
+  - registro
 aiContext: >-
-  Ao escrever qualquer copy (site, proposta, post, e-mail) em nome da ROBUSTA,
-  seguir este tom. Evitar especialmente jargão vazio de marketing e discurso
-  motivacional genérico.
+  Escreva direto, denso, interpretativo — de quem já atravessou, não de quem
+  ensina de cima. Frases curtas. Nunca motivacional, coach ou genérico. Se a
+  frase serve para qualquer estrategista de branding, corte.
 relatedSlugs:
   - icp
   - big-idea
 order: 5
 answers:
   essencia: >-
-    Direto, sem enrolação, com autoridade que vem de exemplo concreto, não de
-    adjetivo. Prefere "reduzimos o tempo de resposta de 3 dias para 4 horas" a
-    "somos referência em excelência operacional".
+    Direto, denso, interpretativo — a voz de quem já atravessou, não de quem
+    ensina de cima. Frases curtas, pausas deliberadas, a negação usada como
+    afirmação. Inteligente sem ser hermético, profundo sem ser acadêmico.
 
 
-    Tom de quem já esteve na operação, não de consultor de fora olhando de cima.
-    Pode usar humor seco ocasionalmente, nunca ironia com o founder ou com o
-    problema dele.
-
-
-    Evitar: "sinergia", "ecossistema", "disruptivo", qualquer frase que poderia
-    estar no site de qualquer agência sem perder sentido. Se a frase serve para
-    qualquer empresa, não serve para a ROBUSTA.
+    O que a voz NÃO é: motivacional ou coach, leve com excesso de emoji,
+    explicativa demais (não subestima a inteligência do leitor) ou
+    genérica/intercambiável com outros profissionais de branding. Frases que
+    definem o registro: "Marca não nasce no design. Nasce no diagnóstico." ·
+    "Clareza é um ato de poder." · "Não aumentei o preço. Mudei a conversa."
 briefing: >-
-  Direto, sem enrolação, com autoridade que vem de exemplo concreto, não de
-  adjetivo. Prefere "reduzimos o tempo de resposta de 3 dias para 4 horas" a
-  "somos referência em excelência operacional".
+  Direto, denso, interpretativo — a voz de quem já atravessou, não de quem
+  ensina de cima. Frases curtas, pausas deliberadas, a negação usada como
+  afirmação. Inteligente sem ser hermético, profundo sem ser acadêmico.
 
 
-  Tom de quem já esteve na operação, não de consultor de fora olhando de cima.
-  Pode usar humor seco ocasionalmente, nunca ironia com o founder ou com o
-  problema dele.
-
-
-  Evitar: "sinergia", "ecossistema", "disruptivo", qualquer frase que poderia
-  estar no site de qualquer agência sem perder sentido. Se a frase serve para
-  qualquer empresa, não serve para a ROBUSTA.
+  O que a voz NÃO é: motivacional ou coach, leve com excesso de emoji,
+  explicativa demais (não subestima a inteligência do leitor) ou
+  genérica/intercambiável com outros profissionais de branding. Frases que
+  definem o registro: "Marca não nasce no design. Nasce no diagnóstico." ·
+  "Clareza é um ato de poder." · "Não aumentei o preço. Mudei a conversa."
 
 
   _Briefing gerado automaticamente a partir das suas respostas (13% preenchido).
   Uma IA (Claude) vai refinar isto em breve._
-briefingGeneratedAt: '2026-07-11T08:30:00-03:00'
+briefingGeneratedAt: '2026-07-12T18:55:49.028Z'
 report:
   summary: >-
-    O tom escolhido — direto, autoridade por exemplo concreto ("reduzimos o
-    tempo de resposta de 3 dias para 4 horas") em vez de adjetivo — é o que gera
-    confiança e disposição a pagar em B2B. **73% dos decisores** confiam mais em
-    conteúdo de autoridade que em material de marketing, e **60% dizem pagar um
-    prêmio** por quem entrega conteúdo de valor real. Traduzindo: falar por
-    prova, não por jargão, não é só estética — tem efeito comercial.
+    O tom por diagnóstico e ponto de vista tem retorno: 73% dos decisores
+    confiam mais em autoridade que em marketing e 60% pagam um prêmio por
+    conteúdo de valor. Num mar de mesmice gerada por IA, a voz é um dos poucos
+    ativos que não se comoditiza.
   generatedAt: '2026-07-12T00:00:00-03:00'
   generatedBy: claude-web-research
   findings:
-    - label: Autoridade por prova gera confiança
-      value: 73% confiam mais nisso que em material de marketing
+    - label: Autoridade gera confiança e prêmio
+      value: 73% confiam mais · 60% pagam premium
       kind: fato
-      detail: >-
-        Sustenta o tom 'de quem esteve na operação', com exemplo concreto no
-        lugar de adjetivo.
+      detail: 'O tom denso e interpretativo, por prova, tem efeito comercial direto.'
       sourceIndexes:
         - 0
-    - label: Conteúdo de valor → disposição a pagar
-      value: 60% dos decisores pagam um prêmio
-      kind: fato
+    - label: Voz não se comoditiza
+      value: diferencial num mercado homogeneizado por IA
+      kind: expectativa
       detail: >-
-        O tom concreto e específico não é só voz de marca — tem retorno
-        comercial direto.
+        Enquanto a forma converge, o ponto de vista próprio é o que resta de
+        único.
       sourceIndexes:
-        - 0
+        - 1
   sources:
     - title: 2024 Edelman-LinkedIn B2B Thought Leadership Impact Report
       url: >-
         https://www.edelman.com/expertise/Business-Marketing/2024-b2b-thought-leadership-report
       publisher: Edelman / LinkedIn
       publishedAt: '2024'
+    - title: Figma 2025 Design Survey & o "mar de mesmice" da IA
+      url: 'https://www.atomwriter.com/blog/ai-content-homogenization-brand-voice/'
+      publisher: Atom Writer (dados Figma 2025)
+      publishedAt: '2025'
 ---
+## Em uma frase, qual é a grande ideia por trás desta marca?
 
-Direto, sem enrolação, com autoridade que vem de exemplo concreto, não de adjetivo. Prefere "reduzimos o tempo de resposta de 3 dias para 4 horas" a "somos referência em excelência operacional".
+Direto, denso, interpretativo — a voz de quem já atravessou, não de quem ensina de cima. Frases curtas, pausas deliberadas, a negação usada como afirmação. Inteligente sem ser hermético, profundo sem ser acadêmico.
 
-Tom de quem já esteve na operação, não de consultor de fora olhando de cima. Pode usar humor seco ocasionalmente, nunca ironia com o founder ou com o problema dele.
-
-Evitar: "sinergia", "ecossistema", "disruptivo", qualquer frase que poderia estar no site de qualquer agência sem perder sentido. Se a frase serve para qualquer empresa, não serve para a ROBUSTA.
+O que a voz NÃO é: motivacional ou coach, leve com excesso de emoji, explicativa demais (não subestima a inteligência do leitor) ou genérica/intercambiável com outros profissionais de branding. Frases que definem o registro: "Marca não nasce no design. Nasce no diagnóstico." · "Clareza é um ato de poder." · "Não aumentei o preço. Mudei a conversa."

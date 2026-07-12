@@ -3,81 +3,63 @@ title: Cases
 section: autoridade
 slug: cases
 status: rascunho
-updatedAt: '2026-07-09T14:10:00-03:00'
+updatedAt: '2026-07-12T18:55:49.050Z'
 tags:
   - editoria
   - cases
-  - prova-social
+  - prova-narrativa
 aiContext: >-
-  Editoria de prova real: só publicar case com número concreto e autorização
-  explícita do cliente. Nunca inventar ou arredondar resultado para cima.
+  Case é prova narrativa lida pela ótica do método — sempre uma tese, nunca
+  elogio ou resumo do que a marca fez.
 group: Editorias
 order: 2
 relatedSlugs:
   - primeiros-clientes
 answers:
   essencia: >-
-    Editoria dedicada a contar, com autorização do cliente, o antes/depois de
-    quem contratou a ROBUSTA — foco em número real (tempo economizado, receita,
-    redução de erro operacional), não em elogio genérico.
+    Prova narrativa — projetos próprios e análise de grandes marcas — sempre
+    lida pela ótica do método, não como elogio. Reels já mapeados: Nike "Why Do
+    It?", rebranding do The News, "No Name" e H. Moser & Cie.
 
 
-    Ainda em rascunho porque só temos 3 clientes ativos até agora; a editoria
-    começa a rodar de fato quando o primeiro case tiver pelo menos 60 dias de
-    resultado para mostrar, previsto para agosto de 2026.
-
-
-    Formato: 1 case por mês, em texto longo (site) com uma versão resumida
-    derivada para LinkedIn.
+    Cada case existe para demonstrar uma tese (ex.: "Just Do It só funciona
+    quando a marca tem o direito de mandar"), não para narrar o que a marca fez.
+    Todo case externo entra como trampolim para o ponto de vista próprio.
 briefing: >-
-  Editoria dedicada a contar, com autorização do cliente, o antes/depois de quem
-  contratou a ROBUSTA — foco em número real (tempo economizado, receita, redução
-  de erro operacional), não em elogio genérico.
+  Prova narrativa — projetos próprios e análise de grandes marcas — sempre lida
+  pela ótica do método, não como elogio. Reels já mapeados: Nike "Why Do It?",
+  rebranding do The News, "No Name" e H. Moser & Cie.
 
 
-  Ainda em rascunho porque só temos 3 clientes ativos até agora; a editoria
-  começa a rodar de fato quando o primeiro case tiver pelo menos 60 dias de
-  resultado para mostrar, previsto para agosto de 2026.
-
-
-  Formato: 1 case por mês, em texto longo (site) com uma versão resumida
-  derivada para LinkedIn.
+  Cada case existe para demonstrar uma tese (ex.: "Just Do It só funciona quando
+  a marca tem o direito de mandar"), não para narrar o que a marca fez. Todo
+  case externo entra como trampolim para o ponto de vista próprio.
 
 
   _Briefing gerado automaticamente a partir das suas respostas (13% preenchido).
   Uma IA (Claude) vai refinar isto em breve._
-briefingGeneratedAt: '2026-07-09T14:10:00-03:00'
+briefingGeneratedAt: '2026-07-12T18:55:49.050Z'
 report:
   summary: >-
-    A decisão de esperar 60 dias de resultado para publicar o primeiro case, com
-    número real (tempo economizado, receita, redução de erro), é acertada: em
-    B2B, **~79% dos compradores dependem de prova social**, e o formato de prova
-    mais forte é justamente o **case com ROI quantificável**. Elogio genérico
-    converte pouco; case com métrica converte — landing pages com estudos de
-    caso chegam a **+15% de conversão**.
+    A editoria de prova narrativa acerta ao focar na tese, não no elogio: ~79%
+    dos compradores dependem de prova social, e o formato mais forte é o case
+    com resultado/ROI. Reels como Nike "Why Do It?" viram case ao demonstrar um
+    princípio, não ao resumir o que a marca fez.
   generatedAt: '2026-07-12T00:00:00-03:00'
   generatedBy: claude-web-research
   findings:
     - label: Prova social decide
       value: ~79% dos compradores B2B dependem dela
       kind: expectativa
-      detail: Cases bem contados são o principal ativo de aquisição desta fase.
+      detail: Cases lidos pela ótica do método são o principal ativo de prova.
       sourceIndexes:
         - 0
     - label: Case com ROI é a prova mais forte
-      value: número real > elogio genérico
+      value: resultado real > elogio genérico
       kind: expectativa
-      detail: >-
-        Confirma a regra do bloco: foco em tempo economizado, receita, redução
-        de erro.
+      detail: 'Alinha com a regra do bloco: número/tese, não resumo.'
       sourceIndexes:
         - 1
-    - label: Impacto na conversão
-      value: 'estudos de caso em landing pages: ~+15%'
-      kind: expectativa
-      detail: Justifica a versão longa (site) além do resumo para LinkedIn.
-      sourceIndexes:
-        - 0
   sources:
     - title: Social Proof Conversion Stats (compilando Gartner)
       url: >-
@@ -90,9 +72,8 @@ report:
       publisher: Intelemark
       publishedAt: '2025'
 ---
+## Em uma frase, por que você quer ser reconhecido?
 
-Editoria dedicada a contar, com autorização do cliente, o antes/depois de quem contratou a ROBUSTA — foco em número real (tempo economizado, receita, redução de erro operacional), não em elogio genérico.
+Prova narrativa — projetos próprios e análise de grandes marcas — sempre lida pela ótica do método, não como elogio. Reels já mapeados: Nike "Why Do It?", rebranding do The News, "No Name" e H. Moser & Cie.
 
-Ainda em rascunho porque só temos 3 clientes ativos até agora; a editoria começa a rodar de fato quando o primeiro case tiver pelo menos 60 dias de resultado para mostrar, previsto para agosto de 2026.
-
-Formato: 1 case por mês, em texto longo (site) com uma versão resumida derivada para LinkedIn.
+Cada case existe para demonstrar uma tese (ex.: "Just Do It só funciona quando a marca tem o direito de mandar"), não para narrar o que a marca fez. Todo case externo entra como trampolim para o ponto de vista próprio.

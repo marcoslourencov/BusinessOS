@@ -3,15 +3,14 @@ title: Método
 section: autoridade
 slug: metodo
 status: em-andamento
-updatedAt: '2026-07-10T15:45:00-03:00'
+updatedAt: '2026-07-12T18:55:49.045Z'
 tags:
   - editoria
   - metodo
-  - educacional
+  - cerne
 aiContext: >-
-  Editoria educacional: ensinar um pedaço real do método da ROBUSTA. Deve ser
-  útil mesmo para quem nunca vai contratar — é isso que constrói autoridade de
-  verdade.
+  Editoria de bastidor estratégico do CERNE. Sempre mostrar como Marcos pensa (o
+  processo por dentro), com exemplo aplicado, nunca teoria abstrata.
 group: Editorias
 order: 5
 relatedSlugs:
@@ -19,45 +18,38 @@ relatedSlugs:
   - oferta
 answers:
   essencia: >-
-    Editoria de ensino: destrinchar publicamente um pedaço do método de operação
-    da ROBUSTA (ex.: como estruturar um board de status, como priorizar entre
-    urgente e importante). É a editoria mais alinhada à Tese de Valor.
+    Editoria de bastidor estratégico: as sete etapas do CERNE viram conteúdo
+    sobre como Marcos pensa — não o que entrega, mas como atravessa o processo.
+    Cada etapa tem uma semente (gancho, virada, tese): da Coleta ("a primeira
+    resposta é sempre a de superfície; o núcleo está na terceira") à Identidade
+    Visual ("não abro o Figma antes de abrir a escuta").
 
 
-    Formato preferido: carrossel ou post estruturado em passos, sempre com um
-    exemplo aplicado, nunca só teoria abstrata de gestão.
-
-
-    É a editoria com melhor retorno até agora em salvamentos e comentários nas
-    publicações de teste, por isso está com prioridade alta de cadência (2 por
-    mês).
+    É a editoria mais alinhada à Tese de Valor e o principal território de
+    autoridade junto aos designers. Melhores pontos de entrada para quem não
+    conhece o método: Coleta e Identidade Visual.
 briefing: >-
-  Editoria de ensino: destrinchar publicamente um pedaço do método de operação
-  da ROBUSTA (ex.: como estruturar um board de status, como priorizar entre
-  urgente e importante). É a editoria mais alinhada à Tese de Valor.
+  Editoria de bastidor estratégico: as sete etapas do CERNE viram conteúdo sobre
+  como Marcos pensa — não o que entrega, mas como atravessa o processo. Cada
+  etapa tem uma semente (gancho, virada, tese): da Coleta ("a primeira resposta
+  é sempre a de superfície; o núcleo está na terceira") à Identidade Visual
+  ("não abro o Figma antes de abrir a escuta").
 
 
-  Formato preferido: carrossel ou post estruturado em passos, sempre com um
-  exemplo aplicado, nunca só teoria abstrata de gestão.
-
-
-  É a editoria com melhor retorno até agora em salvamentos e comentários nas
-  publicações de teste, por isso está com prioridade alta de cadência (2 por
-  mês).
+  É a editoria mais alinhada à Tese de Valor e o principal território de
+  autoridade junto aos designers. Melhores pontos de entrada para quem não
+  conhece o método: Coleta e Identidade Visual.
 
 
   _Briefing gerado automaticamente a partir das suas respostas (13% preenchido).
   Uma IA (Claude) vai refinar isto em breve._
-briefingGeneratedAt: '2026-07-10T15:45:00-03:00'
+briefingGeneratedAt: '2026-07-12T18:55:49.045Z'
 report:
   summary: >-
-    Método é, com razão, a editoria de prioridade alta: o formato preferido
-    (carrossel/post em passos com exemplo aplicado) é também o de melhor
-    desempenho — **carrosséis e documentos engajam de 3 a 6x mais que texto
-    puro**, e **6–10 slides** maximizam conclusão e salvamentos. Some-se o
-    efeito de fundo: conteúdo educacional de autoridade leva **75% dos
-    compradores** a pesquisar soluções novas. É a editoria mais alinhada à Tese
-    de Valor e a que melhor converte atenção em consideração.
+    Método é a editoria de maior alavancagem: o formato preferido
+    (carrossel/post em passos) engaja 3–6x mais que texto, e conteúdo
+    educacional de autoridade leva 75% dos decisores a pesquisar soluções que
+    não consideravam. É a editoria mais alinhada à Tese de Valor.
   generatedAt: '2026-07-12T00:00:00-03:00'
   generatedBy: claude-web-research
   findings:
@@ -65,22 +57,14 @@ report:
       value: 'carrossel/documento: 3–6x mais que texto'
       kind: expectativa
       detail: >-
-        Confirma a escolha do bloco (carrossel/post em passos) e o bom retorno
-        em salvamentos.
-      sourceIndexes:
-        - 0
-    - label: Tamanho ótimo de carrossel
-      value: 6–10 slides maximizam conclusão e saves
-      kind: expectativa
-      detail: Diretriz concreta para os templates de Método.
+        Confirma a escolha do bloco (carrossel/post em passos com exemplo
+        aplicado).
       sourceIndexes:
         - 0
     - label: Educacional gera descoberta
-      value: 75% pesquisam soluções novas após conteúdo de autoridade
+      value: 75% pesquisam algo novo após autoridade
       kind: fato
-      detail: >-
-        A editoria mais alinhada à Tese é também a que melhor converte atenção
-        em consideração.
+      detail: Ensinar o método atrai quem ainda não buscava um estrategista.
       sourceIndexes:
         - 1
   sources:
@@ -94,9 +78,8 @@ report:
       publisher: Edelman / LinkedIn
       publishedAt: '2024'
 ---
+## Em uma frase, por que você quer ser reconhecido?
 
-Editoria de ensino: destrinchar publicamente um pedaço do método de operação da ROBUSTA (ex.: como estruturar um board de status, como priorizar entre urgente e importante). É a editoria mais alinhada à Tese de Valor.
+Editoria de bastidor estratégico: as sete etapas do CERNE viram conteúdo sobre como Marcos pensa — não o que entrega, mas como atravessa o processo. Cada etapa tem uma semente (gancho, virada, tese): da Coleta ("a primeira resposta é sempre a de superfície; o núcleo está na terceira") à Identidade Visual ("não abro o Figma antes de abrir a escuta").
 
-Formato preferido: carrossel ou post estruturado em passos, sempre com um exemplo aplicado, nunca só teoria abstrata de gestão.
-
-É a editoria com melhor retorno até agora em salvamentos e comentários nas publicações de teste, por isso está com prioridade alta de cadência (2 por mês).
+É a editoria mais alinhada à Tese de Valor e o principal território de autoridade junto aos designers. Melhores pontos de entrada para quem não conhece o método: Coleta e Identidade Visual.

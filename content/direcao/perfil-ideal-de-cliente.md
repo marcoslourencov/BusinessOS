@@ -3,116 +3,80 @@ title: Perfil Ideal de Cliente
 section: direcao
 slug: perfil-ideal-de-cliente
 status: validado
-updatedAt: '2026-07-08T10:05:00-03:00'
+updatedAt: '2026-07-12T18:55:49.037Z'
 tags:
   - icp
   - segmentacao
-  - cliente-ideal
+  - autoridade-monetizacao
 aiContext: >-
-  Ao avaliar um novo lead ou cliente em Primeiros Clientes, compare o perfil
-  dele com os critérios aqui descritos antes de sugerir priorização de
-  atendimento.
+  Dois perfis, um eixo: designer (primário, autoridade) e empreendedor
+  (secundário, paga por direção). Desqualifica quem procura só execução estética
+  barata.
 relatedSlugs:
   - mapa-do-mercado
   - tese-de-valor
 order: 3
 answers:
   essencia: >-
-    O cliente ideal é o founder solo ou com sócio, à frente de uma agência ou
-    consultoria de operações com faturamento entre R$ 20 mil e R$ 150 mil por
-    mês, que já tem clientes pagantes mas ainda não tem nenhuma equipe de gestão
-    dedicada — ou seja, ele mesmo acumula as funções de estratégia, vendas e
-    operação.
+    Dois perfis, um mesmo eixo. Primário (autoridade): o designer com 5+ anos,
+    técnico forte e identidade fraca, deslocado de papel — é quem constrói a
+    audiência pública da ROBUSTA. Secundário (monetização): o empreendedor que
+    já investiu em design/marketing, sente que nada encaixa e perde tempo e
+    dinheiro em caminhos aleatórios — não quer aprender branding, quer direção,
+    e contrata projetos de alto impacto.
 
 
-    Sinal forte de fit: o founder já tentou resolver o problema com uma
-    combinação de 2 a 4 ferramentas (planilha + Notion + WhatsApp, por exemplo)
-    e reclama explicitamente de "não ter uma visão única" do negócio.
-
-
-    Desqualificam o lead: empresas com mais de 50 funcionários (já têm processos
-    formais e times de gestão), e founders que ainda não têm nenhum cliente
-    pagante (nesse estágio o problema é validação de oferta, não organização
-    interna).
+    Desqualifica o lead: quem procura apenas execução estética barata. Nesse
+    enquadramento o trabalho vira commodity comparável por preço — o oposto do
+    que a ROBUSTA entrega.
 briefing: >-
-  O cliente ideal é o founder solo ou com sócio, à frente de uma agência ou
-  consultoria de operações com faturamento entre R$ 20 mil e R$ 150 mil por mês,
-  que já tem clientes pagantes mas ainda não tem nenhuma equipe de gestão
-  dedicada — ou seja, ele mesmo acumula as funções de estratégia, vendas e
-  operação.
+  Dois perfis, um mesmo eixo. Primário (autoridade): o designer com 5+ anos,
+  técnico forte e identidade fraca, deslocado de papel — é quem constrói a
+  audiência pública da ROBUSTA. Secundário (monetização): o empreendedor que já
+  investiu em design/marketing, sente que nada encaixa e perde tempo e dinheiro
+  em caminhos aleatórios — não quer aprender branding, quer direção, e contrata
+  projetos de alto impacto.
 
 
-  Sinal forte de fit: o founder já tentou resolver o problema com uma combinação
-  de 2 a 4 ferramentas (planilha + Notion + WhatsApp, por exemplo) e reclama
-  explicitamente de "não ter uma visão única" do negócio.
-
-
-  Desqualificam o lead: empresas com mais de 50 funcionários (já têm processos
-  formais e times de gestão), e founders que ainda não têm nenhum cliente
-  pagante (nesse estágio o problema é validação de oferta, não organização
-  interna).
+  Desqualifica o lead: quem procura apenas execução estética barata. Nesse
+  enquadramento o trabalho vira commodity comparável por preço — o oposto do que
+  a ROBUSTA entrega.
 
 
   _Briefing gerado automaticamente a partir das suas respostas (13% preenchido).
   Uma IA (Claude) vai refinar isto em breve._
-briefingGeneratedAt: '2026-07-08T10:05:00-03:00'
+briefingGeneratedAt: '2026-07-12T18:55:49.037Z'
 report:
   summary: >-
-    O ICP vive dentro de um universo grande e em expansão: o Brasil bateu
-    **recorde de 4,6 milhões de pequenos negócios abertos em 2025**, sendo **64%
-    de serviços** — o setor onde estão agências e consultorias. O nicho
-    específico (agências) tem ordem de grandeza conhecida: **~36,1 mil empresas,
-    85% micro e pequenas**. A concentração em SP/MG/RJ indica onde focar
-    aquisição. O gargalo do ICP não é tamanho de mercado, é qualificação
-    (faturamento R$ 20–150 mil/mês, com cliente pagante e sem time de gestão).
+    Os dois perfis têm escala. O público de autoridade (designers) passa de 23
+    milhões no mundo, ~90% freelancers. E o mercado onde os empreendedores
+    (perfil de monetização) gastam com design é grande e crescente: ~US$ 55 bi
+    em 2025, crescendo ~7,6% ao ano.
   generatedAt: '2026-07-12T00:00:00-03:00'
   generatedBy: claude-web-research
   findings:
-    - label: Pequenos negócios abertos no Brasil (2025)
-      value: '4,6 mi (recorde) · 77% MEI · +19% a.a.'
-      kind: fato
-      detail: >-
-        Base ampla e crescente da qual o ICP é uma fatia. O predomínio de MEI
-        reforça o perfil 'founder solo que acumula funções'.
+    - label: Público de autoridade (designers)
+      value: +23 mi no mundo · ~90% freelancers
+      kind: expectativa
+      detail: Base ampla para construir audiência e nicho.
       sourceIndexes:
         - 0
-    - label: Serviços como fatia das novas empresas
-      value: 64% das aberturas
-      kind: fato
+    - label: Mercado onde o cliente paga
+      value: 'design ~US$ 55 bi (2025) · +7,6% a.a.'
+      kind: expectativa
       detail: >-
-        Setor onde estão agências e consultorias de operações — o terreno do
-        ICP.
-      sourceIndexes:
-        - 0
-    - label: 'Agências no Brasil (proxy do nicho, CNAE 7311-4/00)'
-      value: '~36,1 mil empresas · ~85% micro e pequenas'
-      kind: fato
-      detail: >-
-        Proxy do universo endereçável do ICP. Ver também o bloco Mapa do
-        Mercado, que usa o mesmo dado.
-      sourceIndexes:
-        - 1
-    - label: Concentração geográfica das aberturas
-      value: SP 29% · MG 11% · RJ 8%
-      kind: fato
-      detail: Onde concentrar prospecção e primeiras conversas de descoberta.
+        Dimensiona o terreno do perfil secundário (empreendedores que compram
+        direção).
       sourceIndexes:
         - 0
   sources:
-    - title: Brasil bate recorde histórico na abertura de pequenos negócios
-      url: >-
-        https://agenciasebrae.com.br/dados/brasil-bate-recorde-historico-na-abertura-de-pequenos-negocios/
-      publisher: Agência Sebrae de Notícias
-      publishedAt: '2025'
-    - title: 'Sebrae em dados: Agências de Publicidade'
-      url: >-
-        https://sebraepr.com.br/comunidade/artigo/sebrae-em-dados-agencias-de-publicidade
-      publisher: Sebrae/PR
-      publishedAt: '2022'
+    - title: Graphic Design Statistics & Trends
+      url: 'https://colorlib.com/wp/graphic-design-statistics/'
+      publisher: Colorlib
+      publishedAt: '2026'
 ---
+## Em uma frase, qual é a direção deste bloco?
 
-O cliente ideal é o founder solo ou com sócio, à frente de uma agência ou consultoria de operações com faturamento entre R$ 20 mil e R$ 150 mil por mês, que já tem clientes pagantes mas ainda não tem nenhuma equipe de gestão dedicada — ou seja, ele mesmo acumula as funções de estratégia, vendas e operação.
+Dois perfis, um mesmo eixo. Primário (autoridade): o designer com 5+ anos, técnico forte e identidade fraca, deslocado de papel — é quem constrói a audiência pública da ROBUSTA. Secundário (monetização): o empreendedor que já investiu em design/marketing, sente que nada encaixa e perde tempo e dinheiro em caminhos aleatórios — não quer aprender branding, quer direção, e contrata projetos de alto impacto.
 
-Sinal forte de fit: o founder já tentou resolver o problema com uma combinação de 2 a 4 ferramentas (planilha + Notion + WhatsApp, por exemplo) e reclama explicitamente de "não ter uma visão única" do negócio.
-
-Desqualificam o lead: empresas com mais de 50 funcionários (já têm processos formais e times de gestão), e founders que ainda não têm nenhum cliente pagante (nesse estágio o problema é validação de oferta, não organização interna).
+Desqualifica o lead: quem procura apenas execução estética barata. Nesse enquadramento o trabalho vira commodity comparável por preço — o oposto do que a ROBUSTA entrega.

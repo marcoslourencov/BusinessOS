@@ -3,14 +3,14 @@ title: Calendário de Publicação
 section: autoridade
 slug: calendario-de-publicacao
 status: rascunho
-updatedAt: '2026-07-11T09:10:00-03:00'
+updatedAt: '2026-07-12T18:55:49.058Z'
 tags:
   - calendario
-  - publicacao
-  - planejamento
+  - cadencia
+  - editorias
 aiContext: >-
-  Use este documento para saber o que já está agendado antes de sugerir uma nova
-  pauta — evite sugerir tema repetido ou fora da cadência definida por editoria.
+  Registra a cadência-alvo por editoria e os próximos temas. Princípio:
+  consistência acima de intensidade.
 order: 6
 relatedSlugs:
   - mercado
@@ -20,69 +20,47 @@ relatedSlugs:
   - metodo
 answers:
   essencia: >-
-    Cadência-alvo por editoria: Método (2x/mês), Mercado (1x/semana), Cases
-    (1x/mês), Cultura (sem cadência fixa ainda) e Notícias (oportunista, sem
-    agenda fixa).
+    Cadência-alvo por editoria: Método (bastidor do CERNE), Mercado, Cases,
+    Cultura/Zeitgeist e Notícias (oportunista). O documento registra a
+    cadência-alvo e os próximos temas decididos; a agenda dia a dia ainda vive
+    numa planilha à parte.
 
 
-    Calendário real ainda vive numa planilha separada — este documento por
-    enquanto registra só a cadência-alvo e os próximos temas já decididos, não a
-    agenda dia a dia. Migrar o calendário completo para cá é um próximo passo em
-    aberto.
-
-
-    Próximos temas já definidos: um post de Método sobre priorização de board de
-    status (semana do dia 14/07), e um post de Mercado sobre o relatório
-    setorial mais recente (semana do dia 21/07).
+    Princípio: consistência acima de intensidade — melhor uma cadência
+    sustentável e regular do que picos seguidos de silêncio.
 briefing: >-
-  Cadência-alvo por editoria: Método (2x/mês), Mercado (1x/semana), Cases
-  (1x/mês), Cultura (sem cadência fixa ainda) e Notícias (oportunista, sem
-  agenda fixa).
+  Cadência-alvo por editoria: Método (bastidor do CERNE), Mercado, Cases,
+  Cultura/Zeitgeist e Notícias (oportunista). O documento registra a
+  cadência-alvo e os próximos temas decididos; a agenda dia a dia ainda vive
+  numa planilha à parte.
 
 
-  Calendário real ainda vive numa planilha separada — este documento por
-  enquanto registra só a cadência-alvo e os próximos temas já decididos, não a
-  agenda dia a dia. Migrar o calendário completo para cá é um próximo passo em
-  aberto.
-
-
-  Próximos temas já definidos: um post de Método sobre priorização de board de
-  status (semana do dia 14/07), e um post de Mercado sobre o relatório setorial
-  mais recente (semana do dia 21/07).
+  Princípio: consistência acima de intensidade — melhor uma cadência sustentável
+  e regular do que picos seguidos de silêncio.
 
 
   _Briefing gerado automaticamente a partir das suas respostas (13% preenchido).
   Uma IA (Claude) vai refinar isto em breve._
-briefingGeneratedAt: '2026-07-11T09:10:00-03:00'
+briefingGeneratedAt: '2026-07-12T18:55:49.058Z'
 report:
   summary: >-
-    A cadência-alvo somada (Método 2x/mês, Mercado 1x/semana, Cases 1x/mês +
-    oportunista) cabe confortavelmente na janela que os dados apontam como
-    ótima: **2 a 5 posts por semana**, com **fadiga de audiência acima de ~12–15
-    posts/mês**. Ou seja, o plano está calibrado — o risco não é volume, é
-    regularidade. Consistência gera bem mais crescimento do que postar em
+    A cadência-alvo por editoria cabe na janela ótima: 2–5 posts por semana, com
+    fadiga de audiência acima de ~12–15/mês. O risco não é volume, é
+    regularidade — consistência gera muito mais crescimento que postar em
     rajada.
   generatedAt: '2026-07-12T00:00:00-03:00'
   generatedBy: claude-web-research
   findings:
-    - label: Frequência ótima B2B
+    - label: Frequência ótima
       value: 2–5 posts/semana · fadiga acima de ~12–15/mês
       kind: fato
-      detail: A soma das editorias deve caber nessa janela — hoje cabe.
-      sourceIndexes:
-        - 0
-    - label: Consistência > irregularidade
-      value: cadência regular supera picos seguidos de silêncio
-      kind: expectativa
-      detail: >-
-        Por isso vale migrar o calendário para um lugar único e cumprir a
-        cadência-alvo.
+      detail: A soma das editorias deve caber nessa janela.
       sourceIndexes:
         - 0
     - label: Melhores janelas
       value: 'terça a quinta, 9h–12h'
       kind: expectativa
-      detail: Referência para agendar os próximos temas já definidos.
+      detail: Referência para agendar os próximos temas.
       sourceIndexes:
         - 1
   sources:
@@ -95,9 +73,8 @@ report:
       publisher: Socialinsider
       publishedAt: '2026'
 ---
+## Em uma frase, por que você quer ser reconhecido?
 
-Cadência-alvo por editoria: Método (2x/mês), Mercado (1x/semana), Cases (1x/mês), Cultura (sem cadência fixa ainda) e Notícias (oportunista, sem agenda fixa).
+Cadência-alvo por editoria: Método (bastidor do CERNE), Mercado, Cases, Cultura/Zeitgeist e Notícias (oportunista). O documento registra a cadência-alvo e os próximos temas decididos; a agenda dia a dia ainda vive numa planilha à parte.
 
-Calendário real ainda vive numa planilha separada — este documento por enquanto registra só a cadência-alvo e os próximos temas já decididos, não a agenda dia a dia. Migrar o calendário completo para cá é um próximo passo em aberto.
-
-Próximos temas já definidos: um post de Método sobre priorização de board de status (semana do dia 14/07), e um post de Mercado sobre o relatório setorial mais recente (semana do dia 21/07).
+Princípio: consistência acima de intensidade — melhor uma cadência sustentável e regular do que picos seguidos de silêncio.

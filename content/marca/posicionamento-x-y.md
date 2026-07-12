@@ -2,94 +2,92 @@
 title: Posicionamento X-Y
 section: marca
 slug: posicionamento-x-y
-status: rascunho
-updatedAt: '2026-07-09T11:40:00-03:00'
+status: validado
+updatedAt: '2026-07-12T18:55:49.025Z'
 tags:
   - posicionamento
   - categoria
-  - diferenciacao
+  - diagnostico
 aiContext: >-
-  Formato X-Y: 'Para [ICP], a ROBUSTA é o(a) [categoria] que [diferencial],
-  diferente de [alternativa], que [limitação da alternativa]'. Ao sugerir copy,
-  valide contra essa frase-síntese.
+  X = diagnóstico e identidade estratégica para marcas que comunicam abaixo do
+  valor. Y primário = designers (autoridade), secundário = empreendedores
+  (monetização). O diferencial é a ordem das decisões, não a estética.
 relatedSlugs:
   - tese-de-valor
   - big-idea
 order: 2
 answers:
   essencia: >-
-    Para founders solo ou com sócio à frente de agências e consultorias de
-    operações pequenas, a ROBUSTA é a operação sob demanda que assume a execução
-    do dia a dia, diferente de contratar mais um freelancer avulso, que resolve
-    uma tarefa mas não assume a operação como um todo.
+    X — Competência dominante: diagnóstico e desenvolvimento estratégico de
+    identidade para marcas que comunicam abaixo do próprio valor. Não é "fazer
+    branding" — é interpretar e devolver direção. O diferencial está na ordem
+    das decisões: enquanto o mercado corre para executar, a ROBUSTA desacelera
+    para entender.
 
 
-    Rascunho ainda em teste: a categoria "operação sob demanda" precisa validar
-    se comunica melhor do que "consultoria de operações" ou "time de operações
-    terceirizado". Próximo passo é testar as três variações em conversas de
-    venda.
+    Y — Grupo com dor: primário são designers experientes presos na execução,
+    que querem ocupar o espaço estratégico (território de autoridade);
+    secundário são empreendedores que já investiram em design, sentem que nada
+    encaixa e querem direção, não aula de branding (monetização). Nicho
+    validado: "designers que querem sair da execução estética e ocupar o espaço
+    estratégico nos projetos de marca."
 briefing: >-
-  Para founders solo ou com sócio à frente de agências e consultorias de
-  operações pequenas, a ROBUSTA é a operação sob demanda que assume a execução
-  do dia a dia, diferente de contratar mais um freelancer avulso, que resolve
-  uma tarefa mas não assume a operação como um todo.
+  X — Competência dominante: diagnóstico e desenvolvimento estratégico de
+  identidade para marcas que comunicam abaixo do próprio valor. Não é "fazer
+  branding" — é interpretar e devolver direção. O diferencial está na ordem das
+  decisões: enquanto o mercado corre para executar, a ROBUSTA desacelera para
+  entender.
 
 
-  Rascunho ainda em teste: a categoria "operação sob demanda" precisa validar se
-  comunica melhor do que "consultoria de operações" ou "time de operações
-  terceirizado". Próximo passo é testar as três variações em conversas de venda.
+  Y — Grupo com dor: primário são designers experientes presos na execução, que
+  querem ocupar o espaço estratégico (território de autoridade); secundário são
+  empreendedores que já investiram em design, sentem que nada encaixa e querem
+  direção, não aula de branding (monetização). Nicho validado: "designers que
+  querem sair da execução estética e ocupar o espaço estratégico nos projetos de
+  marca."
 
 
   _Briefing gerado automaticamente a partir das suas respostas (13% preenchido).
   Uma IA (Claude) vai refinar isto em breve._
-briefingGeneratedAt: '2026-07-09T11:40:00-03:00'
+briefingGeneratedAt: '2026-07-12T18:55:49.025Z'
 report:
   summary: >-
-    A aposta de categoria — "operação sob demanda" contra "contratar mais um
-    freelancer avulso" — está do lado certo de uma tendência mensurável. O
-    trabalho fracionado/sob demanda **dobrou de ~60 mil para ~120 mil
-    profissionais entre 2022 e 2024**, virou um mercado de **~US$ 5,7 bi (+14%
-    a.a.)**, e **operações** é um dos nichos **menos saturados (~16%)**. Isso
-    favorece cravar uma categoria própria de 'operação sob demanda' em vez de
-    competir como 'mais um freelancer'.
+    Posicionar por diagnóstico (valor), não por forma (hora), é também a jogada
+    mais rentável: preço por valor rende ~18% de margem líquida contra ~13% do
+    por hora. E autoridade sustenta esse posicionamento — 73% confiam mais nela
+    que em material de marketing.
   generatedAt: '2026-07-12T00:00:00-03:00'
   generatedBy: claude-web-research
   findings:
-    - label: Crescimento do trabalho sob demanda
-      value: '~60k → ~120k profissionais (2022→2024) · ~US$ 5,7 bi'
+    - label: Preço por valor rende mais
+      value: ~18% margem líquida vs ~13% por hora
       kind: expectativa
       detail: >-
-        A categoria em que 'operação sob demanda' se encaixa está em forte
-        expansão.
+        Sustenta posicionar por diagnóstico/direção, não por execução
+        cronometrada.
       sourceIndexes:
         - 0
-    - label: Adoção pelas empresas
-      value: ~25% das empresas dos EUA já usam contratação fracionada
-      kind: expectativa
+    - label: Autoridade sustenta o X
+      value: 73% confiam mais nisso que em marketing
+      kind: fato
       detail: >-
-        Demanda crescente valida a proposta de assumir a operação, não uma
-        tarefa avulsa.
-      sourceIndexes:
-        - 1
-    - label: Operações = nicho pouco saturado
-      value: ~16% do trabalho fracionado
-      kind: expectativa
-      detail: Menos concorrência na categoria específica que a ROBUSTA quer cravar.
+        O território de autoridade (designers) alimenta o posicionamento de
+        estrategista.
       sourceIndexes:
         - 1
   sources:
-    - title: Why Fractional Executives Are a Growing Business Trend
+    - title: Agency Pricing Statistics 2026 (modelos e margens)
+      url: 'https://agiled.app/statistics/agency-pricing-statistics'
+      publisher: Agiled
+      publishedAt: '2026'
+    - title: 2024 Edelman-LinkedIn B2B Thought Leadership Impact Report
       url: >-
-        https://www.mbopartners.com/blog/independent-workforce-trends/why-fractional-executives-are-a-growing-business-trend/
-      publisher: MBO Partners
-      publishedAt: '2025'
-    - title: 'Fractional Work in 2025: Market Data'
-      url: >-
-        https://fractionus.com/blog/fractional-work-statistics-2025-income-market-data
-      publisher: Fractionus
-      publishedAt: '2025'
+        https://www.edelman.com/expertise/Business-Marketing/2024-b2b-thought-leadership-report
+      publisher: Edelman / LinkedIn
+      publishedAt: '2024'
 ---
+## Em uma frase, qual é a grande ideia por trás desta marca?
 
-Para founders solo ou com sócio à frente de agências e consultorias de operações pequenas, a ROBUSTA é a operação sob demanda que assume a execução do dia a dia, diferente de contratar mais um freelancer avulso, que resolve uma tarefa mas não assume a operação como um todo.
+X — Competência dominante: diagnóstico e desenvolvimento estratégico de identidade para marcas que comunicam abaixo do próprio valor. Não é "fazer branding" — é interpretar e devolver direção. O diferencial está na ordem das decisões: enquanto o mercado corre para executar, a ROBUSTA desacelera para entender.
 
-Rascunho ainda em teste: a categoria "operação sob demanda" precisa validar se comunica melhor do que "consultoria de operações" ou "time de operações terceirizado". Próximo passo é testar as três variações em conversas de venda.
+Y — Grupo com dor: primário são designers experientes presos na execução, que querem ocupar o espaço estratégico (território de autoridade); secundário são empreendedores que já investiram em design, sentem que nada encaixa e querem direção, não aula de branding (monetização). Nicho validado: "designers que querem sair da execução estética e ocupar o espaço estratégico nos projetos de marca."

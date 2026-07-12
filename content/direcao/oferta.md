@@ -3,15 +3,15 @@ title: Oferta
 section: direcao
 slug: oferta
 status: em-andamento
-updatedAt: '2026-07-10T14:30:00-03:00'
+updatedAt: '2026-07-12T18:55:49.041Z'
 tags:
   - oferta
-  - proposta-de-valor
-  - pricing
+  - cerne
+  - projeto-de-marca
 aiContext: >-
-  Ao editar este documento, garanta que a proposta de valor permaneça
-  consistente com a Tese de Valor. Ao ser consultado a partir da página de
-  Validação, priorize comentar sobre evidências de teste, não sobre a definição.
+  A oferta é o projeto de marca conduzido pelo CERNE (diagnóstico → guia). Não
+  se vende logo avulso. Preço acompanha o valor da clareza, não o custo da
+  forma.
 sharedWith:
   - validacao
 validationStage: em-teste
@@ -22,107 +22,73 @@ relatedSlugs:
 order: 5
 answers:
   essencia: >-
-    A oferta atual é um pacote mensal de "Operações sob Demanda": por uma
-    mensalidade fixa de R$ 4.900, assumo a coordenação de operações do cliente
-    (processos, ferramentas, acompanhamento de time) até 20 horas por semana,
-    com reunião semanal de alinhamento e um board de status atualizado em tempo
-    real.
+    A oferta da ROBUSTA é o projeto de marca conduzido pelo método CERNE — sete
+    etapas na ordem sagrada (Coleta, Pesquisa, Exploração, Plataforma,
+    Identidade Verbal, Identidade Visual, Guia de Marca), da escuta profunda ao
+    guia que devolve autonomia à marca.
 
 
-    O que diferencia essa oferta de uma consultoria tradicional por hora é o
-    teto de escopo fechado e previsível: o cliente sabe exatamente quanto vai
-    pagar todo mês, e eu assumo o risco de gerenciar minha própria capacidade
-    dentro desse teto, em vez de faturar por hora trabalhada.
-
-
-    Está em teste com 3 clientes desde junho de 2026. A hipótese que ainda falta
-    validar é se o preço de R$ 4.900 é sustentável para o perfil de cliente com
-    faturamento próximo ao piso de R$ 20 mil/mês do ICP, ou se preciso de um
-    tier de entrada mais barato.
+    Não se vende logo nem estética avulsa: vende-se o diagnóstico como produto e
+    a direção como entregável. O preço acompanha o valor da clareza, não o custo
+    da forma — "não aumentei o preço, mudei a conversa".
 briefing: >-
-  A oferta atual é um pacote mensal de "Operações sob Demanda": por uma
-  mensalidade fixa de R$ 4.900, assumo a coordenação de operações do cliente
-  (processos, ferramentas, acompanhamento de time) até 20 horas por semana, com
-  reunião semanal de alinhamento e um board de status atualizado em tempo real.
+  A oferta da ROBUSTA é o projeto de marca conduzido pelo método CERNE — sete
+  etapas na ordem sagrada (Coleta, Pesquisa, Exploração, Plataforma, Identidade
+  Verbal, Identidade Visual, Guia de Marca), da escuta profunda ao guia que
+  devolve autonomia à marca.
 
 
-  O que diferencia essa oferta de uma consultoria tradicional por hora é o teto
-  de escopo fechado e previsível: o cliente sabe exatamente quanto vai pagar
-  todo mês, e eu assumo o risco de gerenciar minha própria capacidade dentro
-  desse teto, em vez de faturar por hora trabalhada.
-
-
-  Está em teste com 3 clientes desde junho de 2026. A hipótese que ainda falta
-  validar é se o preço de R$ 4.900 é sustentável para o perfil de cliente com
-  faturamento próximo ao piso de R$ 20 mil/mês do ICP, ou se preciso de um tier
-  de entrada mais barato.
+  Não se vende logo nem estética avulsa: vende-se o diagnóstico como produto e a
+  direção como entregável. O preço acompanha o valor da clareza, não o custo da
+  forma — "não aumentei o preço, mudei a conversa".
 
 
   _Briefing gerado automaticamente a partir das suas respostas (13% preenchido).
   Uma IA (Claude) vai refinar isto em breve._
-briefingGeneratedAt: '2026-07-10T14:30:00-03:00'
+briefingGeneratedAt: '2026-07-12T18:55:49.041Z'
 report:
   summary: >-
-    O modelo da oferta — assinatura mensal de escopo fechado — está do lado
-    certo da tendência: **~28% das agências já adotaram pacotes
-    produtizados/assinatura**, fugindo do faturamento por hora. O preço, porém,
-    é agressivo: **R$ 4.900/mês (≈ US$ 900)** fica _abaixo do piso_ do benchmark
-    internacional de serviços produtizados (US$ 1.500–5.000/mês). Isso reforça a
-    hipótese aberta no briefing — há espaço para sustentar o preço (ou criar um
-    tier premium) mais do que para baixá-lo.
+    A oferta conduzida pelo CERNE cobra pela clareza, não pela forma — o modelo
+    de maior margem (~18% vs ~13% por hora), mas que só se sustenta quando se
+    prova o valor entregue. Com a IA pressionando preços (só 20% das agências
+    subiram preço em 2025-26), "mudar a conversa" é como se foge da guerra por
+    preço.
   generatedAt: '2026-07-12T00:00:00-03:00'
   generatedBy: claude-web-research
   findings:
-    - label: Faixa de preço de serviços produtizados (PMEs)
-      value: US$ 1.500–5.000/mês
-      kind: fato
-      detail: >-
-        Benchmark internacional para serviços a pequenas e médias empresas. R$
-        4.900 (≈ US$ 900) fica abaixo desse piso — espaço para reajuste ou tier
-        premium, não para desconto.
+    - label: Preço por valor = maior margem
+      value: ~18% (valor) vs ~13% (hora)
+      kind: expectativa
+      detail: 'A oferta cobra pelo diagnóstico e pela direção, não pela execução.'
       sourceIndexes:
         - 0
-    - label: Referência de assinatura de escopo fechado
-      value: DesignJoy — US$ 4.995/mês (demandas ilimitadas)
-      kind: fato
-      detail: >-
-        Caso conhecido de serviço produtizado por assinatura fixa — mesmo
-        mecanismo de teto de escopo previsível da oferta.
-      sourceIndexes:
-        - 1
-    - label: Agências que já usam pacotes produtizados/assinatura
-      value: ~28%
-      kind: fato
-      detail: >-
-        Adoção equivalente à do faturamento por hora (~28%) — o modelo da oferta
-        já é mainstream, não exótico.
-      sourceIndexes:
-        - 1
-    - label: Agências usando pricing híbrido (em alta)
-      value: ~27% das top agências
+    - label: Prova de valor é pré-requisito
+      value: value-based só se sustenta com casos/autoridade
       kind: expectativa
       detail: >-
-        Tendência crescente de combinar modelos. Sustenta a ideia de um tier de
-        entrada mais barato ao lado do pacote fixo, sem abrir mão do previsível.
+        O CERNE entrega o diagnóstico que justifica o preço — "não aumentei o
+        preço, mudei a conversa".
       sourceIndexes:
-        - 2
+        - 1
+    - label: Pressão de preço pela IA
+      value: só ~20% das agências subiram preço em 2025-26
+      kind: expectativa
+      detail: Sair da forma comoditizada evita a corrida para baixo.
+      sourceIndexes:
+        - 0
   sources:
-    - title: The Complete Guide To Productized Services (2026 Edition)
-      url: 'https://assembly.com/blog/productized-services'
-      publisher: Assembly
+    - title: Agency Pricing Statistics 2026 (modelos e margens)
+      url: 'https://agiled.app/statistics/agency-pricing-statistics'
+      publisher: Agiled
       publishedAt: '2026'
-    - title: Agency Retainer Model vs Subscription for Productized Agencies
-      url: 'https://www.manyrequests.com/blog/agency-retainer-model'
-      publisher: ManyRequests
+    - title: The High Cost Of Putting Creativity On The Clock
+      url: >-
+        https://www.forbes.com/councils/forbesagencycouncil/2025/07/14/the-high-cost-of-putting-creativity-on-the-clock/
+      publisher: Forbes
       publishedAt: '2025'
-    - title: 'Agency Pricing Models: The Complete Guide for 2026'
-      url: 'https://thestacc.com/blog/agency-pricing-models/'
-      publisher: Stacc
-      publishedAt: '2026'
 ---
+## Em uma frase, qual é a direção deste bloco?
 
-A oferta atual é um pacote mensal de "Operações sob Demanda": por uma mensalidade fixa de R$ 4.900, assumo a coordenação de operações do cliente (processos, ferramentas, acompanhamento de time) até 20 horas por semana, com reunião semanal de alinhamento e um board de status atualizado em tempo real.
+A oferta da ROBUSTA é o projeto de marca conduzido pelo método CERNE — sete etapas na ordem sagrada (Coleta, Pesquisa, Exploração, Plataforma, Identidade Verbal, Identidade Visual, Guia de Marca), da escuta profunda ao guia que devolve autonomia à marca.
 
-O que diferencia essa oferta de uma consultoria tradicional por hora é o teto de escopo fechado e previsível: o cliente sabe exatamente quanto vai pagar todo mês, e eu assumo o risco de gerenciar minha própria capacidade dentro desse teto, em vez de faturar por hora trabalhada.
-
-Está em teste com 3 clientes desde junho de 2026. A hipótese que ainda falta validar é se o preço de R$ 4.900 é sustentável para o perfil de cliente com faturamento próximo ao piso de R$ 20 mil/mês do ICP, ou se preciso de um tier de entrada mais barato.
+Não se vende logo nem estética avulsa: vende-se o diagnóstico como produto e a direção como entregável. O preço acompanha o valor da clareza, não o custo da forma — "não aumentei o preço, mudei a conversa".
