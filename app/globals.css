@@ -45,6 +45,8 @@
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  /* Neue Kabel (Adobe Fonts) — aplicada apenas nos títulos H1 via `font-display`. */
+  --font-display: "neue-kabel", var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);

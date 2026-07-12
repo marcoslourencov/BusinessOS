@@ -41,6 +41,11 @@ export default async function RootLayout({
       className={`${inter.variable} h-full antialiased`}
       suppressHydrationWarning
     >
+      <head>
+        {/* Adobe Fonts (Typekit) — Neue Kabel, usada só nos títulos H1. */}
+        <link rel="preconnect" href="https://use.typekit.net" />
+        <link rel="stylesheet" href="https://use.typekit.net/sri7eew.css" />
+      </head>
       <body className="min-h-full bg-background">
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
           <SidebarProvider>

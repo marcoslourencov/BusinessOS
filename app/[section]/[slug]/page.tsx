@@ -55,7 +55,7 @@ export default async function ContentDetailPage({
           {SECTION_LABELS[section]}
         </Link>
         <div className="flex flex-col gap-2">
-          <h1 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
+          <h1 className="font-display text-3xl font-semibold tracking-tight sm:text-4xl">
             {item.frontmatter.title}
           </h1>
           <span className="inline-flex w-fit items-center rounded-full bg-muted px-3 py-1 font-mono text-xs text-muted-foreground">
