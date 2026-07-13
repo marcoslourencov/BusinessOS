@@ -384,7 +384,7 @@ export function ContentOnboarding({ section, item }: ContentOnboardingProps) {
           )}
         </div>
 
-        <DialogFooter className="items-center sm:justify-between">
+        <DialogFooter className="mx-0 mb-0 items-center gap-3 px-6 py-5 sm:justify-between">
           <div className="flex w-full items-center justify-between gap-2 sm:w-auto sm:justify-start">
             {isFirst ? (
               <DialogClose render={<Button variant="ghost" type="button" />}>
