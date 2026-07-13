@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Building2, Compass, ClipboardCheck, Wallet, Sparkles, Megaphone, UserRound, ChevronsUpDown, Bot, SquareKanban } from "lucide-react";
+import { Building2, Compass, ClipboardCheck, Wallet, Sparkles, Megaphone, UserRound, ChevronsUpDown, Bot, SquareKanban, Contact } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import type { Section } from "@/lib/types";
@@ -105,6 +105,7 @@ export function AppSidebar({ counts }: { counts?: Partial<Record<Section, number
             <SidebarMenu className="gap-1">
               {[
                 { title: "Workflow", href: "/workflow", icon: SquareKanban },
+                { title: "Leads", href: "/leads", icon: Contact },
                 { title: "Agentes", href: "/agentes", icon: Bot },
               ].map((tool) => {
                 const isActive = pathname?.startsWith(tool.href) ?? false;
