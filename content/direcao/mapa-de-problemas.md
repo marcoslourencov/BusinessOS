@@ -17,157 +17,190 @@ relatedSlugs:
 order: 2
 answers:
   essencia: >-
-    A dor não é "design é desvalorizado" — essa é a versão genérica de LinkedIn.
-    O núcleo é mais cruel: o designer é chamado para o projeto, mas não para a
-    decisão. Executa a forma que outro já decidiu e é cobrado quando ela não
-    resolve um problema de negócio que ninguém deixou ele diagnosticar.
+    A dor não é 'design é desvalorizado' — genérico demais, ninguém procura
+    solução para uma queixa filosófica. A dor concreta é a comoditização: o
+    designer entrega forma e é pago como mão de obra; a marca compra forma e
+    comunica abaixo do que vale. Os dois sofrem o mesmo deslocamento — a decisão
+    veio depois da execução, quando deveria vir antes.
+  mercado: >-
+    O mercado de design entrou em compressão medível: em 8 meses do ChatGPT, os
+    postings de freelance de design gráfico caíram ~17%. Quem sobra disputa por
+    preço, e o preço tem piso — uma assinatura de IA de US$ 20/mês. O designer
+    de 5+ anos não perde para a IA; perde para a percepção de que seu trabalho é
+    substituível por ela, porque nunca foi contratado pela decisão, só pela
+    entrega.
   problema: >-
-    O designer é tratado como executor de forma, não como quem diagnostica o
-    problema de negócio — participa do projeto, não da decisão. Do lado da
-    marca, a forma foi escolhida antes da direção, então ela comunica abaixo do
-    próprio valor e cai na mesmice. O resultado comum é a comoditização: sem
-    diferenciação percebida, o cliente decide por preço. A dor pesa primeiro no
-    respeito e no tempo, depois no bolso.
+    Dois lados, um deslocamento. Lado autoridade: o designer participa do
+    projeto, mas não da decisão — o 'faz-tudo' preso na execução (78% trabalham
+    mais horas do que são pagos; 90% já ouviram 'aumenta a logo'). Lado
+    monetização: o founder que comunica abaixo do próprio valor porque comprou
+    forma antes de direção. O problema não pesa só no bolso; pesa no respeito
+    (só 55% satisfeitos com a carreira) e no tempo.
   cliente-ideal: >-
-    Designer com 5+ anos de estrada, tecnicamente bom, mas preso na execução e
-    cansado de refazer forma sem nunca tocar na direção. E, do lado secundário,
-    o empreendedor cujo produto vale mais do que a comunicação consegue mostrar
-    — e que por isso está sendo garimpado por preço.
+    Dois ICPs colados pela mesma ferida. Designer 5+ anos deslocado de papel:
+    bom o suficiente para saber que deveria estar na sala de decisão, experiente
+    o suficiente para doer ficar de fora. Founder que comunica abaixo do valor:
+    tem produto forte e marca que não traduz esse valor, porque contratou forma
+    sem diagnóstico. O que os une não é o cargo — é o momento em que percebem
+    que a ordem das decisões foi trocada.
+  oferta: >-
+    A oferta não vende 'design bonito' — vende tradução de design para negócio
+    na ordem certa. O método CERNE coloca diagnóstico antes de forma, e é essa
+    sequência que tira o trabalho da comoditização: quando a decisão vem
+    primeiro, a entrega deixa de ser cotável por hora. Para o designer, é o
+    caminho de faz-tudo para diretor da conversa; para o founder, é a marca que
+    finalmente comunica no nível do que o negócio vale.
+  diferenciacao: >-
+    O diferencial é a ORDEM, não o repertório. Todo mundo entrega logo, paleta,
+    tipografia — a IA também, em 54% dos casos com qualidade que o próprio
+    designer não confia. O que a IA e o concorrente-commodity não fazem é
+    diagnosticar antes de formatar. A ROBUSTA não compete na forma (onde o preço
+    já foi ao chão); compete na direção que decide qual forma.
   evidencias: >-
-    Pesquisa com ~2.000 designers aponta 78% trabalhando mais horas do que são
-    pagos e 90% já reduzidos ao "aumenta a logo"; só 55% se dizem satisfeitos
-    com a carreira. Do lado da marca, a literatura de branding mostra que
-    identidades convergem até ficarem intercambiáveis e que, sem diferenciação,
-    o default é o preço. A IA amplificou o corte: o trabalho freelance de design
-    encolheu ~17% nos oito meses após o ChatGPT.
+    A dor é documentada, não hipotética. Bolso: freelance de design −17%
+    pós-ChatGPT (estudo Zhu et al., Management Science, 1,4M postings), com
+    compressão persistente (Brookings). Tempo: 78% trabalham além do pago.
+    Respeito: 90% ouvem 'aumenta a logo', só 55% satisfeitos. Comoditização por
+    IA: só 32% confiam no output e 54% veem ganho de qualidade — a IA acelera a
+    forma sem elevar a decisão.
   proximo-passo: >-
-    Rodar 5 entrevistas com designers 5+ anos perguntando a última vez que
-    participaram da decisão — não da execução — e cronometrar onde a dor
-    aparece.
+    Levar o cliente da dor genérica ao tipo de dor — bolso, tempo ou respeito?
+    Um diagnóstico curto que nomeia onde a ordem foi invertida (não uma proposta
+    de 'identidade visual'). É o primeiro movimento do CERNE (Coleta + Pesquisa)
+    vendido como entrada: o cliente sente a decisão vindo antes da forma.
 briefing: >-
-  A dor não é "design é desvalorizado". Essa é a versão genérica, a que serve
-  para qualquer designer reclamar no LinkedIn. O núcleo é mais específico e mais
-  cruel: o designer é chamado para o projeto, mas não para a decisão. Ele
-  executa a forma que outra pessoa já decidiu — e depois é cobrado quando a
-  forma não resolve um problema de negócio que ninguém deixou ele diagnosticar.
-  É por isso que 78% trabalham mais horas do que são pagos e 90% já ouviram
-  "aumenta a logo". A dor aqui pesa no respeito antes de pesar no bolso — e
-  depois pesa nos dois.
+  O **Mapa de Problemas** da ROBUSTA não parte da queixa confortável — "design é
+  desvalorizado" — porque queixa não faz ninguém contratar. Parte da dor que faz
+  o telefone tocar: a **comoditização**. Ela tem dois rostos que são o mesmo
+  deslocamento. O designer de 5+ anos chamado para o projeto mas não para a
+  decisão, tratado como faz-tudo, trabalhando **mais horas do que é pago** (78%)
+  e ouvindo **"aumenta a logo"** (90%). E o founder que comunica abaixo do
+  próprio valor porque comprou **forma antes de direção**.
 
 
-  Do outro lado do mesmo deslocamento está a marca que comunica abaixo do
-  próprio valor. Ela escolheu forma antes de direção — pediu "um logo bonito",
-  "um site moderno" — e caiu no mar da mesmice, onde identidades convergem até
-  virarem intercambiáveis. Quando nada diferencia, o mercado fornece o critério
-  que dispensa interpretação: preço. A comoditização é o sintoma que une os dois
-  lados — e a IA acelerou tudo.
+  Esse piso ficou visível e medível. O freelance de design gráfico **encolheu
+  ~17% em oito meses** após o ChatGPT, e a tendência é persistente. A IA não
+  venceu o designer pela qualidade — **só 54% veem ganho real e apenas 32%
+  confiam no output**. Venceu pela percepção de substituibilidade, que só existe
+  porque o trabalho foi vendido como forma cotável, nunca como decisão. A dor se
+  separa em três tipos que o onboarding precisa nomear: **bolso**, **tempo** e
+  **respeito**.
 
 
-  O ponto que a ROBUSTA crava: **comoditização não é destino de mercado, é
-  consequência de ordem de decisões.** Quando a forma vem antes do diagnóstico,
-  o designer vira faz-tudo e a marca vira genérica — o mesmo erro, sentido dos
-  dois lados da mesa.
+  O ângulo da ROBUSTA não é "fazemos design melhor" — é **a ORDEM das
+  decisões**. Diagnóstico antes de forma. A Big Idea fecha o argumento sem
+  suavizar a dor: **"Design não é desvalorizado. Ele só é mal traduzido para o
+  negócio."**
 
 
   _Proposta gerada pelo agente problem-magnet com pesquisa de dados reais.
   Revise e valide._
-briefingGeneratedAt: '2026-07-12T23:52:19.781Z'
+briefingGeneratedAt: '2026-07-13T12:43:02.521Z'
 report:
   summary: >-
-    A dor não é 'design é desvalorizado' — é que o designer é chamado para o
-    projeto, não para a decisão. 78% trabalham mais horas do que são pagos; 90%
-    já ouviram 'aumenta a logo'. Do outro lado, a marca que escolheu forma antes
-    de direção cai na mesmice e é garimpada por preço. Comoditização é
-    consequência de ordem de decisões.
-  generatedAt: '2026-07-12T00:00:00-03:00'
+    A dor não é 'design desvalorizado' — é comoditização por ordem invertida: o
+    designer é chamado para o projeto, não para a decisão (78% horas não pagas,
+    90% 'aumenta a logo'), e a marca comunica abaixo do valor. O freelance de
+    design caiu ~17% pós-ChatGPT.
+  generatedAt: '2026-07-13T00:00:00-03:00'
   generatedBy: problem-magnet
   findings:
     - label: Horas não pagas
-      value: 78% dos designers trabalham mais do que são pagos
+      value: 78% dos designers trabalham mais horas do que são pagos
       kind: fato
-      detail: >-
-        Survey com ~2.000 designers (GraphicDesign&). Dor no tempo e no
-        respeito.
+      detail: 'Sintoma de quem é posicionado como execução, não direção — dor de tempo.'
       sourceIndexes:
         - 0
     - label: Reduzido a 'faz-tudo'
-      value: 90% já foram reduzidos ao 'aumenta a logo'
+      value: 90% já ouviram 'aumenta a logo'
       kind: fato
-      detail: 'Tratado como executor de forma, não como diagnóstico — dor no respeito.'
+      detail: 'Tratado como operador da forma, fora da decisão — dor de respeito.'
       sourceIndexes:
         - 0
     - label: Satisfação de carreira
-      value: só 55% satisfeitos (83% recomendam a profissão)
+      value: só 55% satisfeitos
       kind: fato
       detail: >-
-        Amam o ofício, mas o papel os frustra — a tensão está na posição, não no
-        talento.
+        Survey GraphicDesign& (~2.000 designers, 2016) — a tensão está na
+        posição, não no talento.
       sourceIndexes:
         - 0
-    - label: Encolhimento por IA
-      value: trabalho freelance de design −17% nos 8 meses pós-ChatGPT
-      kind: expectativa
-      detail: >-
-        Citação secundária de estudo Harvard/Imperial; comoditização pesando no
-        bolso.
-      sourceIndexes:
-        - 1
-    - label: Mesmice vira preço
-      value: 'sem diferenciação, o mercado decide por preço'
+    - label: Encolhimento do freelance por IA
+      value: design gráfico −17% nos 8 meses pós-ChatGPT
       kind: fato
-      detail: >-
-        Identidades convergem até serem intercambiáveis; a marca homogeneizada é
-        forçada a descontar.
+      detail: 'Estudo Zhu et al. (Management Science), 1,4M postings — dor de bolso.'
       sourceIndexes:
         - 2
-        - 3
-    - label: Medo da IA entre criativos
-      value: 81% acham que a IA embota a criatividade · 70% temem perda de trabalho
+    - label: Compressão persistente
+      value: 'a queda do freelance cresce, não é choque passageiro'
       kind: expectativa
-      detail: Pesquisa DIGIT Lab 2025.
+      detail: Análise Brookings do mesmo mercado.
       sourceIndexes:
-        - 4
+        - 3
+    - label: Confiança no output da IA
+      value: só 32% confiam · 54% veem ganho de qualidade
+      kind: fato
+      detail: A IA acelera a forma sem elevar a decisão — o vácuo do diagnóstico.
+      sourceIndexes:
+        - 1
   sources:
     - title: 'Educated, overworked, underpaid: Graphic Designers Surveyed'
       url: >-
         https://www.itsnicethat.com/news/graphic-designers-surveyed-results-150116
       publisher: It's Nice That / GraphicDesign&
       publishedAt: '2016'
-    - title: 'Graphic Designer Job Market 2025: Trends, AI & Outlook'
-      url: 'https://tapflare.com/articles/graphic-designer-job-market-2025'
-      publisher: Tapflare
+    - title: 'Figma''s 2025 AI Report: Perspectives From Designers and Developers'
+      url: 'https://www.figma.com/blog/figma-2025-ai-report-perspectives/'
+      publisher: Figma
       publishedAt: '2025'
-    - title: 6 Ways for Brands to Differentiate in a Sea of Sameness
-      url: 'https://www.brandfederation.com/news-viewpoints/commodity-trap'
-      publisher: Brand Federation
+    - title: >-
+        Generative AI reduces demand for some freelance jobs (Zhu et al.,
+        Management Science)
+      url: >-
+        https://the-decoder.com/generative-ai-reduces-demand-for-some-freelance-jobs-in-writing-coding-and-design-study-says/
+      publisher: The Decoder
       publishedAt: '2024'
-    - title: The Risks of Homogenization
-      url: 'https://musubi.black/thought-leadership/theriskofhomogenization'
-      publisher: Musubi Brand Agency
+    - title: Is generative AI a job killer? Evidence from the freelance market
+      url: >-
+        https://www.brookings.edu/articles/is-generative-ai-a-job-killer-evidence-from-the-freelance-market/
+      publisher: Brookings
       publishedAt: '2024'
-    - title: Designers most likely among creatives to believe AI dulls creativity
-      url: 'https://www.dezeen.com/2025/10/27/ai-dulls-creativity-design-survey/'
-      publisher: Dezeen / DIGIT Lab
-      publishedAt: '2025'
+    - title: Why clients often undervalue graphic design
+      url: >-
+        https://www.creativeboom.com/tips/why-clients-undervalue-graphic-design-and-how-to-persuade-them-otherwise/
+      publisher: Creative Boom
+      publishedAt: '2024'
 review: pendente
-updatedAt: '2026-07-12T23:52:19.785Z'
+updatedAt: '2026-07-13T12:43:02.521Z'
 ---
 ## Em uma frase, qual é a direção deste bloco?
 
-A dor não é "design é desvalorizado" — essa é a versão genérica de LinkedIn. O núcleo é mais cruel: o designer é chamado para o projeto, mas não para a decisão. Executa a forma que outro já decidiu e é cobrado quando ela não resolve um problema de negócio que ninguém deixou ele diagnosticar.
+A dor não é 'design é desvalorizado' — genérico demais, ninguém procura solução para uma queixa filosófica. A dor concreta é a comoditização: o designer entrega forma e é pago como mão de obra; a marca compra forma e comunica abaixo do que vale. Os dois sofrem o mesmo deslocamento — a decisão veio depois da execução, quando deveria vir antes.
+
+## Em que mercado ou contexto você está jogando?
+
+O mercado de design entrou em compressão medível: em 8 meses do ChatGPT, os postings de freelance de design gráfico caíram ~17%. Quem sobra disputa por preço, e o preço tem piso — uma assinatura de IA de US$ 20/mês. O designer de 5+ anos não perde para a IA; perde para a percepção de que seu trabalho é substituível por ela, porque nunca foi contratado pela decisão, só pela entrega.
 
 ## Qual é o problema central que você resolve?
 
-O designer é tratado como executor de forma, não como quem diagnostica o problema de negócio — participa do projeto, não da decisão. Do lado da marca, a forma foi escolhida antes da direção, então ela comunica abaixo do próprio valor e cai na mesmice. O resultado comum é a comoditização: sem diferenciação percebida, o cliente decide por preço. A dor pesa primeiro no respeito e no tempo, depois no bolso.
+Dois lados, um deslocamento. Lado autoridade: o designer participa do projeto, mas não da decisão — o 'faz-tudo' preso na execução (78% trabalham mais horas do que são pagos; 90% já ouviram 'aumenta a logo'). Lado monetização: o founder que comunica abaixo do próprio valor porque comprou forma antes de direção. O problema não pesa só no bolso; pesa no respeito (só 55% satisfeitos com a carreira) e no tempo.
 
 ## Quem é o cliente ideal para isso?
 
-Designer com 5+ anos de estrada, tecnicamente bom, mas preso na execução e cansado de refazer forma sem nunca tocar na direção. E, do lado secundário, o empreendedor cujo produto vale mais do que a comunicação consegue mostrar — e que por isso está sendo garimpado por preço.
+Dois ICPs colados pela mesma ferida. Designer 5+ anos deslocado de papel: bom o suficiente para saber que deveria estar na sala de decisão, experiente o suficiente para doer ficar de fora. Founder que comunica abaixo do valor: tem produto forte e marca que não traduz esse valor, porque contratou forma sem diagnóstico. O que os une não é o cargo — é o momento em que percebem que a ordem das decisões foi trocada.
+
+## Qual é a sua oferta ou solução?
+
+A oferta não vende 'design bonito' — vende tradução de design para negócio na ordem certa. O método CERNE coloca diagnóstico antes de forma, e é essa sequência que tira o trabalho da comoditização: quando a decisão vem primeiro, a entrega deixa de ser cotável por hora. Para o designer, é o caminho de faz-tudo para diretor da conversa; para o founder, é a marca que finalmente comunica no nível do que o negócio vale.
+
+## Por que você, e não as alternativas?
+
+O diferencial é a ORDEM, não o repertório. Todo mundo entrega logo, paleta, tipografia — a IA também, em 54% dos casos com qualidade que o próprio designer não confia. O que a IA e o concorrente-commodity não fazem é diagnosticar antes de formatar. A ROBUSTA não compete na forma (onde o preço já foi ao chão); compete na direção que decide qual forma.
 
 ## Quais evidências ou premissas sustentam essa direção?
 
-Pesquisa com ~2.000 designers aponta 78% trabalhando mais horas do que são pagos e 90% já reduzidos ao "aumenta a logo"; só 55% se dizem satisfeitos com a carreira. Do lado da marca, a literatura de branding mostra que identidades convergem até ficarem intercambiáveis e que, sem diferenciação, o default é o preço. A IA amplificou o corte: o trabalho freelance de design encolheu ~17% nos oito meses após o ChatGPT.
+A dor é documentada, não hipotética. Bolso: freelance de design −17% pós-ChatGPT (estudo Zhu et al., Management Science, 1,4M postings), com compressão persistente (Brookings). Tempo: 78% trabalham além do pago. Respeito: 90% ouvem 'aumenta a logo', só 55% satisfeitos. Comoditização por IA: só 32% confiam no output e 54% veem ganho de qualidade — a IA acelera a forma sem elevar a decisão.
 
 ## Qual é o próximo passo concreto para avançar nessa direção?
 
-Rodar 5 entrevistas com designers 5+ anos perguntando a última vez que participaram da decisão — não da execução — e cronometrar onde a dor aparece.
+Levar o cliente da dor genérica ao tipo de dor — bolso, tempo ou respeito? Um diagnóstico curto que nomeia onde a ordem foi invertida (não uma proposta de 'identidade visual'). É o primeiro movimento do CERNE (Coleta + Pesquisa) vendido como entrada: o cliente sente a decisão vindo antes da forma.

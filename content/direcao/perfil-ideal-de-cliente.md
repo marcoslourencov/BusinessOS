@@ -17,206 +17,193 @@ relatedSlugs:
 order: 3
 answers:
   essencia: >-
-    A ROBUSTA não vende design — vende a tradução que falta entre o design e a
-    decisão de negócio. Por isso o cliente ideal não é quem não tem marca, é
-    quem tem forma sem ordem. São três pessoas no mesmo eixo: autoridade
-    constrói a audiência, monetização fecha o negócio, e a ponte liga os dois.
+    A ROBUSTA existe porque o design é bem executado e mal traduzido. A essência
+    do ICP é uma só: gente que domina forma mas não domina a decisão que vem
+    antes da forma — e por isso é lida pelo mercado como mão de obra estética,
+    não como direção de negócio. Não vendemos para quem quer um logo; vendemos
+    para quem já entendeu que o problema não era o logo.
+  mercado: >-
+    O mercado é a camada de profissionais e fundadores presos na ponte entre
+    execução e estratégia, num momento em que a IA rebaixa o preço da execução
+    pura. O Brasil tem ~38% da força de trabalho em regime freelancer e ~32,5
+    milhões de autônomos informais — um contingente enorme competindo por preço.
+    É um mercado que cresce em volume e encolhe em margem para quem só entrega
+    pixel.
+  problema: >-
+    O problema não é falta de talento técnico — é falta de tradução. O sênior
+    tem repertório mas nome fraco; o solo entrega bem mas cobra por peça e
+    entrega a estratégia de graça; o founder pagou por identidade visual e
+    recebeu silêncio de mercado. Todos sofrem o mesmo sintoma: a decisão certa
+    foi tomada na ordem errada, forma antes de diagnóstico.
   cliente-ideal: >-
-    A ROBUSTA atende quem tem forma sem ordem — três perfis no mesmo eixo. O
-    designer sênior tecnicamente forte e sem identidade pública, que quer virar
-    referência (autoridade). O solo que executa bem e trava na hora de cobrar
-    pela decisão, não pelo arquivo (a ponte). E o founder que já pagou por
-    identidade visual, recebeu silêncio e quer direção, não aula de branding
-    (monetização). Os três começam pela forma e descobrem tarde que forma sem
-    diagnóstico é cara e muda. O denominador não é dinheiro nem gosto: é a falta
-    de método na ordem das decisões. Desqualifica-se, de saída, quem quer
-    estética barata, entrega rápida e nenhuma pergunta.
+    Um eixo, três perfis. Autoridade: O Sênior Deslocado (5+ anos, técnica alta,
+    nome fraco, quer virar referência) e O Solo que Trava na Ponte (executa bem,
+    mas precifica por hora/peça e não captura a estratégia que já entrega).
+    Monetização: O Founder que Comunica Abaixo do Valor (investiu em identidade
+    visual, recebeu silêncio, quer direção, não enfeite). Desqualifica quem quer
+    só execução estética barata, prazo de ontem e desconto — quem procura
+    fornecedor, não parceiro de decisão.
+  oferta: >-
+    A oferta é o método CERNE: reordenar as decisões de marca começando pelo
+    diagnóstico e terminando na forma. Para o profissional, é um sistema que
+    transforma técnica solta em autoridade precificável. Para o founder, é a
+    direção que a identidade visual sozinha nunca entregou.
+  diferenciacao: >-
+    Todo mundo entrega os mesmos artefatos; quase ninguém entrega na ordem
+    certa. O diferencial da ROBUSTA é a ORDEM — diagnóstico antes de forma — que
+    separa design de decoração e estrategista de operador. Num mundo onde a IA
+    barateia a execução, a ordem das decisões é a única coisa que não
+    commoditiza.
   evidencias: >-
-    ~38% da força de trabalho brasileira é freelancer e o design gráfico é ~13%
-    dessa atividade, com renda média baixa (~R$ 1.800/mês; ~US$ 22/h) — mercado
-    grande e comprimido por preço. A IA já absorve a demanda de baixo valor e
-    "separa quem opera ferramenta de quem entrega estratégia", empurrando o
-    sênior a se reposicionar. E a confusão persistente entre identidade visual e
-    branding explica por que founders investem na forma e não veem resultado.
+    Freelancers já são ~38% da força de trabalho brasileira e há ~32,5 milhões
+    de autônomos informais, dos quais 44% ganham até um salário mínimo — a prova
+    estatística da armadilha do preço por peça. A renda média do designer
+    freelancer orbita R$ 1.900–3.000/mês, coerente com 'técnica alta, captura de
+    valor baixa'. E a literatura de branding é explícita: confundir identidade
+    visual com estratégia leva a investir em aparência antes de significado.
   proximo-passo: >-
-    Validar os três perfis com 5 entrevistas reais (um sênior, um solo, um
-    founder frustrado) testando a frase "você comprou forma achando que comprava
-    direção".
+    O próximo passo é o diagnóstico — o C de Coleta. Antes de qualquer forma,
+    mapear onde a decisão foi tomada fora de ordem: no repertório do
+    profissional ou na comunicação do founder. Quem topa começar pelo
+    diagnóstico é fit; quem quer pular direto para o visual se desqualifica
+    sozinho.
 briefing: >-
-  A ROBUSTA não vende design. Vende a tradução que falta entre o design e a
-  decisão de negócio — e por isso seu cliente ideal não é quem não tem marca, é
-  quem tem **forma sem ordem**. O que os três perfis compartilham não é falta de
-  dinheiro nem de gosto: é falta de método na ordem das coisas. Todos começam
-  pela forma e descobrem tarde que forma sem diagnóstico é cara e muda.
+  **Eixo do ICP:** o deslocamento entre o valor que a pessoa entrega e o valor
+  que o mercado lê nela. Dois lados do mesmo eixo — **autoridade**
+  (profissionais que produzem valor e não capturam) e **monetização** (founders
+  que pagaram por valor e não receberam direção).
 
 
-  **Perfil 1 — O Sênior Deslocado (autoridade)**
+  **O Sênior Deslocado** — designer 5+ anos, técnica alta, nome e identidade
+  fracos. Quer virar referência, ser lido como autor, não como executor; teme
+  ficar "bom e invisível", substituível por prompt. Fit: reconhece que domina a
+  forma, mas não a narrativa sobre si.
 
 
-  - **Contexto:** designer 5+ anos, tecnicamente forte, formado na régua da
-  execução; vê a IA absorver a demanda de baixo valor e sente sumir o chão do
-  "operador de ferramenta".
-
-  - **Quer conquistar:** virar referência pública, ser procurado pelo pensamento
-  e não pelo arquivo.
-
-  - **Teme perder:** deixar de ser "o bom" e virar commodity substituível por
-  prompt — descobrir que sua competência nunca teve nome.
-
-  - **Fit:** fala de portfólio mas evita posicionamento; sente que "faz mais do
-  que cobra"; já tentou criar conteúdo e travou por não saber sua tese.
+  **O Solo que Trava na Ponte** — freelancer/estúdio solo que executa bem, mas
+  cobra por hora/peça e entrega a estratégia de graça. Quer precificar por
+  valor; teme perder margem e relevância à medida que a IA barateia a execução.
+  Fit: já entrega estratégia embutida e sabe disso.
 
 
-  **Perfil 2 — O Solo que Trava na Ponte (autoridade → monetização)**
+  **O Founder que Comunica Abaixo do Valor** — pagou por identidade visual,
+  recebeu silêncio. Quer direção que gere leitura de mercado, não só estética;
+  teme gastar mais em redesign que não resolve. Fit: diz "está bonito mas não
+  comunica o que a gente vale".
 
 
-  - **Contexto:** freelancer ou estúdio solo; entrega bem, mas cobra por peça e
-  orça por hora (~US$ 22/h), recomeçando do zero a negociação de valor a cada
-  projeto.
-
-  - **Quer conquistar:** subir de "quem faz a arte" para "quem decide a
-  direção"; entrar no projeto pelo diagnóstico.
-
-  - **Teme perder:** virar o "designer barato e rápido" que ele despreza; que
-  subir de preço o exponha como fraude por nunca ter método.
-
-  - **Fit:** entrega estratégia embutida sem cobrar por ela; tem casos bons e
-  propostas fracas; quer ancorar preço em algo defensável, não em hora.
-
-
-  **Perfil 3 — O Founder que Comunica Abaixo do Valor (monetização)**
-
-
-  - **Contexto:** empreendedor que já pagou por identidade visual e sente que
-  "nada encaixa"; a empresa parece menor do que é. Comprou forma achando que
-  comprava direção.
-
-  - **Quer conquistar:** direção — uma marca que traduza o valor real do negócio
-  e sustente preço e diferenciação.
-
-  - **Teme perder:** a percepção de que seu negócio é sério; ter construído algo
-  real e ser lido como amador.
-
-  - **Fit:** diz "já gastei com isso e não deu resultado"; sente incoerência
-  entre o que a empresa é e o que parece; valoriza o porquê antes do como.
-
-
-  **Desqualifica os três:** quem quer só um logo novo e mais barato, entrega
-  rápida sem responder perguntas de negócio, ou já decidiu a forma e só quer mão
-  de obra.
+  **Desqualifica (transversal):** procura só execução estética barata; quer
+  forma antes de diagnóstico; trata design como custo, não como decisão; pede
+  desconto antes de entender o método.
 
 
   _Proposta gerada pelo agente icp com pesquisa de dados reais. Revise e
   valide._
-briefingGeneratedAt: '2026-07-12T23:52:19.787Z'
+briefingGeneratedAt: '2026-07-13T12:43:02.528Z'
 report:
   summary: >-
-    Três pessoas no mesmo eixo — todas com forma sem ordem. O sênior deslocado
-    que quer virar referência (autoridade), o solo que trava na hora de cobrar
-    pela decisão (a ponte) e o founder que pagou por identidade visual e recebeu
-    silêncio (monetização). O denominador não é dinheiro nem gosto: é a falta de
-    método na ordem das decisões.
-  generatedAt: '2026-07-12T00:00:00-03:00'
+    Um eixo, três perfis: o deslocamento entre o valor que a pessoa entrega e o
+    que o mercado lê nela. Sênior Deslocado + Solo na Ponte (autoridade) e
+    Founder que Comunica Abaixo do Valor (monetização), num mercado de ~38% de
+    freelancers comprimidos por preço.
+  generatedAt: '2026-07-13T00:00:00-03:00'
   generatedBy: icp
   findings:
     - label: Freelancers no Brasil
-      value: ~38% da força de trabalho · design gráfico ≈13% da atividade freela
+      value: ~38% da força de trabalho
       kind: expectativa
       detail: >-
-        Base de mercado dos Perfis 1 e 2 (fontes de blog; tratar como ordem de
+        Dimensiona o mercado dos Perfis 1 e 2 (fonte de blog; ordem de
         grandeza).
       sourceIndexes:
         - 0
+    - label: Autônomos informais
+      value: '~32,5 milhões (31,7% dos ocupados)'
+      kind: fato
+      detail: IBGE/PNADC — massa competindo por preço.
+      sourceIndexes:
         - 1
-    - label: Renda do freela BR
-      value: ~R$ 1.800/mês · ~US$ 22/h médios
+    - label: Concentração de renda baixa
+      value: 44% dos autônomos ganham até 1 salário mínimo
+      kind: fato
+      detail: IBGE via Agência Brasil — a armadilha do preço por peça.
+      sourceIndexes:
+        - 1
+    - label: Renda do designer freelancer
+      value: ~R$ 1.900–3.000/mês
       kind: expectativa
-      detail: >-
-        Faixa de compressão por preço que motiva o salto de execução para
-        estratégia.
+      detail: 'Glassdoor — técnica alta, captura de valor baixa.'
       sourceIndexes:
         - 2
-    - label: IA separa operador de estrategista
-      value: 82% já usam IA em execução · 69% a veem como suporte
+    - label: Identidade visual ≠ estratégia
+      value: leva a 'aparência antes de significado'
       kind: expectativa
-      detail: Gatilho de deslocamento do Perfil 1.
+      detail: Diagnóstico do Founder que comunica abaixo do valor.
       sourceIndexes:
         - 3
+    - label: IA barateia a execução
+      value: até ~20% de queda em serviços operacionais
+      kind: expectativa
+      detail: Empurra o profissional para a estratégia — o eixo do ICP.
+      sourceIndexes:
         - 4
-    - label: Founders confundem identidade visual com branding
-      value: 'investe na forma, não vê resultado'
-      kind: expectativa
-      detail: Dor central do Perfil 3 — forma sem diagnóstico.
-      sourceIndexes:
-        - 5
-        - 6
-    - label: Crise de identidade do design
-      value: difusão do 'design' ∝ inversa à valorização
-      kind: expectativa
-      detail: 'Sustenta a crise de identidade do Perfil 1 (técnica alta, nome fraco).'
-      sourceIndexes:
-        - 7
-    - label: Validar os 3 perfis
-      value: '5 entrevistas (1 sênior, 1 solo, 1 founder)'
-      kind: meta
-      detail: >-
-        Testar 'você comprou forma achando que comprava direção' antes de
-        escalar aquisição.
   sources:
     - title: Freelancers representam 38% da força de trabalho no Brasil
       url: >-
         https://blog.alterdata.com.br/freelancers-representam-38-da-forca-de-trabalho-no-brasil/
       publisher: Alterdata
       publishedAt: '2024'
-    - title: 'Ser freelancer no Brasil: tudo o que você precisa saber'
+    - title: Mais de 32 milhões são autônomos informais ou trabalham sem carteira
       url: >-
-        https://www.freelancermap.com/blog/pt/ser-freelancer-no-brasil-tudo-o-que-voce-precisa-saber-em-2024/
-      publisher: Freelancermap
-      publishedAt: '2024'
-    - title: 'Salário: Freelancer'
-      url: 'https://www.glassdoor.com.br/Salarios/freelancer-salario-SRCH_KO0,10.htm'
+        https://agenciabrasil.ebc.com.br/economia/noticia/2025-04/mais-de-32-milhoes-sao-autonomos-informais-ou-trabalham-sem-carteira
+      publisher: Agência Brasil / IBGE-PNADC
+      publishedAt: '2025'
+    - title: Salário mensal de Designer Gráfico Freelancer
+      url: >-
+        https://www.glassdoor.com.br/Pagamento-mensal/Freelancer-Designer-Gr%C3%A1fico-Pagamento-mensal-E392261_D_KO11,27.htm
       publisher: Glassdoor
       publishedAt: '2026'
-    - title: >-
-        IA está separando quem opera ferramentas de quem entrega pensamento
-        criativo
+    - title: 'Brand Strategy vs Visual Identity: What Most Companies Get Wrong'
       url: >-
-        https://www.hardware.com.br/noticias/impacto-ia-mercado-design-profissionalizacao-estrategica/
-      publisher: Hardware.com.br
+        https://www.themarketingblender.com/brand-strategy-vs-visual-identity-what-most-companies-get-wrong/
+      publisher: The Marketing Blender
+      publishedAt: '2024'
+    - title: Is Generative AI the Commoditization of Creation?
+      url: >-
+        https://medium.com/@rossbrannigan/is-generative-ai-the-commoditization-of-creation-50e3ab6a0bb4
+      publisher: Ross Brannigan / Medium
       publishedAt: '2025'
-    - title: 'IA no Design 2025: o que os dados revelam'
-      url: 'https://ibpad.com.br/publicacoes/estudos/ia-no-design-2025/'
-      publisher: IBPAD
-      publishedAt: '2025'
-    - title: Branding não é design de identidade visual
-      url: >-
-        https://volarebranding.com.br/conteudos/branding/branding-e-identidade-visual/
-      publisher: Volare Branding
-      publishedAt: '2024'
-    - title: 5 Erros Comuns no Branding de Pequenas Empresas
-      url: >-
-        https://ideup.com.br/5-erros-comuns-no-branding-de-pequenas-empresas-e-como-evita-los/
-      publisher: IDEUP
-      publishedAt: '2024'
-    - title: A crise de identidade do Design
-      url: 'https://www.stoa.news/p/stoa-60-a-crise-de-identidade-do'
-      publisher: Stoa
-      publishedAt: '2024'
 review: pendente
-updatedAt: '2026-07-12T23:52:19.792Z'
+updatedAt: '2026-07-13T12:43:02.528Z'
 ---
 ## Em uma frase, qual é a direção deste bloco?
 
-A ROBUSTA não vende design — vende a tradução que falta entre o design e a decisão de negócio. Por isso o cliente ideal não é quem não tem marca, é quem tem forma sem ordem. São três pessoas no mesmo eixo: autoridade constrói a audiência, monetização fecha o negócio, e a ponte liga os dois.
+A ROBUSTA existe porque o design é bem executado e mal traduzido. A essência do ICP é uma só: gente que domina forma mas não domina a decisão que vem antes da forma — e por isso é lida pelo mercado como mão de obra estética, não como direção de negócio. Não vendemos para quem quer um logo; vendemos para quem já entendeu que o problema não era o logo.
+
+## Em que mercado ou contexto você está jogando?
+
+O mercado é a camada de profissionais e fundadores presos na ponte entre execução e estratégia, num momento em que a IA rebaixa o preço da execução pura. O Brasil tem ~38% da força de trabalho em regime freelancer e ~32,5 milhões de autônomos informais — um contingente enorme competindo por preço. É um mercado que cresce em volume e encolhe em margem para quem só entrega pixel.
+
+## Qual é o problema central que você resolve?
+
+O problema não é falta de talento técnico — é falta de tradução. O sênior tem repertório mas nome fraco; o solo entrega bem mas cobra por peça e entrega a estratégia de graça; o founder pagou por identidade visual e recebeu silêncio de mercado. Todos sofrem o mesmo sintoma: a decisão certa foi tomada na ordem errada, forma antes de diagnóstico.
 
 ## Quem é o cliente ideal para isso?
 
-A ROBUSTA atende quem tem forma sem ordem — três perfis no mesmo eixo. O designer sênior tecnicamente forte e sem identidade pública, que quer virar referência (autoridade). O solo que executa bem e trava na hora de cobrar pela decisão, não pelo arquivo (a ponte). E o founder que já pagou por identidade visual, recebeu silêncio e quer direção, não aula de branding (monetização). Os três começam pela forma e descobrem tarde que forma sem diagnóstico é cara e muda. O denominador não é dinheiro nem gosto: é a falta de método na ordem das decisões. Desqualifica-se, de saída, quem quer estética barata, entrega rápida e nenhuma pergunta.
+Um eixo, três perfis. Autoridade: O Sênior Deslocado (5+ anos, técnica alta, nome fraco, quer virar referência) e O Solo que Trava na Ponte (executa bem, mas precifica por hora/peça e não captura a estratégia que já entrega). Monetização: O Founder que Comunica Abaixo do Valor (investiu em identidade visual, recebeu silêncio, quer direção, não enfeite). Desqualifica quem quer só execução estética barata, prazo de ontem e desconto — quem procura fornecedor, não parceiro de decisão.
+
+## Qual é a sua oferta ou solução?
+
+A oferta é o método CERNE: reordenar as decisões de marca começando pelo diagnóstico e terminando na forma. Para o profissional, é um sistema que transforma técnica solta em autoridade precificável. Para o founder, é a direção que a identidade visual sozinha nunca entregou.
+
+## Por que você, e não as alternativas?
+
+Todo mundo entrega os mesmos artefatos; quase ninguém entrega na ordem certa. O diferencial da ROBUSTA é a ORDEM — diagnóstico antes de forma — que separa design de decoração e estrategista de operador. Num mundo onde a IA barateia a execução, a ordem das decisões é a única coisa que não commoditiza.
 
 ## Quais evidências ou premissas sustentam essa direção?
 
-~38% da força de trabalho brasileira é freelancer e o design gráfico é ~13% dessa atividade, com renda média baixa (~R$ 1.800/mês; ~US$ 22/h) — mercado grande e comprimido por preço. A IA já absorve a demanda de baixo valor e "separa quem opera ferramenta de quem entrega estratégia", empurrando o sênior a se reposicionar. E a confusão persistente entre identidade visual e branding explica por que founders investem na forma e não veem resultado.
+Freelancers já são ~38% da força de trabalho brasileira e há ~32,5 milhões de autônomos informais, dos quais 44% ganham até um salário mínimo — a prova estatística da armadilha do preço por peça. A renda média do designer freelancer orbita R$ 1.900–3.000/mês, coerente com 'técnica alta, captura de valor baixa'. E a literatura de branding é explícita: confundir identidade visual com estratégia leva a investir em aparência antes de significado.
 
 ## Qual é o próximo passo concreto para avançar nessa direção?
 
-Validar os três perfis com 5 entrevistas reais (um sênior, um solo, um founder frustrado) testando a frase "você comprou forma achando que comprava direção".
+O próximo passo é o diagnóstico — o C de Coleta. Antes de qualquer forma, mapear onde a decisão foi tomada fora de ordem: no repertório do profissional ou na comunicação do founder. Quem topa começar pelo diagnóstico é fit; quem quer pular direto para o visual se desqualifica sozinho.
