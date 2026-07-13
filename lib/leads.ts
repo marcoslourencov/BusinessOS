@@ -131,6 +131,14 @@ export async function createLead(input: LeadInput): Promise<Lead> {
   );
 }
 
+/** Atualiza apenas o estágio de um lead (usado pelo kanban de Oportunidades). */
+export async function setLeadStage(id: string, stage: LeadStage): Promise<Lead | null> {
+  const existing = await getLeadById(id);
+  if (!existing) return null;
+  const { notes, ...fm } = existing;
+  return writeLead({ ...fm, stage }, notes);
+}
+
 export async function deleteLead(id: string): Promise<void> {
   try {
     await fs.unlink(path.join(LEADS_ROOT, `${id}.md`));

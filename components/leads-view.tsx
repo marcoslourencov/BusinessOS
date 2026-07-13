@@ -27,7 +27,7 @@ import {
 import type { Lead, LeadInput, LeadStage } from "@/lib/leads";
 import { saveLeadAction, createLeadAction, deleteLeadAction } from "@/app/leads/actions";
 
-const LEAD_STAGES: LeadStage[] = [
+export const LEAD_STAGES: LeadStage[] = [
   "novo",
   "contatado",
   "qualificado",
@@ -38,7 +38,7 @@ const LEAD_STAGES: LeadStage[] = [
 
 type StageMeta = { label: string; pill: string; dot: string; check?: boolean; cross?: boolean };
 
-const STAGE_META: Record<LeadStage, StageMeta> = {
+export const STAGE_META: Record<LeadStage, StageMeta> = {
   novo: { label: "Novo", pill: "border text-muted-foreground", dot: "ring-1 ring-muted-foreground/50" },
   contatado: { label: "Contatado", pill: "bg-muted text-foreground", dot: "bg-muted-foreground" },
   qualificado: { label: "Qualificado", pill: "bg-violet-500/12 text-violet-700 dark:text-violet-300", dot: "bg-violet-500" },
@@ -47,7 +47,7 @@ const STAGE_META: Record<LeadStage, StageMeta> = {
   perdido: { label: "Perdido", pill: "bg-muted text-muted-foreground/70", dot: "bg-muted-foreground/50", cross: true },
 };
 
-function StagePill({ stage }: { stage: LeadStage }) {
+export function StagePill({ stage }: { stage: LeadStage }) {
   const m = STAGE_META[stage];
   return (
     <span className={cn("inline-flex h-6 w-fit items-center gap-1.5 whitespace-nowrap rounded-full px-2.5 text-xs font-medium", m.pill)}>
@@ -63,7 +63,7 @@ function StagePill({ stage }: { stage: LeadStage }) {
   );
 }
 
-function fitTone(fit?: number): string {
+export function fitTone(fit?: number): string {
   if (fit == null) return "bg-muted-foreground/30";
   if (fit >= 80) return "bg-accent-moss";
   if (fit >= 60) return "bg-accent-orange";
@@ -80,10 +80,17 @@ const GRID = "grid grid-cols-1 gap-x-4 gap-y-2 sm:grid-cols-[1.5fr_1.7fr_1fr_0.9
 
 function LeadCard({ lead, onOpen }: { lead: Lead; onOpen: () => void }) {
   return (
-    <button
-      type="button"
+    <div
+      role="button"
+      tabIndex={0}
       onClick={onOpen}
-      className="w-full rounded-2xl border bg-card p-4 text-left shadow-sm transition-colors hover:bg-muted/40 focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none"
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          onOpen();
+        }
+      }}
+      className="w-full cursor-pointer rounded-2xl border bg-card p-4 text-left shadow-sm transition-colors hover:bg-muted/40 focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none"
     >
       <div className={GRID}>
         {/* LEAD */}
@@ -119,13 +126,13 @@ function LeadCard({ lead, onOpen }: { lead: Lead; onOpen: () => void }) {
           <span className="text-xs tabular-nums text-muted-foreground sm:ml-auto">{formatDate(lead.enteredAt)}</span>
         </div>
       </div>
-    </button>
+    </div>
   );
 }
 
 const EMPTY: LeadInput = { name: "", company: "", stage: "novo", via: "manual", fit: undefined, notes: "" };
 
-function LeadForm({
+export function LeadForm({
   lead,
   onDone,
 }: {

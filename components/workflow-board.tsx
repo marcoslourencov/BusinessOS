@@ -233,6 +233,7 @@ function SortableCard({
       ref={setNodeRef}
       style={style}
       data-card-id={card.id}
+      suppressHydrationWarning
       {...listeners}
       {...attributes}
       className={cn(
