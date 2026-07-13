@@ -10,5 +10,6 @@ via: prospector
 fit: 38
 stage: perdido
 enteredAt: '2026-06-25T15:00:00-03:00'
+kind: pessoa
 ---
 Desqualificado: buscava estética barata e rápida, sem responder perguntas de negócio.

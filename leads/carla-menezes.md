@@ -11,5 +11,6 @@ fit: 91
 stage: qualificado
 enteredAt: '2026-07-08T14:00:00-03:00'
 notes: Quer sair da execução e assumir a estratégia da marca. Enviar proposta CERNE.
+kind: pessoa
 ---
 Quer sair da execução e assumir a estratégia da marca. Enviar proposta CERNE.

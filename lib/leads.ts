@@ -21,12 +21,18 @@ export const LEAD_STAGES: LeadStage[] = [
   "perdido",
 ];
 
+export type LeadKind = "pessoa" | "empresa";
+
 export interface LeadFrontmatter {
   id: string;
   name: string;
   role?: string;
   email?: string;
   company: string;
+  /** Pessoa (CPF) ou empresa (CNPJ). Default: "pessoa". */
+  kind?: LeadKind;
+  /** Documento: CPF (pessoa) ou CNPJ (empresa). */
+  document?: string;
   /** Nota curta sobre a empresa/contexto (aparece na lista). */
   companyNote?: string;
   /** Fonte do lead (ex.: LinkedIn, Indicação, Product Hunt). */

@@ -24,7 +24,7 @@ import {
   SheetHeader,
   SheetTitle,
 } from "@/components/ui/sheet";
-import type { Lead, LeadInput, LeadStage } from "@/lib/leads";
+import type { Lead, LeadInput, LeadKind, LeadStage } from "@/lib/leads";
 import { saveLeadAction, createLeadAction, deleteLeadAction } from "@/app/leads/actions";
 
 export const LEAD_STAGES: LeadStage[] = [
@@ -102,6 +102,11 @@ function LeadCard({ lead, onOpen }: { lead: Lead; onOpen: () => void }) {
         {/* EMPRESA */}
         <div className="min-w-0">
           <p className="truncate text-sm font-medium text-foreground">{lead.company}</p>
+          {lead.document ? (
+            <p className="truncate font-mono text-[0.7rem] text-muted-foreground/80">
+              {(lead.kind === "empresa" ? "CNPJ " : "CPF ") + lead.document}
+            </p>
+          ) : null}
           {lead.companyNote ? <p className="line-clamp-2 text-xs text-muted-foreground">{lead.companyNote}</p> : null}
         </div>
         {/* FONTE */}
@@ -130,7 +135,7 @@ function LeadCard({ lead, onOpen }: { lead: Lead; onOpen: () => void }) {
   );
 }
 
-const EMPTY: LeadInput = { name: "", company: "", stage: "novo", via: "manual", fit: undefined, notes: "" };
+const EMPTY: LeadInput = { name: "", company: "", stage: "novo", via: "manual", fit: undefined, kind: "empresa", document: "", notes: "" };
 
 export function LeadForm({
   lead,
@@ -144,6 +149,7 @@ export function LeadForm({
     lead
       ? {
           name: lead.name, role: lead.role, email: lead.email, company: lead.company,
+          kind: lead.kind ?? "pessoa", document: lead.document,
           companyNote: lead.companyNote, source: lead.source, via: lead.via,
           fit: lead.fit, stage: lead.stage, notes: lead.notes,
         }
@@ -188,8 +194,25 @@ export function LeadForm({
       </SheetHeader>
 
       <div className="min-h-0 flex-1 space-y-4 overflow-y-auto px-4">
-        <Field label="Nome">
-          <Input value={form.name} onChange={(e) => set("name", e.target.value)} placeholder="Nome do contato" />
+        <Field label="Tipo">
+          <div className="flex gap-1">
+            {(["empresa", "pessoa"] as const).map((k) => (
+              <button
+                key={k}
+                type="button"
+                onClick={() => set("kind", k)}
+                className={cn(
+                  "flex-1 rounded-lg border px-2 py-1.5 text-xs capitalize",
+                  (form.kind ?? "pessoa") === k ? "border-foreground bg-foreground text-background" : "text-muted-foreground"
+                )}
+              >
+                {k}
+              </button>
+            ))}
+          </div>
+        </Field>
+        <Field label={(form.kind ?? "pessoa") === "empresa" ? "Contato / decisor" : "Nome"}>
+          <Input value={form.name} onChange={(e) => set("name", e.target.value)} placeholder={(form.kind ?? "pessoa") === "empresa" ? "Nome do tomador de decisão" : "Nome do contato"} />
         </Field>
         <div className="grid grid-cols-2 gap-3">
           <Field label="Cargo">
@@ -199,9 +222,14 @@ export function LeadForm({
             <Input value={form.email ?? ""} onChange={(e) => set("email", e.target.value)} placeholder="nome@empresa.com" />
           </Field>
         </div>
-        <Field label="Empresa">
-          <Input value={form.company} onChange={(e) => set("company", e.target.value)} placeholder="Empresa" />
-        </Field>
+        <div className="grid grid-cols-2 gap-3">
+          <Field label="Empresa">
+            <Input value={form.company} onChange={(e) => set("company", e.target.value)} placeholder="Empresa" />
+          </Field>
+          <Field label={(form.kind ?? "pessoa") === "empresa" ? "CNPJ" : "CPF"}>
+            <Input value={form.document ?? ""} onChange={(e) => set("document", e.target.value)} placeholder={(form.kind ?? "pessoa") === "empresa" ? "00.000.000/0000-00" : "000.000.000-00"} />
+          </Field>
+        </div>
         <Field label="Contexto / nota da empresa">
           <Textarea rows={2} value={form.companyNote ?? ""} onChange={(e) => set("companyNote", e.target.value)} placeholder="Ex.: Fit alto com o ICP; orçamento confirmado." />
         </Field>
@@ -266,6 +294,7 @@ function Field({ label, children }: { label: string; children: React.ReactNode }
 export function LeadsView({ leads }: { leads: Lead[] }) {
   const [open, setOpen] = React.useState(false);
   const [current, setCurrent] = React.useState<Lead | null>(null);
+  const [tab, setTab] = React.useState<LeadKind>("empresa");
 
   function openEdit(lead: Lead) {
     setCurrent(lead);
@@ -276,7 +305,11 @@ export function LeadsView({ leads }: { leads: Lead[] }) {
     setOpen(true);
   }
 
-  const counts = LEAD_STAGES.map((s) => ({ stage: s, n: leads.filter((l) => l.stage === s).length }));
+  const leadKind = (l: Lead): LeadKind => l.kind ?? "pessoa";
+  const nEmpresa = leads.filter((l) => leadKind(l) === "empresa").length;
+  const nPessoa = leads.filter((l) => leadKind(l) === "pessoa").length;
+  const visible = leads.filter((l) => leadKind(l) === tab);
+  const counts = LEAD_STAGES.map((s) => ({ stage: s, n: visible.filter((l) => l.stage === s).length }));
 
   return (
     <div className="mx-auto flex w-full max-w-6xl flex-col gap-6">
@@ -284,7 +317,7 @@ export function LeadsView({ leads }: { leads: Lead[] }) {
         <div className="flex flex-col gap-1">
           <h1 className="font-display text-3xl font-semibold tracking-tight sm:text-4xl">Leads</h1>
           <p className="text-sm text-muted-foreground">
-            {leads.length} {leads.length === 1 ? "lead" : "leads"}
+            {visible.length} {visible.length === 1 ? "lead" : "leads"}
             {counts
               .filter((c) => c.n > 0)
               .map((c) => ` · ${c.n} ${STAGE_META[c.stage].label.toLowerCase()}`)
@@ -296,8 +329,31 @@ export function LeadsView({ leads }: { leads: Lead[] }) {
         </Button>
       </header>
 
+      {/* Tabs Empresas / Pessoas (CNPJ / CPF) */}
+      <div className="flex w-fit items-center gap-1 rounded-xl border bg-muted/40 p-1">
+        {([
+          { k: "empresa" as const, label: "Empresas", n: nEmpresa },
+          { k: "pessoa" as const, label: "Pessoas", n: nPessoa },
+        ]).map((t) => (
+          <button
+            key={t.k}
+            type="button"
+            onClick={() => setTab(t.k)}
+            className={cn(
+              "flex items-center gap-2 rounded-lg px-3 py-1.5 text-sm font-medium transition-colors",
+              tab === t.k ? "bg-card text-foreground shadow-sm" : "text-muted-foreground hover:text-foreground"
+            )}
+          >
+            {t.label}
+            <span className="flex h-5 min-w-5 items-center justify-center rounded-full bg-muted px-1.5 text-xs tabular-nums text-muted-foreground">
+              {t.n}
+            </span>
+          </button>
+        ))}
+      </div>
+
       {/* Cabeçalho de colunas (rótulos, não é tabela) */}
-      {leads.length > 0 ? (
+      {visible.length > 0 ? (
         <div className={cn(GRID, "hidden px-4 text-xs font-medium tracking-wide text-muted-foreground uppercase sm:grid")}>
           <span>Lead</span>
           <span>Empresa</span>
@@ -309,11 +365,11 @@ export function LeadsView({ leads }: { leads: Lead[] }) {
 
       {/* Lista de cards */}
       <div className="flex flex-col gap-2.5">
-        {leads.length > 0 ? (
-          leads.map((lead) => <LeadCard key={lead.id} lead={lead} onOpen={() => openEdit(lead)} />)
+        {visible.length > 0 ? (
+          visible.map((lead) => <LeadCard key={lead.id} lead={lead} onOpen={() => openEdit(lead)} />)
         ) : (
           <div className="rounded-2xl border border-dashed py-16 text-center text-sm text-muted-foreground">
-            Nenhum lead ainda. Clique em <span className="font-medium text-foreground">Novo lead</span> para começar.
+            Nenhum lead em <span className="font-medium text-foreground">{tab === "empresa" ? "Empresas" : "Pessoas"}</span>. Clique em <span className="font-medium text-foreground">Novo lead</span> para começar.
           </div>
         )}
       </div>
